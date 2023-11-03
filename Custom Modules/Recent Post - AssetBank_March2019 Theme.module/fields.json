@@ -1,0 +1,26 @@
+[ {
+  "id" : "ab12ddb6-d9f1-e189-c445-7111e8dad516",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "News & Resources"
+}, {
+  "id" : "d4dd35aa-aa57-2a5a-3876-bb88ce8eb98b",
+  "name" : "select_blog",
+  "display_width" : null,
+  "label" : "Select Blog",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "blog",
+  "default" : 5684256048
+} ]

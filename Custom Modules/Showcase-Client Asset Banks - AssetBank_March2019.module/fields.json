@@ -1,0 +1,239 @@
+[ {
+  "id" : "84653f2c-581b-98de-375f-fbcb69cd5936",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Showcase: Client Asset Banks"
+}, {
+  "id" : "5866b4b6-b90e-147a-0ddb-a20f0d31ecd5",
+  "name" : "sub_heading",
+  "display_width" : null,
+  "label" : "Sub Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Browse a selection of public facing Asset Banks from clients including IKEA and Superdrug."
+}, {
+  "id" : "a1585bca-8656-830a-41c6-79c0a823af17",
+  "name" : "add_button",
+  "display_width" : null,
+  "label" : "Add Button",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 5,
+    "sorting_label_field" : "db8a97cb-93d4-9eb7-5948-defe52df267d",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "c99d78a8-9143-df11-12bc-539aaa353ab1",
+    "name" : "cta_button",
+    "display_width" : null,
+    "label" : "CTA Button",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "db8a97cb-93d4-9eb7-5948-defe52df267d",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "c99d78a8-9143-df11-12bc-539aaa353ab1",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "false",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "ce09535a-3d28-d2f8-fccb-4b36878f9019",
+    "name" : "select_button",
+    "display_width" : null,
+    "label" : "Select Button",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "c99d78a8-9143-df11-12bc-539aaa353ab1",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "cta"
+  }, {
+    "id" : "b9982066-ddd8-b993-6d5d-0cea5f49a267",
+    "name" : "button_link_url",
+    "display_width" : null,
+    "label" : "Button Link Url",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "c99d78a8-9143-df11-12bc-539aaa353ab1",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "false",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "0ae93216-7a3d-8c82-aeee-99c6ceee1583",
+    "name" : "button_style_type",
+    "display_width" : null,
+    "label" : "Button Style Type",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "c99d78a8-9143-df11-12bc-539aaa353ab1",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "false",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "select",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "choices" : [ [ "btn-violet", "Filled" ], [ "btn-outline", "Transparent" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "cta_button" : false,
+    "button_link_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ]
+}, {
+  "id" : "8543a341-eb5a-dd76-f67e-5ba45d1d7dd6",
+  "name" : "add_item",
+  "display_width" : null,
+  "label" : "Add Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 16,
+    "sorting_label_field" : "0983a377-19b7-551f-96da-0d0b0bb1713e",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "77567572-ec5a-86aa-3414-dfc6a7fe7d1f",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "074077d0-9057-1ee8-954c-bc4eb66ed997",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null
+    }
+  }, {
+    "id" : "0983a377-19b7-551f-96da-0d0b0bb1713e",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "src" : "",
+      "alt" : null
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

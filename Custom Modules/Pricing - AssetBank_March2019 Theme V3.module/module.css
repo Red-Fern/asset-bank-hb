@@ -1,0 +1,33 @@
+.price-value {
+  display:none;
+}
+.price-value.active {
+  display:inline-block;
+}
+
+
+.cd-table-column-header a {
+  color:#fff;
+  text-decoration:none;
+}
+.currency-select {
+  color: #2c2c4a;
+  padding:1px;
+}
+.currency-selector {
+  padding: 1px 10px;
+  border: 1px solid #d8d8d8;
+  display: inline-block;
+  font-family: Netto,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.currency-selector:hover {
+    background: #2c2c4a;
+    cursor: pointer;
+    color: #fff;
+}
+.currency-selector.active {
+  border: 1px solid #2c2c4a;
+}

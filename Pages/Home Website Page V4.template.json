@@ -1,0 +1,766 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/AssetBank_March2019-style.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/AssetBank_March2019-main.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/lottie.js"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/ScrollMagic.min.js"
+  } ],
+  "customHead" : "",
+  "customFooter" : "<script type=\"application/ld+json\">\n    {\n        \"@context\": \"http://schema.org\",\n        \"@type\": \"Organization\",\n        \"@id\": \"https://www.builtbybright.com/#organization\",\n        \"mainEntityOfPage\": {\n            \"@type\": \"WebPage\",\n            \"@id\": \"https://www.builtbybright.com/\",\n            \"inLanguage\":\"en\"\n\t\t},\n        \"name\": \"Bright\",\n        \"url\": \"https://www.builtbybright.com/\",\n        \"logo\": {\n            \"@type\": \"ImageObject\",\n            \"url\": \"https://www.builtbybright.com/hubfs/BRAND-ASSETS/Logo_Products/Bright/Landscape/Bright_Logo-1A-Landscape_RGB-GRAD_Pos-300px.png\",\n            \"width\": 300,\n            \"height\": 141\n        },\n        \"image\": {\n            \"@type\": \"ImageObject\",\n            \"url\": \"https://www.builtbybright.com/hubfs/BRAND-ASSETS/Logo_Products/Bright/Landscape/Bright_Logo-1A-Landscape_RGB-GRAD_Pos-300px.png\",\n            \"width\": 300,\n            \"height\": 141\n        },\n        \"brand\":\"Bright\",\n        \"foundingDate\":\"1999\",\n        \"founder\": [ \n            {\n                \"@type\": \"Person\",\n                \"name\": \"Martin Wilson\",\n                \"jobTitle\": \"Director\",\n                \"sameAs\": \"https://www.linkedin.com/in/martinrwilson/\"\n            \n            },\n            {\n                \"@type\": \"Person\",\n                \"name\": \"Eric Clack\",\n                \"jobTitle\": \"Director\",\n                \"sameAs\": \"https://www.linkedin.com/in/ericclack/\"\n            \n            }\n        ],\n        \"department\": {\n            \"@type\": \"LocalBusiness\",\n            \"address\": {\n                \"@type\": \"PostalAddress\",\n                \"addressCountry\": \"GB\",\n                \"addressLocality\": \"Brighton\",\n                \"addressRegion\": \"East Sussex\",\n                \"postalCode\":\"BN1 1YR\",\n                \"streetAddress\": \"9th Floor Tower Point, 44 North Road\"\n            },\n            \"image\": {\n                \"@type\": \"ImageObject\",\n                \"url\": \"https://www.builtbybright.com/hubfs/bright-brighton-office.jpg\",\n                \"width\": \"1200\",\n                \"height\": \"1600\"\n            },\n            \"url\": \"https://www.builtbybright.com/contact/\",\n            \"@id\": \"https://www.builtbybright.com/contact/\",\n            \"description\": \"Bright Brighton\",\n            \"name\": \"Bright Brighton\",\n            \"telephone\": \"+44 1273 923153\",\n            \"openingHours\": \"Mo,Tu,We,Th,Fr 09:00-17:00\",\n            \"hasMap\": \"https://goo.gl/maps/1W8dZWdCEW5FfUtP8\",\n            \"geo\": {\n                \"@type\": \"GeoCoordinates\",\n                \"latitude\": \"50.8260396\",\n                \"longitude\": \"-0.1421667\"\n            },\n            \"priceRange\": \"££\"\n        },\n        \"email\": \"info@assetbank.co.uk\",\n        \"description\": \"5 star Digital Asset Management software that's won awards for its ease of use, scalability and customer support. Get your free demo, today!\",\n        \"sameAs\" : [ \n            \"https://twitter.com/brightassetbank\",\n            \"https://www.facebook.com/brightinteractive\",\n            \"https://www.youtube.com/channel/UCiNAjozJU9axpulcFJaqZkQ\",\n            \"https://www.linkedin.com/company/bright-interactive/\",\n            \"https://www.capterra.co.uk/software/97468/asset-bank\",\n            \"https://www.g2.com/products/asset-bank/reviews\"\n        ]\n    }\n</script>",
+  "bodyClass" : "site-page one-column hs-home no-space hs-home-v4",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16015711368501046",
+        "label" : "Mega Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/AssetBank_March2019 Theme/Custom Modules/Mega Menu",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Mega Menu",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1552017809591303",
+        "label" : "Row2 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "home-row2-group section slideshow",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_158532652567295",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1590075651071261",
+                "label" : "Home Header Image V2",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : true,
+                  "path" : "/AssetBank_March2019 Theme/Custom Modules/Home Header Image V2",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Home Header Image V2",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "home-row2-group section slideshow",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1552020099945294",
+        "label" : "Row6 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "pt-sm-3 pb-sm-3",
+          "css_id" : "menu-trigger",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1590434822573308",
+            "label" : "Content With Image Group - Type2 - AssetBank_March2019 Theme",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/AssetBank_March2019 Theme/Custom Modules/Content With Image Group - Type2 - AssetBank_March2019 Theme",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Content With Image Group - Type2 - AssetBank_March2019 Theme",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "menu-trigger",
+        "cssClass" : "pt-sm-3 pb-sm-3",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1552018662130770",
+        "label" : "Row5 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "home-row5-group",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1590089473263478",
+            "label" : "Client Logos Group - AssetBank_March2019 Theme",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "client-logos-group-v2 mb-3",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/AssetBank_March2019 Theme/Custom Modules/Client Logos Group - AssetBank_March2019 Theme",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Client Logos Group - AssetBank_March2019 Theme",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "client-logos-group-v2 mb-3",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "home-row5-group",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_159043432637830",
+        "label" : "Row5 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_159043435069254",
+            "label" : "One Line of Text",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "@hubspot/text",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "value" : "So what’s the big deal?",
+              "widget_name" : "One Line of Text",
+              "wrapping_html" : "<h1 class=\"d-none d-sm-inline text-center text-violet\">{{ html }}</h1>"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_159043438445266",
+            "label" : "One Line of Text",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "@hubspot/text",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "value" : "Why choose a Bright DAM",
+              "widget_name" : "One Line of Text",
+              "wrapping_html" : "<h3 class=\"why-choose mt-0 mb-2 mt-sm-1 mt-sm-1 text-center text-violet\">{{ html }}</h3>"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1590088224842441",
+            "label" : "Content With Animation",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/AssetBank_March2019 Theme/Custom Modules/Content With Animation",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Content With Animation",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_158990920311024",
+        "label" : "Row3 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_158990936004391",
+            "label" : "Wizard",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/AssetBank_March2019 Theme/Custom Modules/Wizard",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Wizard",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1552018134806479",
+        "label" : "Row3 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "pt-2",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1590436911269507",
+            "label" : "Our Products V2 - AssetBank_March2019 Theme",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/AssetBank_March2019 Theme/Custom Modules/Our Products V2 - AssetBank_March2019 Theme",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Our Products V2 - AssetBank_March2019 Theme",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "pt-2",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1590523395403170",
+        "label" : "Row4 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1590523395403171",
+            "label" : "Content - 2 Col - AssetBank_March2019 Theme",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/AssetBank_March2019 Theme/Custom Modules/Content - 2 Col - AssetBank_March2019 Theme",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Content - 2 Col - AssetBank_March2019 Theme",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_159051826869749",
+        "label" : "Customer Testimonials",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "pt-2",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_159051829295299",
+            "label" : "Testimonial Carousel - AssetBank_March2019 Theme",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/AssetBank_March2019 Theme/Custom Modules/Testimonial Carousel - AssetBank_March2019 Theme",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Testimonial Carousel - AssetBank_March2019 Theme",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "pt-2",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1552018242639537",
+        "label" : "Row4 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1590521586349158",
+            "label" : "Content - 2 Col - AssetBank_March2019 Theme",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/AssetBank_March2019 Theme/Custom Modules/Content - 2 Col - AssetBank_March2019 Theme",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Content - 2 Col - AssetBank_March2019 Theme",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1552020879142671",
+        "label" : "Row7 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "mb-2",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1552020876548651",
+            "label" : "Row7 - Recent Post - AssetBank_March2019 Theme",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/AssetBank_March2019 Theme/Custom Modules/Recent Post - AssetBank_March2019 Theme",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Recent Post - AssetBank_March2019 Theme",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "mb-2",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "HubSpot_Boilerplate Theme/Footer",
+        "label" : "HubSpot_Boilerplate Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "path" : "/AssetBank_March2019 Theme/Global Groups/AssetBank_March2019 Footer.template.json",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

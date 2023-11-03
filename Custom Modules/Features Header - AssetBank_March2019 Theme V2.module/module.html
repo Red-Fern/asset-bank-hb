@@ -1,0 +1,72 @@
+
+<div class="content_with_image_group_fullwidth features_header">
+  <div class="section">
+    <div class="row">
+      <div class="container container-wide content_with_image_group_fullwidth__inner">
+        <div class="row align-items-center">
+
+          <div class="col-md-6">
+            <div class="content_with_image_group_fullwidth_content img-right">
+              <h1 class="h2 mb-2">{{ module.heading }}</h1>
+              {% inline_rich_text field="heading_text" value="{{ module.heading_text }}" %}
+              
+              {% if module.links_position == 'left' %}
+              <div class="container features_links">
+                <div class="row align-items-center">
+                  {% for item in module.item %}
+                  <div class="col-6 col-md-6 features_link">
+                      <a href="#{{ item.link_id }}">
+                        <h5 class="mb-0">{{ item.title }}</h5>
+                        <h5 class="mt-0 font-weight-bold">
+                          {{ item.link_text }}
+                          <svg class="ab-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg>
+                        </h5>
+                      </a>
+                  </div>    
+                  {% endfor %}
+                </div>
+              </div>
+              {% endif %}
+              
+              
+            </div> 
+          </div>
+          <div class="pb-1 col-md-6">
+            {% if module.heading_image.src %}
+            {% set sizeAttrs = 'width="{{ module.heading_image.width }}" height="{{ module.heading_image.height }}"' %}
+            {% if module.heading_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif module.heading_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.heading_image.max_width }}px; max-height: {{ module.heading_image.max_height }}px"' %}
+            {% endif %}
+            <img src="{{ module.heading_image.src }}" alt="{{ module.heading_image.alt }}" class="img-fluid d-block w-100" {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+
+          {% if module.links_position == 'below' %}
+          <div class="container features_links">
+            <div class="row align-items-center">
+              {% for item in module.item %}
+              <div class="col-6 col-md-2 features_link">
+                  <a href="#{{ item.link_id }}">
+                    <h5 class="mb-0">{{ item.title }}</h5>
+                    <h5 class="mt-0 font-weight-bold">
+                      {{ item.link_text }}
+                      <svg class="ab-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg>
+                    </h5>
+                  </a>
+              </div>    
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

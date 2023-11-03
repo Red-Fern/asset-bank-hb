@@ -1,0 +1,134 @@
+[ {
+  "id" : "342c0dd5-7fdd-c1d6-d411-07e3ac7f417f",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Benefits of working here"
+}, {
+  "id" : "ac15f64d-fd1c-829d-236f-3d3d6a3eae9e",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "36fbb7ec-5da7-4c99-99af-07884bab9278",
+  "name" : "column_item",
+  "display_width" : null,
+  "label" : "Column Item",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "b615f719-adcc-5438-a907-2f4810efdcd2",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "b615f719-adcc-5438-a907-2f4810efdcd2",
+    "name" : "item",
+    "display_width" : null,
+    "label" : "Item",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "a4654a82-c08d-d29a-7172-dd65dfa48209",
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "a4654a82-c08d-d29a-7172-dd65dfa48209",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "responsive_enabled" : false,
+      "breakpoint_defaults" : { },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Competitive salaries"
+    }, {
+      "id" : "083b142e-af8f-4008-e7d0-e42abf323a3c",
+      "name" : "box_shadow_color",
+      "display_width" : null,
+      "label" : "Box Shadow Color",
+      "required" : false,
+      "locked" : false,
+      "responsive_enabled" : false,
+      "breakpoint_defaults" : { },
+      "type" : "color",
+      "default" : {
+        "color" : "#4400a9",
+        "opacity" : 100
+      }
+    } ],
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "title" : "Competitive salaries",
+      "box_shadow_color" : {
+        "color" : "#4400a9",
+        "opacity" : 100
+      }
+    } ]
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "item" : [ {
+      "title" : "Competitive salaries",
+      "box_shadow_color" : {
+        "color" : "#4400a9",
+        "opacity" : 100
+      }
+    } ]
+  }, {
+    "item" : [ {
+      "title" : "Office based in the North Laine area of Brighton with amazing sea views",
+      "box_shadow_color" : {
+        "color" : "#4066ff",
+        "opacity" : 100
+      }
+    } ]
+  }, {
+    "item" : [ {
+      "title" : "Company wide profit share",
+      "box_shadow_color" : {
+        "color" : "#4400a9",
+        "opacity" : 100
+      }
+    } ]
+  }, {
+    "item" : [ {
+      "title" : "‘Thank you’ rewards based on performance/length of service",
+      "box_shadow_color" : {
+        "color" : "#009ca6",
+        "opacity" : 100
+      }
+    } ]
+  } ]
+} ]

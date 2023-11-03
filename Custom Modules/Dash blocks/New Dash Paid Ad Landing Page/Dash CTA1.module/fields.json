@@ -1,0 +1,137 @@
+[ {
+  "id" : "ffd0e0df-252a-47d9-3911-505adff14ef1",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Try it yourself for free"
+}, {
+  "id" : "b84dbffb-8efa-ccd4-5cdb-7e54573cef59",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : true,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/4056449/Dash-assets/Browser-mockup.png",
+    "alt" : "Screenshot of Dash",
+    "loading" : "lazy",
+    "width" : 818,
+    "height" : 506,
+    "max_width" : 818,
+    "max_height" : 506
+  }
+}, {
+  "id" : "57a3d328-5626-ab91-1b3b-d5d3320cda1e",
+  "name" : "reasons_to_sign_up",
+  "display_width" : null,
+  "label" : "Reasons to sign up",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "32ca7501-7eb6-418a-6596-41706274b84f",
+    "name" : "reason_1",
+    "display_width" : null,
+    "label" : "Reason 1",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Reason 1"
+  }, {
+    "id" : "6d1c9350-2c08-0a90-6d26-24ecb0559020",
+    "name" : "reason_2",
+    "display_width" : null,
+    "label" : "Reason 2",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Reason 2"
+  }, {
+    "id" : "81b4a6ad-c8c7-7ff5-335c-5b43578ec10b",
+    "name" : "reason_3",
+    "display_width" : null,
+    "label" : "Reason 3",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Reason 3"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "type" : "group",
+  "default" : {
+    "reason_1" : "Reason 1",
+    "reason_2" : "Reason 2",
+    "reason_3" : "Reason 3"
+  }
+}, {
+  "id" : "6b797d1e-5b4d-eb5f-bed9-495f37fb348e",
+  "name" : "form",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "72004737-bfa6-7bdb-172a-6fab2fc95b9e",
+    "name" : "form_field",
+    "display_width" : null,
+    "label" : "Form",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "form",
+    "default" : {
+      "form_id" : "06bcadd0-1748-4beb-8931-ce1ad9d5a377",
+      "response_type" : "inline",
+      "message" : "<p>Thanks! Let's get you set up ...</p>",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "form_field" : {
+      "form_id" : "06bcadd0-1748-4beb-8931-ce1ad9d5a377",
+      "response_type" : "inline",
+      "message" : "<p>Thanks! Let's get you set up ...</p>",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }
+} ]

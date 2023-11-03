@@ -1,0 +1,74 @@
+[ {
+  "picker" : "file",
+  "id" : "48e7ec65-a13c-c936-7b3e-bb10e613dbcf",
+  "name" : "json_file",
+  "display_width" : null,
+  "label" : "JSON File",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/4056449/Bright-Homepage-Image%201.jpg"
+}, {
+  "id" : "525cee02-6af1-76fc-18d1-ccea13134a43",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext",
+  "default" : "Leave the chaos of <span>shared drives behind</span>"
+}, {
+  "id" : "a70b565f-2483-f598-939f-79ce01b13e2e",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : true,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext",
+  "default" : "<p>Find brand image and videos quickly using the power of AI, collaborate with colleagues, share files safely and securely.</p>\n<p>Easy to use and simple to set up, Dash is the tool for busy teams needing to save time and organise their brand assets.</p>"
+}, {
+  "id" : "23d33877-4ee9-d802-f396-c796f0943ca2",
+  "name" : "form",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f0e0301c-dbf7-3e40-c651-3586b1972436",
+    "name" : "form_field",
+    "display_width" : null,
+    "label" : "Form",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "form",
+    "default" : {
+      "form_id" : "06bcadd0-1748-4beb-8931-ce1ad9d5a377",
+      "response_type" : "inline",
+      "message" : "<p>Thanks! Let's get you set up ...</p>",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "form_field" : {
+      "form_id" : "06bcadd0-1748-4beb-8931-ce1ad9d5a377",
+      "response_type" : "inline",
+      "message" : "<p>Thanks! Let's get you set up ...</p>",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }
+} ]

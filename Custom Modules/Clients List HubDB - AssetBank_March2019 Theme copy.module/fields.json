@@ -1,0 +1,99 @@
+[ {
+  "id" : "42ab8310-2597-ab2f-0d0d-a3a3b39cf276",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We are proud to partner with over 800 clients including 20 FTSE 100 companies"
+}, {
+  "id" : "77b0587b-96d8-75b8-b622-1c91df5d3cc1",
+  "name" : "sub_heading",
+  "display_width" : null,
+  "label" : "Sub Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our clients span a variety of industries, including Travel &amp; Leisure, Non-Profit, Education, Media &amp;           Entertainment, Retail and Information Technology."
+}, {
+  "id" : "765cee92-e4e0-f276-1f7b-3d4b3401e415",
+  "name" : "display_button",
+  "display_width" : null,
+  "label" : "Display Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "2e2a8cf8-0601-9fc6-db0a-9d9d9ee91e8d",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "765cee92-e4e0-f276-1f7b-3d4b3401e415",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See all clients"
+}, {
+  "id" : "be20d589-019a-f406-ae87-d0069e387edc",
+  "name" : "button_link_url",
+  "display_width" : null,
+  "label" : "Button Link Url",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "765cee92-e4e0-f276-1f7b-3d4b3401e415",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "15b436b5-0d5b-5224-13c2-ea1131d66fc0",
+  "name" : "display_filters",
+  "display_width" : null,
+  "label" : "Display Filters",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : false
+} ]

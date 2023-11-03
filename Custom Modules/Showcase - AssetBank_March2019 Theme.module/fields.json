@@ -1,0 +1,158 @@
+[ {
+  "id" : "486c4283-f814-297f-9e0d-44e7ce31f75b",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Showcase: Clients public Asset Banks"
+}, {
+  "id" : "1fb90e4c-8d69-248a-a40a-f3f762af174e",
+  "name" : "add_item",
+  "display_width" : null,
+  "label" : "Add Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 6,
+    "sorting_label_field" : "34fa6865-336e-b2e7-af0e-9ab865d89a67",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "6ea1c466-11a5-b27b-2281-6579d75397a3",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "2d045927-2a07-c014-25a3-e9f8169ffb10",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null
+    }
+  }, {
+    "id" : "34fa6865-336e-b2e7-af0e-9ab865d89a67",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "src" : "",
+      "alt" : null
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "ce300606-8aa0-9a9f-a8ce-95422016cd64",
+  "name" : "display_button",
+  "display_width" : null,
+  "label" : "Display Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "cde06383-cc58-744f-c1e8-eb7466c833c6",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "ce300606-8aa0-9a9f-a8ce-95422016cd64",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "View showcase"
+}, {
+  "id" : "34628b5b-f2af-4eee-e162-c366e3f0aad7",
+  "name" : "button_link_url",
+  "display_width" : null,
+  "label" : "Button Link Url",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "ce300606-8aa0-9a9f-a8ce-95422016cd64",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+} ]

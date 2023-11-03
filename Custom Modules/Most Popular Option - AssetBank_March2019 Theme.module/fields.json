@@ -1,0 +1,193 @@
+[ {
+  "id" : "2691a711-d5bf-265d-4d4d-81dc90126fff",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our most popular option"
+}, {
+  "id" : "4a3e27ac-3107-775f-6759-287b39d92886",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "e836a79a-75b2-553d-a826-cc678e52daed",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "e836a79a-75b2-553d-a826-cc678e52daed",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Shared Hosting"
+  }, {
+    "id" : "40ec2028-2e0d-0a77-199d-43b313893c35",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext",
+    "default" : "<p>This is a cost effective way to host your DAM solution in a Cloud Environment and have our experts manage the application and infrastructure.</p>"
+  }, {
+    "id" : "ac3ae6df-f946-7789-8ada-51fdbc2902ea",
+    "name" : "benefits_item",
+    "display_width" : null,
+    "label" : "Benefits Item",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "cb8ba60d-5e75-88ef-d281-3fa8785b05ef",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "cb8ba60d-5e75-88ef-d281-3fa8785b05ef",
+      "name" : "benefits_title",
+      "display_width" : null,
+      "label" : "Benefits Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "responsive_enabled" : false,
+      "breakpoint_defaults" : { },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Expertise"
+    }, {
+      "id" : "98ae4391-4a50-dfbd-86d2-04e9702c0b27",
+      "name" : "benefits_content",
+      "display_width" : null,
+      "label" : "Benefits Content",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "responsive_enabled" : false,
+      "breakpoint_defaults" : { },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Our dedicated in-house infrastructure experts support the entire platform, resulting in one less application for your IT Team to worry about, and gaining you access to qualified, skilled support."
+    } ],
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "benefits_title" : "Expertise",
+      "benefits_content" : "Our dedicated in-house infrastructure experts support the entire platform, resulting in one less application for your IT Team to worry about, and gaining you access to qualified, skilled support."
+    }
+  }, {
+    "id" : "c37bbbe7-812c-d14c-cea8-b6119623bfb5",
+    "name" : "more_information_item",
+    "display_width" : null,
+    "label" : "More Information Item",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "cbe3a306-01b3-e0e8-9875-77e49a02522a",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "cbe3a306-01b3-e0e8-9875-77e49a02522a",
+      "name" : "more_information_label",
+      "display_width" : null,
+      "label" : "Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "responsive_enabled" : false,
+      "breakpoint_defaults" : { },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "cfb96c68-2daa-6c93-69f1-eaa3166a9f3f",
+      "name" : "link_type",
+      "display_width" : null,
+      "label" : "Link Type",
+      "required" : false,
+      "locked" : false,
+      "responsive_enabled" : false,
+      "breakpoint_defaults" : { },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "FILE"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "link_type" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "FILE"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Shared Hosting",
+    "content" : "<p>This is a cost effective way to host your DAM solution in a Cloud Environment and have our experts manage the application and infrastructure.</p>",
+    "benefits_item" : {
+      "benefits_title" : "Expertise",
+      "benefits_content" : "Our dedicated in-house infrastructure experts support the entire platform, resulting in one less application for your IT Team to worry about, and gaining you access to qualified, skilled support."
+    },
+    "more_information_item" : {
+      "link_type" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "FILE"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+} ]

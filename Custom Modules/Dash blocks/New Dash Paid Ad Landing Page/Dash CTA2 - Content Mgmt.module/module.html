@@ -1,0 +1,32 @@
+<div class="d-container">
+      <div class="d-cta2">
+        <div class="d-cta2__inner">
+          <div class="d-cta2__form">
+            <h2 class="d-cta__title">{{ module.title }}</h2>
+            <p class="d-cta2__desc">{{ module.intro }}</p>
+            <div class="d-signup">
+              <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	region: "na1",
+	portalId: "4056449",
+	formId: "b0c52439-ca7b-457d-b84c-72d636890e6f"
+});
+</script>
+            </div>
+            <p class="d-cta2__gdpr d-cta__gdpr">We'll process your data to handle this request. More information can be found in our <a href="https://www.builtbybright.com/privacy-policy/">Privacy Policy</a></p>
+          </div>
+          <ul class="d-cta2__bullets">
+            {% for item in module.bullet_point %}
+            <li class="d-cta2__bullets__item">
+              <img class="d-cta2__bullets__item__icon" src="https://www.builtbybright.com/hubfs/AssetBank_March2019%20Theme/Images/dash-bulletpoint.png" alt=""/>
+              {{item}}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,45 @@
+<div class="custom-professional-services">
+  <div class="section page-tabs">
+    <div class="tabs mb-2 ">
+      <div class="container page-center">
+        <div class="row">
+          <div class="tabs-container">
+            {% for item in module.item %}
+            <a href="#{{ item.categories|lower|replace(' &','')|replace(' ','-') }}"><span>{{ item.categories }}</span></a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  {% for item in module.item %}
+  <div id="{{ item.categories|lower|replace(' &','')|replace(' ','-') }}">
+    <div class="section {% cycle 'pt-1 pb-1','pt-2 pb-2 bg-grey' %}">
+      <div class="container page-center">
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1 mb-2">
+            <h2>{{ item.heading }}</h2>
+            {% if item.image.src %}
+            <img class="img-fluid d-block" src="{{ item.image.src }}" alt="{{ item.image.alt }}" width="{{ item.image.width }}" height="{{ item.image.height }}">
+            {% endif %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 offset-sm-1">
+            {{ item.left_content }}
+            {% set href = item.button_link.url.href %}
+            {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a class="btn btn-violet mb-2" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a>
+          </div>
+          <div class="col-sm-4 offset-sm-1">
+            {{ item.right_content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

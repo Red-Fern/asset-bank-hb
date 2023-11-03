@@ -1,0 +1,82 @@
+[ {
+  "id" : "216e586a-7d78-17f5-0465-c313bbcb2eb8",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Video"
+}, {
+  "id" : "8fce9f53-4c6b-a7b3-6525-af70be4f4563",
+  "name" : "sub_heading",
+  "display_width" : null,
+  "label" : "Sub Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "You can also watch this short video interview filmed with Rob in 2015."
+}, {
+  "id" : "559b4b85-fc40-b33a-ab26-5379b3fecf51",
+  "name" : "link",
+  "display_width" : null,
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "page"
+}, {
+  "id" : "cfc332ac-b3b7-deb5-35f9-c468f9ece283",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null
+  }
+}, {
+  "id" : "e2512448-4350-36e2-8d2e-529d4f0b5c24",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "68bca543-d298-412f-d8b3-2d5384d18896",
+  "name" : "duration",
+  "display_width" : null,
+  "label" : "Duration",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

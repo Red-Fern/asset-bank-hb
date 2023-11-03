@@ -1,0 +1,94 @@
+<!-- <div class="landing-page-bg bg-violet-gradient"></div> -->
+<div class="banner-area-with-form landing-page-v3 {% if module.form_title %} has-form {% else %} no-form {% endif %} {% if module.background_colour == 'grey'  %}grey-bg{% endif %}">
+  <div class="">
+    <div class="row ">
+      
+      <div class="col-md-7 gradient-landing-page align-self-start text-center">
+        
+        <div class="landing-page_logo mt-2">  
+          {% if module.logo == 'bright'  %} 
+          <img src="https://cdn2.hubspot.net/hubfs/4056449/BRAND-ASSETS/Logo_Products/Bright/Landscape/Bright_Logo-1A-Landscape_RGB-GRAD_Rev-300px.png" width="160" height="75" alt="Bright Logo" border="0" class="h-2 w-auto">
+          {% elif module.logo == 'assetbank' %}
+          <img src="https://cdn2.hubspot.net/hubfs/4056449/BRAND-ASSETS/Logo_Products/AssetBank/AssetBank_Logo-1A-Landscape_RGB-GRAD_Rev_2-small.png" width="300" height="75" alt="Asset Bank Logo" border="0" class="h-2 w-auto">
+          {% elif module.logo == 'asset_bank_alt' %}
+          <img src="https://cdn2.hubspot.net/hubfs/4056449/BRAND-ASSETS/Logo_Products/AssetBank/AssetBank_Logo-1A-Landscape_RGB-GRAD_Pos_2-small.png" width="300" height="75" alt="Asset Bank Logo" border="0" class="h-2 w-auto">
+          {% elif module.logo == 'dash' %}
+          <img src="https://cdn2.hubspot.net/hubfs/4056449/BRAND-ASSETS/Logo_Products/Dash/Dash_Logo-1A-Landscape_RGB-GRAD_Rev_2-small.png" width="208" height="75" alt="Dash Logo" border="0" class="h-2 w-auto">
+          {% elif module.logo == 'brand_hub' %}
+          <img src="https://cdn2.hubspot.net/hubfs/4056449/BRAND-ASSETS/Logo_Products/BrandHub/BrandHub_Logo-1A-Landscape_RGB-GRAD_Rev_2-small.png" width="292" height="75" alt="Brand Hub Logo" class="0" style="h-2 w-auto">
+          {% elif module.logo == 'Bright_AB_D' %}
+          <img src="https://f.hubspotusercontent40.net/hubfs/4056449/BRAND-ASSETS/Logo_Products/Logos_2020/Bright_Logos/Bright_Creators_of_AB_and_Dash_200.png" alt="Bright creators of Asset Bank and Dash Logo" class="h-4 w-auto">
+          {% endif %}
+        </div>
+       
+        
+        <h1 class="text-center mt-1 mx-auto px-2 {% if module.background_colour == 'purple'  %}text-white{% endif %}" style="max-width: 575px;">
+          {{ module.title }}
+        </h1>
+        
+        <div class="landing-page_content mx-auto mt-1 px-2" style="max-width: 740px;">  
+          {{ module.content }}
+        </div>
+        
+        <!-- TrustBox widget - Horizontal -->
+        <div style="transform: scale(0.85);" class="trustpilot-widget mt-2 mb-1" data-locale="en-GB" data-template-id="5406e65db0d04a09e042d5fc" data-businessunit-id="5183df24000064000529c16f" data-style-height="28px" data-style-width="100%" {% if module.background_colour == 'purple'  %}data-theme="dark"{% endif %}> <a href="https://uk.trustpilot.com/review/assetbank.co.uk" target="_blank" rel="noopener">Trustpilot</a> </div> 
+        <!-- End TrustBox widget -->
+        
+        <div class="landing-page_image">  
+          {% if module.image.src %}
+            <img src="{{ module.image.src }}" alt="{{ module.image.alt }}" width="{{ module.image.width }}" height="{{ module.image.height }}">
+          {% endif %}
+        </div>
+      </div>  
+      
+      {% if module.title %}
+      <div class="col-md-5">
+        <!-- <div class="h2 mt-3 landing-page_mobile-title text-center">
+          {{ module.title }}
+        </div> -->
+        <div class="landing-page_form">
+          
+          <!-- HUBSPOT FORM -->
+          <h5 class="mt-1 mb-1 landing-page_form_instruction">{{ module.form_title }}</h5>
+          <div class="form-group">
+            {% form
+              form_to_use="{{ module.form.form_id }}"
+              response_response_type="{{ module.form.response_type }}"
+              response_message="{{ module.form.message }}"
+              response_redirect_id="{{ module.form.redirect_id }}"
+              response_redirect_url="{{module.form.redirect_url}}"
+              gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
+            %}  
+          </div>
+
+          <div class="">
+           <div class="row">
+              <div class="col-12">
+                  {% if module.logos_heading %}<h5 class="mt-2">{{ module.logos_heading }}</h5>{% endif %}  
+              </div>
+            </div>
+            <div class="g2-logos mt-1 row justify-content-center align-items-center">
+                {% for item in module.add_logo %}
+                    <div class="col-3">
+                      {% if item.logo_image.src %}
+                      <img style="padding:0 4px" src="{{ item.logo_image.src }}" alt="{{ item.logo_image.alt }}" width="{{ item.logo_image.width }}" height="{{ item.logo_image.height }}">
+                      {% endif %}
+                    </div>  
+                {% endfor %}
+            </div>
+          </div>  
+        </div>
+        
+        <div class="landing-page_image mobile hidden-lg hidden-md">  
+          {% if module.image.src %}
+            <img src="{{ module.image.src }}" alt="{{ module.image.alt }}" width="{{ module.image.width }}" height="{{ module.image.height }}">
+          {% endif %}
+        </div>
+
+      </div>
+      {% endif %}
+      
+
+    </div>
+  </div>
+</div>

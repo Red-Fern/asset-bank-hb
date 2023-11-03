@@ -1,0 +1,14 @@
+<div class="image-shadow {{ module.module_setting.shadow_position }} mt-{{ module.module_setting.top_margin_gap_in_rem_ }} mb-{{ module.module_setting.bottom_margin_gap_in_rem_ }}" style="background-color:rgba({{ module.module_setting.box_shadow_color.color|convert_rgb  }},{{ module.module_setting.box_shadow_color.opacity/100 }});">
+  {% if module.image.src %}
+  <img src="{{ module.image.src }}" class="img-fluid d-block" alt="{{ module.image.alt }}" width="{{ module.image.width }}" height="{{ module.image.height }}">
+  {% endif %}
+</div>
+
+
+
+
+
+
+
+
+

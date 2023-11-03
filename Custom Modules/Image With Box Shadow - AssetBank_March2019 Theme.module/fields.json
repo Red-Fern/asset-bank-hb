@@ -1,0 +1,96 @@
+[ {
+  "id" : "c1f84e68-4b67-f4a1-e9a5-5de058c4de57",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null
+  }
+}, {
+  "id" : "42e1f366-2ab9-2495-b1db-9391fa6b246d",
+  "name" : "module_setting",
+  "display_width" : null,
+  "label" : "Module Setting",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8023c249-c97a-2dcf-e85d-cb74866bc9a9",
+    "name" : "box_shadow_color",
+    "display_width" : null,
+    "label" : "Box Shadow Color",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "03d970d6-4b5a-a485-7a47-c61c3ed7d82b",
+    "name" : "shadow_position",
+    "display_width" : null,
+    "label" : "Shadow Position",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "choices" : [ [ "image-shadow--top-left", "Top Left" ], [ "image-shadow--top-right", "Top Right" ], [ "image-shadow--bottom-left", "Bottom Left" ], [ "image-shadow--bottom-right", "Bottom Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "image-shadow--top-left"
+  }, {
+    "id" : "3d40caae-e185-05fd-28fe-28536307dc74",
+    "name" : "top_margin_gap_in_rem_",
+    "display_width" : null,
+    "label" : "Top Margin Gap (in rem)",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "step" : 1,
+    "type" : "number",
+    "default" : 0
+  }, {
+    "id" : "2398ee43-9cda-056f-c62c-b16639b28327",
+    "name" : "bottom_margin_gap_in_rem_",
+    "display_width" : null,
+    "label" : "Bottom Margin Gap (in rem)",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "step" : 1,
+    "type" : "number",
+    "default" : 0
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "box_shadow_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "shadow_position" : "image-shadow--top-left",
+    "top_margin_gap_in_rem_" : 0,
+    "bottom_margin_gap_in_rem_" : 0
+  }
+} ]

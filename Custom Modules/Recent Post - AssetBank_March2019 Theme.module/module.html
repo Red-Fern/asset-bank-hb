@@ -1,0 +1,54 @@
+<div class="section gradient-70 pt-2 pb-3 custom-recent-post">
+  <div class="container">
+    <div class="">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-white mb-3">{{ module.heading }}</h2>
+        </div>
+      </div>            
+      <div class="row">
+        {% set rec_posts = blog_recent_posts(module.select_blog, 3) %}
+        {% for rec_post in rec_posts %}
+        <div class="col-sm-6 col-lg-4 mb-1">
+          <div class="card d-flex flex-column h-100 shadow-lg">
+            <a href="{{rec_post.absolute_url}}">
+              <div class="card-header">
+                {% if rec_post.featured_image %}
+                <div class="card-image" style="background-image:url('{{ resize_image_url( rec_post.featured_image,767 ) }}');">
+
+                </div>
+                {% endif %}
+              </div>
+              <div class="card-meta">
+                {% if rec_post.blog_post_author %}
+                by {{ rec_post.blog_post_author.display_name }},
+                {% endif %}{{ rec_post.publish_date_local_time.strftime('%B') }} {% set day = rec_post.publish_date_local_time.strftime('%e') %}
+                {% if day >= 4 and day <= 20 %}
+                {% set day = day + "th" %}
+                {% elif day >= 24 and day <= 30 %}
+                {% set day = day + "th" %}
+                {% elif day == 1 or day == 21 or day == 31 %}
+                {% set day = day + "st" %}
+                {% elif day == 2 or day == 22 %}
+                {% set day = day + "nd" %}
+                {% elif day == 3 or day == 23 %}
+                {% set day = day + "rd" %}
+                {% endif %}
+                {{ day }}
+                , {{ rec_post.publish_date_local_time.strftime('%Y') }}
+              </div>
+              <div class="card-body flex-grow-1">
+                <h3 class="card-title">{{ rec_post.name }}</h3>
+                {{ rec_post.post_list_content|safe|truncatehtml(155, '' , false) }}
+              </div>
+              <div class="card-footer">
+                <span class="btn btn-link">Read more</span>
+              </div>
+            </a>
+          </div>                        
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

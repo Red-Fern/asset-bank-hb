@@ -1,0 +1,23 @@
+.d-simple-header {
+  height: 72px;
+  width: 100%;
+
+  background: #fff;
+}
+
+.d-simple-header__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 100%;
+}
+
+.assetbank-logo img{
+  width: 150px;
+}
+
+.d-simple-header__logo {
+
+}

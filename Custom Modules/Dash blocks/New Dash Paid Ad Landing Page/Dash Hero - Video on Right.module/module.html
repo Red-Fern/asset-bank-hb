@@ -1,0 +1,45 @@
+<div class="d-hero">
+  <div class="d-container">
+    <div class="d-hero__inner">
+      <div class="d-hero__copy">
+        <h1 class="d-hero__title">
+          {% inline_rich_text field="title" value="{{ module.title }}" %}
+        </h1>
+        <div class="d-hero__desc">
+          {% inline_rich_text field="richtext_field" value="{{ module.richtext_field }}" %}
+        </div>
+        <div class="d-hero__form-heading">
+<!--           <h2>Start your 14-day free trial <small>- No credit card needed</small></h2> -->
+        </div>
+        <!-- Form -->
+        <div class="dash-landing-page-form d-hero__form d-signup">
+          <!--[if lte IE 8]>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+          <![endif]-->
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "4056449",
+              formId: "{{ module.form.form_field.form_id }}"
+            });
+          </script>    
+        </div>
+        <div class="d-hero__gdpr">
+          We'll process your data to handle this request. More information can be found in our <a href="https://www.builtbybright.com/privacy-policy/">Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="d-hero__animation">
+        <div class="animation-wrapper">
+          {% inline_rich_text field="video_rhs_youtube_" value="{{ module.video_rhs_youtube_ }}" %}
+<!--           <div id="animation-dash" class="animation-dash animation"></div>  -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

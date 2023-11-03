@@ -1,0 +1,66 @@
+[ {
+  "id" : "c1fcf5d5-d2a9-252c-f79e-d037d1367897",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Key facts"
+}, {
+  "id" : "e534ad71-ef3a-d913-2271-7b071cf47446",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "aa725ec4-e76a-fb59-c3d2-ea40f12113ea",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "aa725ec4-e76a-fb59-c3d2-ea40f12113ea",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Founded"
+  }, {
+    "id" : "234cb718-ea83-6bcb-beb9-555e5fa280e6",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "1994"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Founded",
+    "content" : "1994"
+  }
+} ]

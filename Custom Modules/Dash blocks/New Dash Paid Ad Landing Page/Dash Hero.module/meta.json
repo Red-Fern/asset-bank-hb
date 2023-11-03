@@ -1,0 +1,15 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 41432877578,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../../Coded Files/lottie.js",
+    "name" : "lottie.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../../../Coded Files/ScrollMagic.min.js",
+    "name" : "ScrollMagic.min.js"
+  } ],
+  "is_available_for_new_content" : true
+}

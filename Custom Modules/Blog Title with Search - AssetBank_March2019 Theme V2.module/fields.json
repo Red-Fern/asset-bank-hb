@@ -1,0 +1,26 @@
+[ {
+  "id" : "e75bef76-6568-6550-8840-1d97bfc93c0b",
+  "name" : "placeholder",
+  "display_width" : null,
+  "label" : "Field Placeholder",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Search blog..."
+}, {
+  "id" : "4a849bba-3584-2242-f58f-5f6403742108",
+  "name" : "blog_intro",
+  "display_width" : null,
+  "label" : "Blog Intro",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext",
+  "default" : ""
+} ]

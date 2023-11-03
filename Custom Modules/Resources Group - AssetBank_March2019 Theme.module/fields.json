@@ -1,0 +1,160 @@
+[ {
+  "id" : "e0499c82-a73e-ebad-dbf7-41cead020b29",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Guides, reports &amp; ebooks"
+}, {
+  "id" : "ce65ad73-e80c-b475-c781-aa35e6b6493b",
+  "name" : "sub_heading",
+  "display_width" : null,
+  "label" : "Sub Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Check out our industry-leading guides, reports and eBooks"
+}, {
+  "id" : "748331c5-3bac-3478-d68a-9def31eba6c3",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "96707e78-279b-2981-9577-493892e1520e",
+  "name" : "button_link_url",
+  "display_width" : null,
+  "label" : "Button Link Url",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "ca080090-8bd2-6d7c-1ef4-b7c44699b913",
+  "name" : "add_item",
+  "display_width" : null,
+  "label" : "Add Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : "a15f8155-c6e8-dff1-ffe2-5a865ea2bd58",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "d64fdb6f-4f2f-cdae-d190-4005b4ba00ca",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/call-to-action-image-1.jpg",
+      "alt" : "premium assets",
+      "width" : 600,
+      "height" : 425
+    }
+  }, {
+    "id" : "1cc7afc2-1894-6e99-4479-3f10ad7e5d9e",
+    "name" : "image_link_url",
+    "display_width" : null,
+    "label" : "Image Link Url",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "a15f8155-c6e8-dff1-ffe2-5a865ea2bd58",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "fe69af72-bb7d-0be3-a138-e4c9ceb364d1",
+    "name" : "category",
+    "display_width" : null,
+    "label" : "Category",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/call-to-action-image-1.jpg",
+      "alt" : "premium assets",
+      "width" : 600,
+      "height" : 425
+    },
+    "image_link_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

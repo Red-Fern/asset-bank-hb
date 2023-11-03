@@ -1,0 +1,72 @@
+.d-hero {
+  background: URL('https://www.builtbybright.com/hubfs/AssetBank_March2019%20Theme/Images/Assetbank_conspiracy_hero_background.svg');
+  background-size: cover;
+  background-position: center center;
+  padding: 3.75rem 0;
+}
+
+.hs-content-id-65328417691 .d-hero {
+  background: none;
+}
+
+.d-hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 748px) {
+  .d-hero__inner {
+    flex-direction: row;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .d-hero__copy {
+    padding: 0 1rem;
+    width: 45%;
+  }
+  
+  .d-hero__animation {
+    padding: 0 1rem;
+    width: 55%;
+    flex-grow: 0;
+  }
+}
+
+.d-hero__desc {
+  margin-bottom: 2rem;
+  font-size: 1.125em;
+}
+
+.d-hero__form {
+  max-width: 486px;
+}
+
+.d-hero__form-heading {
+  margin-bottom: 11px;
+}
+
+.d-hero__form-heading.d-hero__form-heading > h2 {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.d-hero__form-heading.d-hero__form-heading > h2 > small {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.d-hero__gdpr {
+  margin-top: 9px;
+  max-width: 486px;
+
+  font-size: 0.875rem;
+  color: #878792;
+}
+
+.d-hero__gdpr a {
+  color: #878792;
+}
+

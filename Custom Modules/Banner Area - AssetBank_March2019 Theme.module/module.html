@@ -1,0 +1,24 @@
+{% if module.sub_title or module.title or module.content or module.button_link_url.href and module.button_text %}
+<div class="section pt-3 bg-brand-dark banner">
+  <div class="container border-bottom pb-3">
+    <div class="row">
+      <div class="col-12 col-md-10 offset-md-1 text-center">
+        {% if module.sub_title %}<h5 class="font-weight-bold text-ocean-spray">{{ module.sub_title }}</h5>{% endif %}
+        {% if module.sub_title %}<h1 class="h2 mt-0 text-white">{{ module.title }}</h1>{% endif %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 offset-md-3 text-center">
+        {% if module.content %}<h4 class="text-white mt-0 mb-1">{{ module.content }}</h4>{% endif %}
+        {% if module.button_type == "link" %}
+        {% if module.button_text %}
+        <a href="{{ module.button_link_url.href }}" class="btn btn-ocean-spray">{{ module.button_text }}</a>
+        {% endif %}
+        {% else %}
+        {% cta guid="{{ module.select_button }}" %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

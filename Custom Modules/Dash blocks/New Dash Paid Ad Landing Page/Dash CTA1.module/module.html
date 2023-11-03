@@ -1,0 +1,42 @@
+<div class="d-cta1">
+  <div class="d-container">
+    <div class="d-cta1__inner">
+      <div class="d-cta1__screen">
+        {% if module.image_field.src %}
+          {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+          {% if module.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+           {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+          <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="d-cta1__content">
+        <h2 class="d-cta__title">{{ module.title }}</h2>
+        <div class="d-cta1__reasons">
+          <span class="d-cta1__reasons__item">{{ module.reasons_to_sign_up.reason_1 }}</span>
+          <img class="d-slash" src="https://f.hubspotusercontent40.net/hubfs/4056449/Dash-assets/green-slash.svg" alt=""/>
+          <span class="d-cta1__reasons__item">{{ module.reasons_to_sign_up.reason_2 }}</span>
+          <img class="d-slash" src="https://f.hubspotusercontent40.net/hubfs/4056449/Dash-assets/green-slash.svg" alt=""/>
+          <span class="d-cta1__reasons__item">{{ module.reasons_to_sign_up.reason_3 }}</span>
+        </div>
+        <div class="d-cta1__form d-signup">
+          <!--[if lte IE 8]>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+          <![endif]-->
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "4056449",
+              formId: "{{ module.form.form_field.form_id }}",
+            });
+          </script>
+        </div>
+        <p class="d-cta1__gdpr d-cta__gdpr">We'll process your data to handle this request. More information can be found in our <a href="https://www.builtbybright.com/privacy-policy/">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+</div>

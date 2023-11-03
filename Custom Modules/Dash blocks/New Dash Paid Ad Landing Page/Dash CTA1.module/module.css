@@ -1,0 +1,154 @@
+.d-cta1 {
+  overflow: hidden;
+  background: #4c00a9;
+  background-image: linear-gradient(122deg, #4C00A9 20%, #B941FF 160%);
+  color: #F6EFFB;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.d-cta1__inner {
+  display: flex;
+  align-items: center;
+}
+
+
+.d-cta1__screen {
+  display: none;
+}
+
+@media (min-width: 748px) {
+  .d-cta1__screen {
+    display: block;
+    width: 50%;
+  }
+
+  .d-cta1__content{
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 968px) {
+  .d-cta1__screen {
+    width: 40%
+  }
+
+  .d-cta1__content{
+    margin-left: 3rem;
+  }
+}
+
+
+.d-cta1__screen > img {
+  display: block;
+  width: 409px;
+  margin-left: auto;
+  margin-bottom: -3rem;
+
+  border-radius: 8px;
+  box-shadow: 0 10px 20px -10px rgba(54,38,85,0.26), 0 25px 60px -30px rgba(0,0,0,0.25);
+}
+
+.d-cta1__title.d-cta1__title {
+  margin-bottom: 6px;
+  font-size: 1.5rem;
+  color: #F6EFFB;
+}
+
+.d-cta1__reasons {
+  display: flex;
+  align-items: center;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.d-cta1__reasons__slash {
+  display: block;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 9px;
+  height: 20px;
+}
+
+.d-cta1__form {
+  max-width: 500px;
+}
+
+/* Shared  */
+
+.d-container {
+  max-width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  box-sizing: content-box;
+}
+
+.d-cta__title.d-cta__title {
+  margin-bottom: 6px;
+  font-size: 1.5rem;
+  color: #f6effb;
+  margin-top:0;
+  font-weight: 500;
+}
+
+.d-cta1__gdpr {
+  margin-top: 9px;
+  font-size: .875rem;
+  color: #bc85e0;
+  margin-bottom:0;
+}
+
+.d-cta1__gdpr a {
+  color: #bc85e0;
+}
+
+/* Signup form styles  */
+
+.d-signup form {
+  position: relative;
+
+  display: flex;
+
+  box-shadow: 0 0 0 3px #00D5B7;
+  border-radius: 4px;
+}
+
+.d-signup .hs_email {
+  width: 100%;
+}
+
+.d-signup .hs_email input {
+  height: 52px;
+  margin: 0;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Hide label */
+.d-signup .hs_email > label {
+  display: none;
+}
+
+.d-signup .hs-button.primary {
+  display: block;
+  flex-shrink: 0;
+  width: auto;
+  width: max-content;
+  margin: 0;
+  height: 52px;
+
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 0 4px 4px 0;
+}
+
+.d-slash {
+  display: block;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 9px;
+  height: 20px;
+}

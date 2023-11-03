@@ -1,0 +1,139 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1551864776281480",
+        "label" : "Asset Header",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "asset-header",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1551864773850472",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "page-center",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_1551977019787129",
+                "label" : "Logo",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "asset-logo",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<a href=\"https://www.assetbank.co.uk/dash/\" rel=\" noopener\"><img src=\"https://cdn2.hubspot.net/hubfs/4056449/BRAND-ASSETS/Logo_Products/Dash/Dash_Logo-1A-Landscape_RGB-GRAD_Rev_4-large.png\" alt=\"Dash_Logo-1A-Landscape_RGB-GRAD_Rev_4-large\" width=\"1136\" style=\"width: 1136px;\"></a>",
+                  "overrideable" : false,
+                  "path" : "@hubspot/rich_text",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Rich Text",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_1551864769848460",
+                "label" : "Trustpilot",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "cm-trustpilot",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "img" : {
+                    "alt" : "Trustpilot",
+                    "height" : 400,
+                    "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/trustpilot-logo-rev.svg",
+                    "width" : 400
+                  },
+                  "overrideable" : false,
+                  "path" : "@hubspot/linked_image",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Image",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

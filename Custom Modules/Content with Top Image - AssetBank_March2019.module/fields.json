@@ -1,0 +1,40 @@
+[ {
+  "id" : "4eb28116-ed44-bed4-67a0-6202c2df8bab",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null
+  }
+}, {
+  "id" : "d65b0bb4-79e6-f44a-9283-14bf134e34ca",
+  "name" : "beta",
+  "display_width" : null,
+  "label" : "Beta",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "ea325a8e-f681-5c48-6eea-1b9bb4e97632",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext"
+} ]

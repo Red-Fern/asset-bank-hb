@@ -1,0 +1,308 @@
+<div class="content_with_image_group">
+  {% for item in module.item %}
+  <div class="section">
+    <div class="container page-center">
+      <div class="row align-items-center {% if item.image_alignment == "right" %}flex-sm-row-reverse{% endif %} {% if module.module_setting.show_bottom_border %}border-bottom{% endif %} pt-{{ module.module_setting.top_padding_gap_in_rem_ }} pb-{{ module.module_setting.bottom_padding_gap_in_rem_ }} mt-{{ module.module_setting.top_margin_gap_in_rem_ }} mb-{{ module.module_setting.bottom_margin_gap_in_rem_ }}">
+        {% if item.image_content == "4:5" %}
+        {% if item.image.src %}
+        <div class="col-{{ module.module_setting.mobile_view }}-4 {% if item.image_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {% if item.image.src %}
+          {% if item.image_shadow %}<div class="image-shadow {{ item.image_shadow_position }}" style="background-color:rgba({{ item.image_shadow_color.color|convert_rgb  }},{{ item.image_shadow_color.opacity/100 }});">{% endif %}
+          <img src="{{ item.image.src }}" class="img-fluid d-block {% if item.image_border %}border_yes{% endif %}" alt="{{ item.image.alt }}">
+          {% if item.image_shadow %}</div>{% endif %}
+          {% endif %}
+        </div>
+        <div class="col-{{ module.module_setting.mobile_view }}-5 {% if item.content_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% else %}
+        <div class="col-{{ module.module_setting.mobile_view }}-12">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+
+
+
+        {% if item.image_content == "4:7" %}
+        {% if item.image.src %}
+        <div class="col-{{ module.module_setting.mobile_view }}-4 {% if item.image_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {% if item.image.src %}
+          {% if item.image_shadow %}<div class="image-shadow {{ item.image_shadow_position }}" style="background-color:rgba({{ item.image_shadow_color.color|convert_rgb  }},{{ item.image_shadow_color.opacity/100 }});">{% endif %}
+          <img src="{{ item.image.src }}" class="img-fluid d-block {% if item.image_border %}border_yes{% endif %}" alt="{{ item.image.alt }}">
+          {% if item.image_shadow %}</div>{% endif %}
+          {% endif %}
+        </div>
+        <div class="col-{{ module.module_setting.mobile_view }}-7 {% if item.content_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% else %}
+        <div class="col-{{ module.module_setting.mobile_view }}-12">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+
+
+
+        {% if item.image_content == "4:8" %}
+        {% if item.image.src %}
+        <div class="col-{{ module.module_setting.mobile_view }}-4 {% if item.image_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {% if item.image.src %}
+          {% if item.image_shadow %}<div class="image-shadow {{ item.image_shadow_position }}" style="background-color:rgba({{ item.image_shadow_color.color|convert_rgb  }},{{ item.image_shadow_color.opacity/100 }});">{% endif %}
+          <img src="{{ item.image.src }}" class="img-fluid d-block {% if item.image_border %}border_yes{% endif %}" alt="{{ item.image.alt }}">
+          {% if item.image_shadow %}</div>{% endif %}
+          {% endif %}
+        </div>
+        <div class="col-{{ module.module_setting.mobile_view }}-8 {% if item.content_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% else %}
+        <div class="col-{{ module.module_setting.mobile_view }}-12">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+
+
+
+        {% if item.image_content == "5:5" %}
+        {% if item.image.src %}
+        <div class="col-{{ module.module_setting.mobile_view }}-5 {% if item.image_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {% if item.image.src %}
+          {% if item.image_shadow %}<div class="image-shadow {{ item.image_shadow_position }}" style="background-color:rgba({{ item.image_shadow_color.color|convert_rgb  }},{{ item.image_shadow_color.opacity/100 }});">{% endif %}
+          <img src="{{ item.image.src }}" class="img-fluid d-block {% if item.image_border %}border_yes{% endif %}" alt="{{ item.image.alt }}">
+          {% if item.image_shadow %}</div>{% endif %}
+          {% endif %}
+        </div>
+        <div class="col-{{ module.module_setting.mobile_view }}-5 {% if item.content_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% else %}
+        <div class="col-{{ module.module_setting.mobile_view }}-12">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+
+
+        {% if item.image_content == "5:6" %}
+        {% if item.image.src %}
+        <div class="col-{{ module.module_setting.mobile_view }}-5 {% if item.image_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {% if item.image.src %}
+          {% if item.image_shadow %}<div class="image-shadow {{ item.image_shadow_position }}" style="background-color:rgba({{ item.image_shadow_color.color|convert_rgb  }},{{ item.image_shadow_color.opacity/100 }});">{% endif %}
+          <img src="{{ item.image.src }}" class="img-fluid d-block {% if item.image_border %}border_yes{% endif %}" alt="{{ item.image.alt }}">
+          {% if item.image_shadow %}</div>{% endif %}
+          {% endif %}
+        </div>
+        <div class="col-{{ module.module_setting.mobile_view }}-6 {% if item.content_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% else %}
+        <div class="col-{{ module.module_setting.mobile_view }}-12">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+
+
+
+        {% if item.image_content == "6:4" %}
+        {% if item.image.src %}
+        <div class="col-{{ module.module_setting.mobile_view }}-6 {% if item.image_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {% if item.image.src %}
+          {% if item.image_shadow %}<div class="image-shadow {{ item.image_shadow_position }}" style="background-color:rgba({{ item.image_shadow_color.color|convert_rgb  }},{{ item.image_shadow_color.opacity/100 }});">{% endif %}
+          <img src="{{ item.image.src }}" class="img-fluid d-block {% if item.image_border %}border_yes{% endif %}" alt="{{ item.image.alt }}">
+          {% if item.image_shadow %}</div>{% endif %}
+          {% endif %}
+        </div>
+        <div class="col-{{ module.module_setting.mobile_view }}-4 {% if item.content_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% else %}
+        <div class="col-{{ module.module_setting.mobile_view }}-12">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+        
+        
+        {% if item.image_content == "7:5" %}
+        {% if item.image.src %}
+        <div class="col-{{ module.module_setting.mobile_view }}-7 {% if item.image_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {% if item.image.src %}
+          {% if item.image_shadow %}<div class="image-shadow {{ item.image_shadow_position }}" style="background-color:rgba({{ item.image_shadow_color.color|convert_rgb  }},{{ item.image_shadow_color.opacity/100 }});">{% endif %}
+          <img src="{{ item.image.src }}" class="img-fluid d-block {% if item.image_border %}border_yes{% endif %}" alt="{{ item.image.alt }}">
+          {% if item.image_shadow %}</div>{% endif %}
+          {% endif %}
+        </div>
+        <div class="col-{{ module.module_setting.mobile_view }}-5 {% if item.content_left_gap %}offset-{{ module.module_setting.mobile_view }}-1{% endif %}">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% else %}
+        <div class="col-{{ module.module_setting.mobile_view }}-12">
+          {{ item.content }}
+          {% if item.show_button %}
+          {% set href = item.button_link.url.href %}
+          {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% if item.cta_button == "true" %}
+          {% cta guid="{{ item.select_button }}" %}
+          {% else %}
+          <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+
+
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,437 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/AssetBank_March2019-style.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/AssetBank_March2019-main.js"
+  } ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "site-page one-column hs-media no-space",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16015711945091086",
+        "label" : "Mega Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : true,
+          "widget_name" : "Mega Menu",
+          "schema_version" : 2,
+          "path" : "/AssetBank_March2019 Theme/Custom Modules/Mega Menu"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_15519474798923026",
+        "label" : "Row1 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "media-row1-group section pt-3",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_15519474796803023",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "page-center",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_155808471183476",
+                "label" : "Header - Asset Bank",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "media-row1-header mt-half mb-2 h2",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "header_tag" : "h1",
+                  "overrideable" : true,
+                  "path" : "/Header - Asset Bank",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Header - Asset Bank",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "media-row1-header mt-half mb-2 h2",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_15519482142643709",
+                "label" : "Horizontal Spacer",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "path" : "@hubspot/horizontal_spacer",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Horizontal Spacer",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "page-center",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "media-row1-group section pt-3",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_15519475957373105",
+        "label" : "Row2 Group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "media-row2-group",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_15519475957373106",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "page-center",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 6,
+                "name" : "module_15519511970835736",
+                "label" : "Row2 Left Column",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "media-row2-left-col",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_15519476293053148",
+                    "label" : "Row2 Left Column",
+                    "type" : "cell",
+                    "params" : {
+                      "css_class" : "bg-violet left-runoff text-royal-pavilion mb-2",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ {
+                      "0" : {
+                        "x" : 0,
+                        "w" : 12,
+                        "name" : "module_15519494732484100",
+                        "label" : "Heading With Content Group - AssetBank_March2019 Theme",
+                        "type" : "custom_widget",
+                        "params" : {
+                          "css_class" : "",
+                          "css_id" : "",
+                          "css_id_str" : "",
+                          "css_style" : "",
+                          "item" : [ { } ],
+                          "overrideable" : true,
+                          "path" : "/AssetBank_March2019 Theme/Custom Modules/Heading With Content Group - AssetBank_March2019 Theme",
+                          "per_widget_wrapper_html" : "",
+                          "schema_version" : 2,
+                          "widget_name" : "Heading With Content Group - AssetBank_March2019 Theme",
+                          "wrapping_html" : ""
+                        },
+                        "rows" : [ ],
+                        "rowMetaData" : [ ],
+                        "cells" : [ ],
+                        "cssId" : "",
+                        "cssClass" : "",
+                        "cssStyle" : "",
+                        "styles" : null,
+                        "widgets" : [ ]
+                      }
+                    } ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "bg-violet left-runoff text-royal-pavilion mb-2",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "media-row2-left-col",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 6,
+                "name" : "module_15519495158814144",
+                "label" : "Row2 Right Column",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "media-row2-right-col",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : true,
+                  "path" : "@hubspot/rich_text",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Rich Text",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "media-row2-right-col",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "page-center",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "media-row2-group",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_15519502465634723",
+        "label" : "Row3 - Image With Caption Group - AssetBank_March2019 Theme",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/AssetBank_March2019 Theme/Custom Modules/Image With Caption Group - AssetBank_March2019 Theme",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Image With Caption Group - AssetBank_March2019 Theme",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "HubSpot_Boilerplate Theme/Footer",
+        "label" : "HubSpot_Boilerplate Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "path" : "/AssetBank_March2019 Theme/Global Groups/AssetBank_March2019 Footer.template.json",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

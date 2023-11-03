@@ -1,0 +1,35 @@
+<div class="section {% if module.content %}pb-2{% else %}pb-4{% endif %} custom_benefits_lists">
+  <div class="container page-center">
+    <div class="benefits-list">
+      <div class="row ">
+        {% if module.content %}
+        <div class="offset-md-1 col-md-6 pt-2 pb-1">
+          <h3 class="text-violet">{{ module.heading }}</h3>  
+          <p>{{ module.content }}</p>
+        </div>
+        <div class="col-8 offset-md-1 col-md-3 offset-lg-2 col-lg-2 pb-2 pb-md-0 align-self-center">
+         <p><img src="https://www.assetbank.co.uk/hs-fs/hubfs/GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png?width=181&amp;name=GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png" alt="GPTW_Excellence_in_Wellbeing_July_2019-July_2020" width="181" style="width: 181px;" srcset="https://www.assetbank.co.uk/hs-fs/hubfs/GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png?width=91&amp;name=GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png 91w, https://www.assetbank.co.uk/hs-fs/hubfs/GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png?width=181&amp;name=GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png 181w, https://www.assetbank.co.uk/hs-fs/hubfs/GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png?width=272&amp;name=GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png 272w, https://www.assetbank.co.uk/hs-fs/hubfs/GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png?width=362&amp;name=GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png 362w, https://www.assetbank.co.uk/hs-fs/hubfs/GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png?width=453&amp;name=GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png 453w, https://www.assetbank.co.uk/hs-fs/hubfs/GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png?width=543&amp;name=GPTW_Excellence_in_Wellbeing_July_2019-July_2020.png 543w" sizes="(max-width: 181px) 100vw, 181px"></p>
+         <a href="https://www.glassdoor.co.uk/Overview/Working-at-Bright-Interactive-EI_IE976925.11,29.htm">
+             <img src="https://www.glassdoor.co.uk/api/widget/verticalStarRating.htm?e=976925">
+          </a>
+        </div>
+        {% else %}
+        <div class="col-12">
+          <h3>{{ module.heading }}</h3>
+        </div>
+        {% endif %}
+      </div>
+      <div class="row ">
+        {% for item in module.column_item %}
+        <div class="col-12 col-sm-6 col-md-3">
+          {% for item2 in item.item %}
+          <div class="benefits-list_benefit" style="background-color:rgba({{ item2.box_shadow_color.color|convert_rgb  }},{{ item2.box_shadow_color.opacity/100 }});">
+            <h4 class="benefits-list_title"><span>{{ item2.title }}</span></h4>
+          </div> 
+          {% endfor %}
+        </div>  
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

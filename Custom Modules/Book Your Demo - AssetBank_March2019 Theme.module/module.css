@@ -1,0 +1,72 @@
+/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Book a demo override
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+
+.book-demo-cta {
+  padding: 2.7rem 1.5rem;
+  position: relative;
+}
+
+.book-demo-cta .book-demo-cta_left {
+  padding-left: 1.5rem
+}
+
+.book-demo-cta .book-demo-cta__logo {
+  height: 3rem;
+  display: block;
+  margin-bottom: 1.5rem
+}
+
+.book-demo-cta .book-demo-cta__title {
+  font-weight: 700;
+  margin-bottom: .75rem;
+  margin-top: 0;
+  color: #fff
+}
+
+.book-demo-cta .book-demo-cta__text {
+  font-size: .8rem;
+  color: #d4c0fd;
+}
+
+.book-demo-cta li {
+  text-rendering: auto;
+  -webkit-font-smoothing: auto;
+}
+
+
+.book-demo-cta h3 {
+  color: #fff;
+}
+
+/*.book-demo-cta:before {
+  content: "";
+  width: 100%;
+  left: .75rem;
+  height: 100%;
+  top: .75rem;
+  position: absolute;
+  background: #b18aff;
+  z-index: -1
+}*/
+
+@media (min-width:576px) {
+  .book-demo-cta:before {
+    top: 1.5rem;
+    left: 1.5rem
+  }
+}
+
+.bg-violet-gradient,
+.book-demo-cta {
+  background: linear-gradient(90deg, #330072, #5300c3)
+}
+
+@media screen and (max-width: 1200px) {
+  div.book-demo-cta__hero {
+    display: none;
+  }
+}

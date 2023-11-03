@@ -1,0 +1,67 @@
+{
+  "caption.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "caption.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "caption.label" : {
+    "message" : "Légende",
+    "description" : null,
+    "placeholders" : null
+  },
+  "container_classes.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "container_classes.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "container_classes.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "container_classes.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "container_classes.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "img.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "img.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "img.label" : {
+    "message" : "Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "lightboxrows.label" : {
+    "message" : "Lignes pour la galerie de la lightbox",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Home Header Image",
+    "description" : null,
+    "placeholders" : null
+  }
+}

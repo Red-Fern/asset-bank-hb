@@ -1,0 +1,70 @@
+[ {
+  "id" : "3e1587bf-18d0-e617-552e-81fe3db8d397",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Case Studies"
+}, {
+  "id" : "b2883158-add2-cd30-15b9-fefe1302a40a",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext"
+}, {
+  "id" : "9696dc88-f6dd-2a0d-3db6-64adb4a14464",
+  "name" : "select_blog",
+  "display_width" : null,
+  "label" : "Select Blog",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "blog",
+  "default" : 7970890963
+}, {
+  "id" : "b73ac9d2-bf69-8374-a7b8-dae214817d92",
+  "name" : "display_button",
+  "display_width" : null,
+  "label" : "Display Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "6f565c00-ac34-acbf-4185-4eb3606047bf",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "b73ac9d2-bf69-8374-a7b8-dae214817d92",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "View all case studies"
+} ]

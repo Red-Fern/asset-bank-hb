@@ -1,0 +1,107 @@
+[ {
+  "id" : "026ce0c8-cf77-7a54-1964-d514c59f650a",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext"
+}, {
+  "id" : "2094e513-c2fe-3d26-513d-8cd9b7af9da8",
+  "name" : "primary_cta",
+  "display_width" : null,
+  "label" : "Primary CTA",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "cta"
+}, {
+  "id" : "447007f0-e65b-b646-d0d2-d22326a85878",
+  "name" : "secondary_cta",
+  "display_width" : null,
+  "label" : "Secondary CTA",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "cta"
+}, {
+  "id" : "58d148dd-64fd-b743-6a6d-4fbc083df0dd",
+  "name" : "screenshots",
+  "display_width" : null,
+  "label" : "Screenshots",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 5,
+    "max" : 5,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }, {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }, {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }, {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }, {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  } ]
+}, {
+  "id" : "d3fd75b6-da8b-217b-088b-72fd864d379f",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "a91c5b60-1db0-1e3a-83e3-020d9e583c0f",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/4056449/hero-bg-medium.png",
+    "alt" : "hero-bg-medium",
+    "width" : 1084,
+    "height" : 688,
+    "max_width" : 1084,
+    "max_height" : 688
+  }
+} ]

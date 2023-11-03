@@ -1,0 +1,70 @@
+[ {
+  "id" : "3e0e93bf-5f5c-e41b-d195-39c1504344bf",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "654adef3-57d2-a7b8-0547-e6fb88518921",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "654adef3-57d2-a7b8-0547-e6fb88518921",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "54b7638e-91d1-97e3-8497-b8dbb7d8abee",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext"
+  }, {
+    "id" : "ab803199-4bae-39be-bc7d-84d25e7b116b",
+    "name" : "telephone_number",
+    "display_width" : null,
+    "label" : "Telephone Number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "bf6b8b6f-e8d3-ece6-0b2b-e7078464daaf",
+    "name" : "email_id",
+    "display_width" : null,
+    "label" : "Email Id",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+} ]

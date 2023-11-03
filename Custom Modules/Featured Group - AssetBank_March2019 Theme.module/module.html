@@ -1,0 +1,42 @@
+<div class="section gradient-70 pt-2 pb-3 mb-2 featured-group">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="text-white">{{ module.heading }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      {% for item in module.add_item %}
+      <div class="col-md-6 col-lg-4 mb-2">
+        <div class="card-premium d-flex flex-column h-100 text-center align-items-center with-bg with-shadow">
+          {% set href = item.image_link_url.url.href %}
+          {% if item.image_link_url.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if item.image_link_url.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.image_link_url.no_follow %}rel="nofollow"{% endif %}
+             >
+            <div class="card-header">
+              <div class="card-image">
+                {% if item.image.src %}
+                <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" width="{{ item.image.width }}" height="{{ item.image.height }}">
+                {% endif %}
+                <div class="card-premium_icon">
+                  <span class="btn btn-violet">Download now</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body flex-grow-1">
+              <h4 class="font-weight-bold mt-half">{{ item.title }}</h4>
+            </div>
+            <div class="card-footer">
+              <h4 class="mt-0">{{ item.category }}</h4>
+            </div>
+          </a>
+        </div>              
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

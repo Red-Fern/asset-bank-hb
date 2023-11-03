@@ -1,0 +1,65 @@
+<div class="custom-our-team">
+  <div class="section pt-3 pb-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-1">
+          <h2 class="mt-half mb-half">{{ module.heading }}</h2>
+          <p>{{ module.content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section pt-1 pb-5 mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+          {% for row in module.member_item|batch(3, '&nbsp;') %}
+          <div class="row">
+            {% for item in row %}
+            <div class="col-md-12 col-lg-4 mb-2">
+              <div class="card-team d-flex flex-column h-100 text-center ">
+                <div class="card-header">
+                  <div class="card-image">
+                    {% if item.image.src %}
+                    <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" class="img-fluid d-block">
+                    {% endif %}
+                  </div>
+                  <div class="card-hover">
+                    <div class="card-team-text">
+                      <h4 class="mt-0 mb-half">{{ item.overlay_content }}</h4>
+                        {% if item.overlay_link.url.href %}
+                          {% set href = item.overlay_link.url.href %}
+                          {% if item.overlay_link.url.type is equalto "EMAIL_ADDRESS" %}
+                           {% set href = "mailto:" + href %}
+                          {% endif %}
+                          <a class="text-white" href="{{ href }}"
+                           {% if item.overlay_link.open_in_new_tab %}target="_blank"{% endif %}
+                           {% if item.overlay_link.no_follow %}rel="nofollow"{% endif %}
+                           >
+                            <span class="ab-icon linkedin">
+                              <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1 0 53.8 0s53.8 24.1 53.8 53.8-24.1 54.3-53.8 54.3zM448 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448h-.1z"></path></svg>
+                            </span>
+                          </a>
+                        {% endif %}
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body flex-grow-1">
+                  <h4 class="font-weight-bold mt-half">{{ item.member_name }}</h4>
+                  <p>{{ item.job_title }}</p>
+                </div>
+              </div>                           
+            </div>
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </div>
+        {% if module.display_button %}
+        <div class="col-sm-12 mb-2 text-center">
+          <a class="btn btn-violet" href="{{ module.button_link_url.href }}">{{ module.button_text }}</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

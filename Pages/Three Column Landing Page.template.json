@@ -1,0 +1,355 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/AssetBank_March2019-style.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/AssetBank_March2019-main.js"
+  } ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "landing-page three-column",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "HubSpot_Boilerplate Theme/Header - No Navigation",
+        "label" : "HubSpot_Boilerplate Theme/Header - No Navigation",
+        "type" : "global_group",
+        "params" : {
+          "css_style" : "",
+          "cell" : false,
+          "css_id" : "",
+          "css_class" : "",
+          "path" : "/AssetBank_March2019 Theme/Global Groups/AssetBank_March2019 Header - No Navigation.template.json",
+          "cells" : [ ],
+          "root" : false,
+          "html" : "",
+          "row" : false,
+          "starting_html" : "",
+          "wrapping_html" : "",
+          "css_id_str" : "",
+          "ending_html" : "",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "css_class" : "",
+          "cells" : [ ],
+          "css_style" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "cell" : false,
+          "css_id" : "",
+          "css_id_str" : "",
+          "ending_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_13885006495507970",
+        "label" : "Page Center, Content Wrapper",
+        "type" : "cell",
+        "params" : {
+          "css_style" : "",
+          "cell" : false,
+          "css_id" : "",
+          "css_class" : "page-center content-wrapper",
+          "cells" : [ ],
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "wrapping_html" : "",
+          "value" : "",
+          "css_id_str" : "",
+          "ending_html" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 4,
+            "name" : "module_13885046520011784",
+            "label" : "Main Content",
+            "type" : "cell",
+            "params" : {
+              "css_style" : "",
+              "cell" : false,
+              "css_id" : "",
+              "css_class" : "main-content",
+              "cells" : [ ],
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "wrapping_html" : "",
+              "value" : "",
+              "css_id_str" : "",
+              "ending_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1395325301989437",
+                "label" : "Left Column",
+                "type" : "widget_container",
+                "params" : {
+                  "css_class" : "",
+                  "cells" : [ ],
+                  "css_style" : "",
+                  "root" : false,
+                  "row" : false,
+                  "starting_html" : "",
+                  "cell" : false,
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "ending_html" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "main-content",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          },
+          "4" : {
+            "x" : 4,
+            "w" : 4,
+            "name" : "module_13885056585042823",
+            "label" : "Main Content",
+            "type" : "cell",
+            "params" : {
+              "css_style" : "",
+              "cell" : false,
+              "css_id" : "",
+              "css_class" : "main-content",
+              "cells" : [ ],
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "wrapping_html" : "",
+              "value" : "",
+              "css_id_str" : "",
+              "ending_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1395325309464440",
+                "label" : "Center Column",
+                "type" : "widget_container",
+                "params" : {
+                  "css_class" : "",
+                  "cells" : [ ],
+                  "css_style" : "",
+                  "root" : false,
+                  "row" : false,
+                  "starting_html" : "",
+                  "cell" : false,
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "ending_html" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "main-content",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          },
+          "8" : {
+            "x" : 8,
+            "w" : 4,
+            "name" : "module_14019005435527207",
+            "label" : "Main Content",
+            "type" : "cell",
+            "params" : {
+              "css_style" : "",
+              "cell" : false,
+              "css_id" : "",
+              "css_class" : "main-content",
+              "cells" : [ ],
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "wrapping_html" : "",
+              "value" : "",
+              "css_id_str" : "",
+              "ending_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1518121427688172",
+                "label" : "Form",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "sidebar-form",
+                  "schema_version" : 2,
+                  "path" : "@hubspot/form",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "widget_name" : "Form",
+                  "css_id_str" : "",
+                  "overrideable" : true
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "sidebar-form",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "main-content",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "page-center content-wrapper",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "css_class" : "",
+          "cells" : [ ],
+          "css_style" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "cell" : false,
+          "css_id" : "",
+          "css_id_str" : "",
+          "ending_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_149943241496999",
+        "label" : "Theme/AssetBank_March2019_January2018 Footer - No Navigation",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "path" : "/AssetBank_March2019 Theme/Global Groups/AssetBank_March2019 Footer - No Navigation.template.json",
+          "css_style" : "",
+          "starting_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "ending_html" : "",
+          "overrideable" : false
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

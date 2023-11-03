@@ -1,0 +1,14 @@
+[ {
+  "id" : "acd02479-d120-4a23-f729-c16e7d20f926",
+  "name" : "listing_content",
+  "display_width" : null,
+  "label" : "Listing Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

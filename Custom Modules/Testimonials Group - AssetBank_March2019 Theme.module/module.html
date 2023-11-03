@@ -1,0 +1,11 @@
+<div class="testimonial_group">
+  <div class="testimonial_group_inner">
+    <h5 class="font-weight-bold mb-1 text-ocean-spray">{{ module.heading }}</h5>
+    {% for item in module.item %}
+    <blockquote class="blockquote with-rating">
+      <p>"{{ item.content }}"</p>
+      <footer class="blockquote-footer"><img src="{{ item.rating }}" alt="star rating">{{ item.author }} ,<cite title="Source Title">{{ item.location }}</cite></footer>
+    </blockquote>
+    {% endfor %}
+  </div>
+</div>

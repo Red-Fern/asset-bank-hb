@@ -1,0 +1,106 @@
+[ {
+  "id" : "e73b2366-57c0-3bfe-1dbe-9bd9e38fbf5a",
+  "name" : "email_item",
+  "display_width" : null,
+  "label" : "Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "3c285c04-80ce-908f-98ad-0908aea1e043",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "5dfd8422-9a22-f992-86ec-8c6c0c349c52",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://f.hubspotusercontent40.net/hubfs/4056449/DAM%20Therapist.jpg",
+      "alt" : "DAM Therapist",
+      "loading" : "lazy",
+      "width" : 2552,
+      "height" : 1540
+    }
+  }, {
+    "id" : "3c285c04-80ce-908f-98ad-0908aea1e043",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext",
+    "default" : "<h1>This is the title</h1>\n<p>Hi,{{ contact.firstname }}, Aliquam convallis enim mi, eget finibus lectus pharetra quis. Sed lectus libero, dignissim sed dignissim eu, porta et libero. Donec egestas, est porta consequat tempus, ipsum risus vehicula tortor, ac lobortis mauris orci ut lorem. Aliquam dignissim vel tellus sed malesuada. Aliquam rutrum mollis commodo.</p>"
+  }, {
+    "id" : "b0313c31-d34d-287a-126d-f3865a9859fc",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "1c7d4f18-44cb-c4ca-2eb5-6abd41947cff",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Read More"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "src" : "https://f.hubspotusercontent40.net/hubfs/4056449/DAM%20Therapist.jpg",
+      "alt" : "DAM Therapist",
+      "loading" : "lazy",
+      "width" : 2552,
+      "height" : 1540
+    },
+    "text" : "<h1>This is the title</h1>\n<p>Hi,{{ contact.firstname }}, Aliquam convallis enim mi, eget finibus lectus pharetra quis. Sed lectus libero, dignissim sed dignissim eu, porta et libero. Donec egestas, est porta consequat tempus, ipsum risus vehicula tortor, ac lobortis mauris orci ut lorem. Aliquam dignissim vel tellus sed malesuada. Aliquam rutrum mollis commodo.</p>",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "link_text" : "Read More"
+  } ]
+} ]

@@ -1,0 +1,106 @@
+.banner-area-with-form.landing-page-v3 .col-md-5 {
+	 padding-left: 0;
+   background: #efeff2;
+   box-shadow: 0 -48px 0 #fff inset;
+}
+
+.landing-page-v3 .landing-page_form {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+	padding: 3rem 48px 48px;
+	max-width: none;
+  margin-bottom: 92px;
+  background: #efeff2;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-page-v3 .landing-page_form {
+    margin-bottom: 0;
+  }
+}
+
+.landing-page-v3 .form-group {
+	padding: 0;
+    max-width: 512px;
+}
+
+.gradient-landing-page:before {
+	left: -100%;
+}
+
+
+.landing-page_form .row .col-12 {
+	text-align: center;
+}
+
+.g2-logos {
+	background: #fff;
+	border-radius: 12px;
+	max-width: 510px;
+  margin-top: 12px !important;
+  padding: 24px 12px;
+}
+
+.g2-logos .col-3 {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .hs-form-field label {
+    margin-top: 12px;
+    display: block;
+}
+
+.hs-button.primary {
+    margin-top: 24px;
+}
+
+.landing-page_form h5.landing-page_form_instruction {
+    max-width: 510px;
+    margin: 0 auto;
+    margin-top: 0 !important;
+    font-size: 16px;
+}
+
+
+.landing-page_form textarea {
+	min-height: 64px;
+}
+
+.trustpilot-widget {
+  margin-top: 64px;
+}
+
+form.hs-form fieldset .hs-form-field {
+  padding: 0;
+}
+.hs_firstname.hs-firstname.hs-fieldtype-text.field {
+  padding-right: 10px;
+}
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hs-button.primary, 
+input[type="submit"], input[type="button"],
+form .hs-form-field > label {
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  line-height: 47px;
+  font-size: 40px;
+}
+
+form .hs-form-field > label {
+  font-size: 14px;
+}

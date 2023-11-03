@@ -1,0 +1,17 @@
+<div class="sidebar-item btns-group">
+  <h4 class="sidebar-item__title">{{ module.heading }}</h4>
+  {% for item in module.add_button %}
+  {% set href = item.button_link_url.url.href %}
+  {% if item.button_link_url.url.type is equalto "EMAIL_ADDRESS" %}
+  {% set href = "mailto:" + href %}
+  {% endif %}
+  <a class="btn btn-block" style="background-color:rgba({{ item.button_background_color.color|convert_rgb  }},{{ item.button_background_color.opacity/100 }});
+                                  border-color:rgba({{ item.button_background_color.color|convert_rgb  }},{{ item.button_background_color.opacity/100 }});
+                                  color:rgba({{ item.button_text_color.color|convert_rgb }},{{ item.button_text_color.opacity/100 }}); " href="{{ href }}"
+     {% if item.button_link_url.open_in_new_tab %}target="_blank"{% endif %}
+     {% if item.button_link_url.no_follow %}rel="nofollow"{% endif %}
+     >
+    {{ item.button_text }}
+  </a>
+  {% endfor %}
+</div>

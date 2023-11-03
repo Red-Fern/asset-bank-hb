@@ -1,0 +1,87 @@
+[ {
+  "id" : "0cb0498e-964e-554a-c110-ad93aed7fb65",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Used by over 800 organisations worldwide, including 20 of the FTSE100"
+}, {
+  "id" : "ffec0512-a133-4c08-c156-41909e2a2b77",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "37a07293-afc6-204d-4497-daab87869ec3",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "37a07293-afc6-204d-4497-daab87869ec3",
+    "name" : "client_logo",
+    "display_width" : null,
+    "label" : "Client Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null
+    }
+  }, {
+    "id" : "a73bb4b1-7a89-a433-b2b2-4dc7c569f54f",
+    "name" : "client_logo_link",
+    "display_width" : null,
+    "label" : "Client Logo Link",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 7993593037
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "client_logo" : {
+      "src" : "",
+      "alt" : null
+    },
+    "client_logo_link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 7993593037
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

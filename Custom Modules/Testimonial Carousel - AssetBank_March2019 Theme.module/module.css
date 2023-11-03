@@ -1,0 +1,34 @@
+.testimonial_carousel .slick-list {
+  display: flex;
+}
+.testimonial_carousel .slick-track {
+  display: flex;
+}
+.testimonial_carousel .slick-slide {
+    display: flex !important;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial_carousel .content_carousel_arrow.next {
+  right: 4.5rem;
+}
+.testimonial_carousel .content_carousel_arrow.prev {
+  left: 4.5rem;
+  transform: rotate(-180deg) translateY(-50%);
+}
+@media (max-width:991px) {
+  .testimonial_carousel .content_carousel_arrow.next {
+    transform: translateX(100%);
+    bottom: -3rem;
+    right: 50%;
+  }
+  .testimonial_carousel .content_carousel_arrow.prev {
+    transform: rotate(-180deg) translateX(100%);
+    bottom: -3rem;
+    left: 50%;
+  }
+  
+      
+}

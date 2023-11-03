@@ -1,0 +1,61 @@
+[ {
+  "id" : "e4c876a4-6083-1785-d3e1-f4a68e716af6",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Why use Asset Bank?"
+}, {
+  "id" : "c5c185d5-7b85-86a3-a67b-93f3692bb0e8",
+  "name" : "video_id",
+  "display_width" : null,
+  "label" : "Video ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "_8yuwtqWo5Q"
+}, {
+  "id" : "e473066c-0130-5f73-8e13-c9f756ac1a8a",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "All Videos"
+}, {
+  "id" : "a3897cab-7cf8-bab7-551f-5356b1000ec6",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "e473066c-0130-5f73-8e13-c9f756ac1a8a",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "page"
+} ]

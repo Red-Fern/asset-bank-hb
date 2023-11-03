@@ -1,0 +1,60 @@
+<div class="section">
+  <div class="client-logos-group page-center {{ module.container_class }}">
+    
+    <div class="row justify-content-center">
+      <div class="{% if module.wide_title %}col-12{% else %}col-sm-9{% endif %}">
+        {% if module.heading %}<h2 class="{{ module.header_class }}">{{ module.heading }}</h2>{% endif %}
+        {% if module.description %}
+          {% inline_rich_text field="description" value="{{ module.description }}" %}
+        {% endif %}
+      </div>
+    </div>  
+    
+    <div class="row mb-1 row-images">
+      {% for item in module.add_logo %}
+      <div class="col-4 col-md-2">
+        <div style="background-color:{{item.background_colour.color}}" class="mb-1 client-logo d-flex justify-content-center align-items-center text-center h-4">
+          <div class="client-image">
+            
+              {% if item.link.url.href %}
+            	{% set href = item.link.url.href %}
+              <a href="{{ href }}"
+                {% if item.link.open_in_new_tab %}target="_blank"{% endif %}
+                {% if item.link.no_follow %}rel="nofollow"{% endif %}
+                >
+              {% endif %}
+                
+                {% if item.logo_image.src %}
+                <img src="{{ item.logo_image.src }}" alt="{{ item.logo_image.alt }}" width="{{ item.logo_image.width }}" height="{{ item.logo_image.height }}">
+                {% endif %}
+                
+              {% if item.link.url.href %}
+              </a>
+              {% endif %}
+                
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="row">
+      <div class="col-12">
+        {% if module.cta %}
+          {% cta guid="{{ module.cta }}" %}
+        {% endif %}
+      </div>  
+    </div>
+    
+  </div>
+</div>
+  
+  
+
+
+
+
+
+
+
+

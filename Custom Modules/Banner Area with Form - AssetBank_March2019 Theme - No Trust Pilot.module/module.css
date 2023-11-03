@@ -1,0 +1,88 @@
+
+.dash-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  
+  background-color: #330072;
+  background: url("https://www.builtbybright.com/hubfs/AssetBank_March2019%20Theme/Images/dash-purple-bg.svg") top left no-repeat;
+  background-size: cover;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.dash-hero__inner {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dash-logo {
+  display: inline-block;
+  margin-top: -2rem;
+  margin-left: -20px;
+}
+
+.dash-hero__row {
+  align-items: center; 
+  padding-top: 3rem;
+}
+
+.dash-hero__heading {
+  color: white;
+}
+
+.dash-bulletpoints {
+  max-width: 420px;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.dash-bulletpoints__item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  
+  color: white;
+  font-size: 18px;
+}
+
+.dash-bulletpoints__item__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.dash-content {
+  font-size: 14px;
+  color: white;
+}
+
+.dash-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 727px) {
+  .dash-form {
+    margin-top: 1.5rem; 
+  }
+}
+
+/* override some form styling */
+.dash-form .hs-form .legal-consent-container {
+  font-weight: normal;
+}
+
+.dash-form input[type="email"],
+.dash-form input[type="text"] {
+  border-radius: 3px;
+}
+
+.dash-trustpilot {
+  border-top: 1px solid #b840fe

@@ -1,0 +1,112 @@
+[ {
+  "id" : "98f566dd-dd15-50ce-f06c-a98448ea280e",
+  "name" : "block",
+  "display_width" : null,
+  "label" : "Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "cf6c4c0b-16fd-856d-cd5e-01197e27359d",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "d166433e-cd8a-c480-16bd-9714c79f9980",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/shutterstock_723081853.jpg",
+      "alt" : "image alt",
+      "width" : 1000,
+      "height" : 527
+    }
+  }, {
+    "id" : "cf6c4c0b-16fd-856d-cd5e-01197e27359d",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext",
+    "default" : "<h1>This is the title</h1>\n<p>Hi {{ contact.firstname }}, describe what you have to offer the customer. Why should they read? What did you promise them in the subject line? Tell them something cool. <a href=\"https://www.assetbank.co.uk\" rel=\" noopener\">Add a link</a>. Make them laugh. Make them cry. Well, maybe don't do that...</p>"
+  }, {
+    "id" : "681eddca-dbc9-ff9d-95d1-93fadd7f7d8c",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Read more"
+  }, {
+    "id" : "d4f0b64c-7610-cea6-4860-1b604286f539",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "681eddca-dbc9-ff9d-95d1-93fadd7f7d8c",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 8017665536
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/shutterstock_723081853.jpg",
+      "alt" : "image alt",
+      "width" : 1000,
+      "height" : 527
+    },
+    "text" : "<h1>This is the title</h1>\n<p>Hi {{ contact.firstname }}, describe what you have to offer the customer. Why should they read? What did you promise them in the subject line? Tell them something cool. <a href=\"https://www.assetbank.co.uk\" rel=\" noopener\">Add a link</a>. Make them laugh. Make them cry. Well, maybe don't do that...</p>",
+    "link_text" : "Read more",
+    "link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 8017665536
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  } ]
+} ]

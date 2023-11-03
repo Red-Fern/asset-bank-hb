@@ -1,0 +1,19 @@
+{
+  "content_tags" : [ {
+    "name" : "OTHER_INDUSTRY",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_BLOG",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_PAGE",
+    "source" : "MARKETPLACE"
+  } ],
+  "extra_classes" : "widget-type-gallery",
+  "global" : false,
+  "master_language" : "en",
+  "icon" : "https://cdn2.hubspot.net/hubfs/3275719/hs_marketplace_assets/modules/Image%20Gallery/icons/Image%20Gallery_icon.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 29628144785,
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,122 @@
+[ {
+  "id" : "ee19f527-d871-e2a6-020f-9e622cd571bb",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "8267cc58-1b9e-92b6-1467-7c88f7268954",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "8267cc58-1b9e-92b6-1467-7c88f7268954",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Digital Marketing Manager"
+  }, {
+    "id" : "11f0f2c8-3a05-fc9d-8dac-a7b3f2ecf8ec",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Imagine….you’re working as a Digital Marketing Manager in central Brighton. You’re given the freedom to make the role your own,               with support from our CMO, sales and marketing team. You’re autonomous and hands on, bringing creativity and new ideas that are               not only welcomed but celebrated."
+  }, {
+    "id" : "12d1d6bd-0372-ae13-6d55-86c570c12561",
+    "name" : "button_type",
+    "display_width" : null,
+    "label" : "Button Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "choices" : [ [ "cta", "CTA" ], [ "link", "Link" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "cta"
+  }, {
+    "id" : "2fdd1abc-70f7-284a-4fcb-6a172a2a0bb6",
+    "name" : "select_button",
+    "display_width" : null,
+    "label" : "Select Button",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "cta"
+  }, {
+    "id" : "eff5e992-e46f-b691-8741-2cba0c282b62",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "12d1d6bd-0372-ae13-6d55-86c570c12561",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "link",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "More details or apply"
+  }, {
+    "id" : "993f0905-1e1b-f002-9711-0ec93a40d775",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "12d1d6bd-0372-ae13-6d55-86c570c12561",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "link",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "page",
+    "default" : ""
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "heading" : "Digital Marketing Manager",
+    "content" : "Imagine….you’re working as a Digital Marketing Manager in central Brighton. You’re given the freedom to make the role your own,               with support from our CMO, sales and marketing team. You’re autonomous and hands on, bringing creativity and new ideas that are               not only welcomed but celebrated.",
+    "button_type" : "cta",
+    "button_text" : "More details or apply",
+    "button_link" : ""
+  }
+} ]

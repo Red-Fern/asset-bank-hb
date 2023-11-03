@@ -1,0 +1,93 @@
+<section class="d-testimonials">
+  <div class="d-top-padded-section {% if module.bottom_padding %} d-bottom-padded-section{% endif %}">
+
+    <div class="d-container">
+      <h2 class="d-testimonials__heading">{% inline_rich_text field="testimonials_heading" value="{{ module.testimonials_heading }}" %}</h2>
+    </div>
+    
+    {% if module.company_logo|length > 0 %}
+    <div class="d-logo-strip">
+      <div class="d-container d-logo-strip__inner">
+        {% for item in module.company_logo %}
+          <div class="d-logo-strip__logo">
+          {% if item.src %}
+            {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+            {% if item.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif item.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.max_width }}px; max-height: {{ item.max_height }}px"' %}
+            {% endif %}
+             {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+            <img src="{{ item.src }}" alt="{{ item.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    
+    <div class="d-container">
+      <ul class="d-reviews">
+        {% for item in module.review %}
+        <li class="d-review">
+          <div class="d-review__person">
+            {% if item.headshot.src %}
+              {% set sizeAttrs = 'width="{{ item.headshot.width }}" height="{{ item.headshot.height }}"' %}
+              {% if item.headshot.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif item.headshot.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.headshot.max_width }}px; max-height: {{ item.headshot.max_height }}px"' %}
+              {% endif %}
+               {% set loadingAttr = item.headshot.loading != 'disabled' ? 'loading="{{ item.headshot.loading }}"' : '' %}
+              <img class="d-review__headshot" src="{{ item.headshot.src }}" alt="{{ item.headshot.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+            <div>
+              <h3 class="d-review__name">{% inline_text field="reviewer_name" value="{{ item.reviewer_name }}" %}</h3>
+              <span class="d-review__role">{% inline_text field="reviewer_company" value="{{ item.reviewer_company }}" %}</span>
+            </div>
+          </div>
+          <h3 class="d-review__title">{% inline_text field="review_title" value="{{ item.review_title }}" %}</h3>
+          <div class="d-review__stars">
+            {% set fullStars = range(0, item.number_of_full_stars) %}
+            {% for items in fullStars %}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g><path d="M14.43,10l-1.47-4.84c-0.29-0.95-1.63-0.95-1.91,0L9.57,10H5.12c-0.97,0-1.37,1.25-0.58,1.81l3.64,2.6l-1.43,4.61 c-0.29,0.93,0.79,1.68,1.56,1.09L12,17.31l3.69,2.81c0.77,0.59,1.85-0.16,1.56-1.09l-1.43-4.61l3.64-2.6 c0.79-0.57,0.39-1.81-0.58-1.81H14.43z"/></g>
+              </svg>
+            {% endfor %}
+
+            {% set halfStars = range(0, item.number_of_half_stars) %}
+            {% for items in halfStars %}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">  
+                <g><path d="M18.88,10h-4.46l-1.47-4.84c-0.29-0.95-1.63-0.95-1.91,0L9.58,10H5.12c-0.97,0-1.37,1.25-0.58,1.81l3.64,2.6l-1.43,4.61 c-0.29,0.93,0.79,1.68,1.56,1.09L12,17.31l3.69,2.81c0.77,0.59,1.85-0.16,1.56-1.09l-1.43-4.61l3.64-2.6 C20.25,11.25,19.85,10,18.88,10z M14.42,16.63L12,14.79v-5.9L12.94,12h2.82l-2.27,1.62L14.42,16.63z"/></g>
+              </svg>
+            {% endfor %}
+          </div>
+          <p class="d-review__full-review">
+            {% inline_text field="review_text" value="{{ item.review_text }}" %}
+          </p>
+          {% set href = item.g2_link.url.href %}
+          {% if item.g2_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+          {% endif %}
+          {% set rel = [] %}
+          {% if item.g2_link.no_follow %}
+            {% do rel.append("nofollow") %}
+          {% endif %}
+          {% if item.g2_link.open_in_new_tab %}
+            {% do rel.append("noopener") %}
+          {% endif %}
+          <a href="{{ href }}" class="d-review__tp-link" 
+            {% if item.g2_link.open_in_new_tab %}target="_blank"{% endif %}
+            {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+            >
+            Read full review
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="d-review__tp-link__icon">
+              <path d="M0 0h24v24H0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+            </svg>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

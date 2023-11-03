@@ -1,0 +1,65 @@
+
+{% for item in module.block %}
+	
+  {% if item.image.src %}
+    <!-- Hero Image, Flush : BEGIN -->
+    <tr>
+      <td style="background-color: #ffffff; border-top-right-radius: 2px; border-top-left-radius: 2px; ">
+        <img src="{{ item.image.src }}" width="680" height="" alt="{{ item.image.alt }}" border="0" style="width: 100%; max-width: 680px; height: auto; background: #dddddd; font-family: sans-serif; font-weight:100; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block; border-top-right-radius: 2px; border-top-left-radius: 2px;" class="g-img">
+      </td>
+    </tr>
+    <!-- Hero Image, Flush : END -->
+  {% endif %}
+
+  <!-- 1 Column Text + Button : BEGIN -->
+  <tr>
+    <td style="background-color: #ffffff; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px;">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+          <td style="padding: 30px 30px 20px; font-family: sans-serif; font-weight:100; font-size: 15px; line-height: 20px; color: #2c2c4a;">
+            {% inline_rich_text field="text" value="{{ item.text }}" %}
+          </td>
+        </tr>
+
+        {% if item.link_text %}
+        <tr>
+          <td style="padding: 0 30px 30px;">
+            <!-- Button : BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0"  align="left">
+              <tr>
+                <td class="button-td button-td-primary" style="border-radius: 2px; background: #4400a9;" bgcolor="#4400a9">
+                  {% set href = item.link.url.href %}
+                  {% if item.link.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a class="button-a button-a-primary" href="{{ href }}" style="background: #4400a9; border: 1px solid #4400a9; font-family: sans-serif; font-weight:100; font-size: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 2px;" {% if item.link.open_in_new_tab %}target="_blank"{% endif %} {% if item.link.no_follow %}rel="nofollow"{% endif %} >
+                    <!--[if mso]>&nbsp;<![endif]-->{{ item.link_text }}<!--[if mso]>&nbsp;<![endif]-->
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- Button : END -->
+          </td>
+        </tr>
+        {% endif %}
+        
+        
+      </table>
+    </td>
+  </tr>
+  <!-- 1 Column Text + Button : END -->
+
+  {% if ! loop.last %}
+  <!-- Clear Spacer : BEGIN -->
+  <tr>
+    <td aria-hidden="true" height="60" style="font-size: 0px; line-height: 0px;">
+      &nbsp;
+    </td>
+  </tr>
+  <!-- Clear Spacer : END -->
+  {% endif %}
+
+{% endfor %}
+
+
+

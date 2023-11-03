@@ -1,0 +1,51 @@
+<!-- <div class="landing-page-bg bg-violet-gradient"></div> -->
+<div class="banner-area-with-form landing-page-v3 has-form dash-hero">
+  
+  <div class="dash-hero__inner">
+  
+    <div class="row dash-hero__row">
+      
+      <div class="col-md-6">
+        <a href="/dash/" class="dash-logo">
+          <img src="https://cdn2.hubspot.net/hubfs/4056449/BRAND-ASSETS/Logo_Products/Dash/Dash_Logo-1A-Landscape_RGB-GRAD_Rev_2-small.png" width="208" height="75" alt="Dash Logo" border="0" class="h-2 w-auto">
+        </a>
+        <h1 class="mt-1 dash-hero__heading" style="max-width: 575px;">
+          {{ module.title }}
+        </h1>
+
+        <ul class="dash-bulletpoints">
+          {% for item in module.bullet_point %}
+          <li class="dash-bulletpoints__item"><img class="dash-bulletpoints__item__icon" src="https://www.builtbybright.com/hubfs/AssetBank_March2019%20Theme/Images/dash-bulletpoint.png" alt=""/>{{item}}</li>
+          {% endfor %}
+        </ul>
+
+        <div class="dash-content mt-1">  
+          {{ module.content }}
+        </div>
+
+<!--         <a href="/dash/product/" class="btn btn-white">Explore features</a> -->
+      </div>  
+      
+      {% if module.form %}
+      <div class="col-md-6">
+
+        <!-- HUBSPOT FORM -->
+        <div class="dash-form">
+          {% form
+            form_to_use="{{ module.form.form_id }}"
+            response_response_type="{{ module.form.response_type }}"
+            response_message="{{ module.form.message }}"
+            response_redirect_id="{{ module.form.redirect_id }}"
+            response_redirect_url="{{module.form.redirect_url}}"
+            gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
+          %}  
+        </div>
+        
+      </div>
+      {% endif %}
+
+    </div> <!-- end of row -->
+
+
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<nav class="subheader ab-secondary-nav fixed"> 
+  <div class="container page-center">
+    <div class="row {% if not module.show_menu %}align-items-center h-3{% endif %}">
+      {% if module.show_menu %}<div class="col-12 d-flex align-items-center">{% endif %}
+        {% for item in module.item %}
+          
+          {% if not module.show_menu %}<div class="col-4 text-center">{% endif %}
+          
+          {% if item.image.src %}
+      
+            {% if item.image_link.url.href %}
+            {% set href = item.image_link.url.href %}
+              <a href="{{ href }}" {% if item.image_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.image_link.no_follow %}rel="nofollow"{% endif %} class="subheader-logo-link">
+            {% endif %}
+                
+              <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" width="{{ item.image.width }}" height="{{ item.image.height }}" class="img-fluid" style="height: 2rem;">
+           
+            {% if item.image_link.url.href %}
+            </a>
+            {% endif %}
+          
+          {% endif %}
+          
+      
+          {% if not module.show_menu %}
+          <a href="{{ page_by_id(item.find_out_more_link).absolute_url }}" class="text-decoration-none text-small text-royal-pavilion">Find out more</a>
+          {% endif %}
+      
+          {% if module.show_menu %}
+          {% menu id="{{ item.menu }}" %}
+          {% endif %}
+      
+          {% if not module.show_menu %}</div>{% endif %}
+      
+          {% cta guid="{{ module.cta_field }}" %}
+      
+        {% endfor %}
+       {% if module.show_menu %}</div>{% endif %}
+      
+    
+      
+    </div>
+  </div>
+</nav>
+  
+{% if module.back_to_top %}
+	<a id="btt-button">
+    <svg class="ab-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg>
+  </a>
+{% endif %}
+
+
+  

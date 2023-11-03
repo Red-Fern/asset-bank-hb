@@ -1,0 +1,65 @@
+{% if not topic %}
+<div class="section mb-2 blog-gallery v2">
+
+        {% set pop_posts = blog_recent_posts('group.id', 6) %}
+        <div class="blog-carousel v2">
+          {% for pop_post in pop_posts %}
+          {% if pop_post.featured_image %}
+          
+          <div class="carousel-cell d-flex flex-column">
+            <a href="{{ pop_post.absolute_url }}"></a>
+            <div class="blog-carousel__content flex-grow-1">
+              <img src="{{ resize_image_url( pop_post.featured_image,767 ) }}" />
+              <div class="blog-carousel__content_inner">
+                
+                
+                
+                <div class="blog-carousel__topics mt-1">
+                  {% for posttopic in pop_post.topic_list %}
+                  <h5 class="font-weight-bold">
+                    <a class="topic-link" href="{{ blog_tag_url(group.id, posttopic.slug) }}">{{ posttopic.name }}{% if not loop.last %}, {% endif %}</a>
+                  </h5>
+                  {% endfor %}
+                </div>
+                
+                
+                <h2 class="blog-carousel__title text-violet mt-half">{{ pop_post.name }}</h2>
+
+                </div>
+              </div> 
+              <div class="blog-carousel__content_inner">
+                <div class="card-meta read-time pb-0">
+                  <span class="ab-icon clock"><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg></span>
+                  {% set initialPostWords = pop_post.post_body|wordcount %}
+                  {% set calculatedPostWords = (initialPostWords/100) * 100 %}
+                  {% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
+                  {% set number = finishedPostWords|round %}
+                  {% if number < 1 %}
+                  {% else %}
+                  {{ finishedPostWords|round }} min read
+                  {% endif %}</span>
+                </div>
+                 <p class="blog-carousel__meta">{{ pop_post.blog_post_author.display_name }}, {{ pop_post.publish_date_local_time.strftime('%B') }} 
+                  {% set day = pop_post.publish_date_local_time.strftime('%e') %}
+                  {% if day >= 4 and day <= 20 %}
+                  {% set day = day + "th" %}
+                  {% elif day >= 24 and day <= 30 %}
+                  {% set day = day + "th" %}
+                  {% elif day == 1 or day == 21 or day == 31 %}
+                  {% set day = day + "st" %}
+                  {% elif day == 2 or day == 22 %}
+                  {% set day = day + "nd" %}
+                  {% elif day == 3 or day == 23 %}
+                  {% set day = day + "rd" %}
+                  {% endif %}
+                  {{ day }}, {{ pop_post.publish_date_local_time.strftime('%Y') }}</p>
+              </div>
+              
+            </div> 
+          
+          {% endif %}
+         {% endfor %}
+        </div> 
+
+</div>
+{% endif %}

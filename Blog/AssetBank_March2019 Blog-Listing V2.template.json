@@ -1,0 +1,432 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 6,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/AssetBank_March2019-style.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/AssetBank_March2019-main.js"
+  } ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "blog no-space resource-blog",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1601961744786263",
+        "label" : "Mega Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : true,
+          "widget_name" : "Mega Menu",
+          "schema_version" : 2,
+          "path" : "/AssetBank_March2019 Theme/Custom Modules/Mega Menu"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_15808147057521132",
+        "label" : "Blog Title with Search - AssetBank_March2019 Theme V2",
+        "type" : "custom_widget",
+        "params" : {
+          "blog_intro" : "Welcome to the Bright Blog! We're all about helping to make your workday more inspiring and productive, so take the tour and discover a range of resources, from the hottest trends in marketing, brand, design and tech, to practical guides and helpful tips for all of your Digital Asset Management needs.",
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/AssetBank_March2019 Theme/Custom Modules/Blog Title with Search - AssetBank_March2019 Theme V2",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Blog Title with Search - AssetBank_March2019 Theme V2",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_13885129496421879",
+        "label" : "Page Center, Content Wrapper",
+        "type" : "cell",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "page-center content-wrapper",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "value" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1585137998555230",
+            "label" : "Rich Text",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "html" : "<h3 class=\"mt-2 mb-2 \"><strong>Most recent posts</strong></h3>",
+              "overrideable" : true,
+              "path" : "@hubspot/rich_text",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Rich Text",
+              "wrapping_html" : "{% if topic %}\n  {{ html }}\n{% else %}\n  \n{% endif %}"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1580814372260992",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : "{% if topic %}    \n{% else %}\n  {{ html }}\n{% endif %}"
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1580814992211126",
+                "label" : "Rich Text",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "html" : "<h3 class=\"mt-2 mb-2 \"><strong>Popular Posts</strong></h3>",
+                  "overrideable" : true,
+                  "path" : "@hubspot/rich_text",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Rich Text",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 8,
+                "name" : "module_1580811690457682",
+                "label" : "Post Gallery - AssetBank_March2019 Theme V2",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : true,
+                  "path" : "/AssetBank_March2019 Theme/Custom Modules/Post Gallery - AssetBank_March2019 Theme V2",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Post Gallery - AssetBank_March2019 Theme V2",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "8" : {
+                "x" : 8,
+                "w" : 4,
+                "name" : "module_1580815492818223",
+                "label" : "Subscribe Form v2",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : true,
+                  "path" : "/Subscribe Form v2",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Subscribe Form v2",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1580812105896735",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "deduplicated_cell_138851284969979",
+                "label" : "Blog Content",
+                "type" : "cell",
+                "params" : {
+                  "cell" : false,
+                  "cells" : [ ],
+                  "css_class" : "blog-content blog-list",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "ending_html" : "",
+                  "overrideable" : false,
+                  "root" : false,
+                  "row" : false,
+                  "starting_html" : "",
+                  "value" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1523032069834331",
+                    "label" : "Blog Content",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "blog_listing_source" : "<div class=\"blog-section v2\">\n  <div class=\"blog-listing-wrapper cell-wrapper\">\n    {# simple_list_page indicates the \"blog/all\" page, which is a list of links to every blog post #}\n    <div class=\"post-listing{% if simple_list_page %}-simple{% endif %}\">\n      {% if blog_author %}\n      <div class=\"hs-author-profile\">\n        <h2 class=\"hs-author-name\">{{ blog_author.display_name }}</h2>\n        {% if blog_author.avatar %} <div class=\"hs-author-avatar\"> <img src=\"{{ blog_author.avatar }}\" alt=\"{{ blog_author.display_name }}\"> </div> {% endif %}\n        <div class=\"hs-author-bio\">{{ blog_author.bio }}</div>\n        {% if blog_author.has_social_profiles %}\n        <div class=\"hs-author-social-section\">\n          <span class=\"hs-author-social-label\">Find me on:</span>\n          <div class=\"hs-author-social-links\">\n            {% if blog_author.facebook %}\n            <a href=\"{{ blog_author.facebook }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-facebook\">&nbsp;</a>\n            {% endif %}\n            {% if blog_author.linkedin %}\n            <a href=\"{{ blog_author.linkedin }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-linkedin\">&nbsp;</a>\n            {% endif %}\n            {% if blog_author.twitter %}\n            <a href=\"{{ blog_author.twitter }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-twitter\">&nbsp;</a>\n            {% endif %}\n            {% if blog_author.google_plus %}\n            <a href=\"{{ blog_author.google_plus }}?rel=author\" target=\"_blank\" class=\"hs-author-social-link hs-social-google-plus\">&nbsp;</a>\n            {% endif %}\n          </div>\n        </div>\n        {% endif %}\n      </div>\n      <h3 class=\"hs-author-listing-header\">Recent Posts</h3>\n      {% endif %}\n      {% if not topic %}\n      <div class=\"row blog-rec-title\">\n        <div class=\"col-sm-12\">\n          <h3 class=\"mt-0 mb-2 font-weight-bold\">Most recent posts</h3>\n        </div>\n      </div>\n      {% endif %}\n      <div class=\"row\">\n        {% for content in contents %}\n        <div class=\"post-item v2 col-lg-4\">\n          {% if not simple_list_page %}\n\n\n          <div class=\"card d-flex flex-column h-100 \">\n            <a href=\"{{content.absolute_url}}\"></a>\n              <div class=\"card-header\">\n                {% if content.featured_image %}\n                <div class=\"card-image\">\n                  <div class=\"hs-featured-image-link\" style=\"background-image:url('{{ resize_image_url( content.featured_image,767 ) }}');\">\n                  </div>\n                </div>\n                {% endif %}\n              </div>\n\n              <div class=\"post-item__topics mt-1 mb-half\">\n                {% for posttopic in content.topic_list %}\n                <h5 class=\"font-weight-bold mt-0 d-inline\">\n                  <a class=\"topic-link\" href=\"{{ blog_tag_url(group.id, posttopic.slug) }}\">{{ posttopic.name }}{% if not loop.last %}, {% endif %}</a>\n                </h5>\n                {% endfor %}\n              </div>\n              \n              <div class=\"card-body flex-grow-1\">\n                <h4 class=\"card-title\">{{ content.name }}</h4>\n                {{ content.post_list_content|striptags|safe|truncatehtml(155, '..' , false) }}\n              </div>\n              <div class=\"card-footer mt-1\">\n                \n\n                <div class=\"card-meta read-time pb-0\">\n                  <span class=\"ab-icon clock\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"currentColor\" d=\"M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z\"></path></svg></span>\n                  {% set initialPostWords = content.post_body|wordcount %}\n                  {% set calculatedPostWords = (initialPostWords/100) * 100 %}\n                  {% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}\n                  {% set number = finishedPostWords|round %}\n                  {% if number < 1 %}\n                  {% else %}\n                  {{ finishedPostWords|round }} min read\n                  {% endif %}</span>\n                </div>\n                \n                <div class=\"card-meta\">\n                  {% if content.blog_post_author %}\n                  {{ content.blog_post_author.display_name }},\n                  {% endif %}{{ content.publish_date_local_time.strftime('%B') }} {% set day = content.publish_date_local_time.strftime('%e') %}\n                  {% if day >= 4 and day <= 20 %}\n                  {% set day = day + \"th\" %}\n                  {% elif day >= 24 and day <= 30 %}\n                  {% set day = day + \"th\" %}\n                  {% elif day == 1 or day == 21 or day == 31 %}\n                  {% set day = day + \"st\" %}\n                  {% elif day == 2 or day == 22 %}\n                  {% set day = day + \"nd\" %}\n                  {% elif day == 3 or day == 23 %}\n                  {% set day = day + \"rd\" %}\n                  {% endif %}\n                  {{ day }}, {{ content.publish_date_local_time.strftime('%Y') }}\n                </div>\n              </div>\n            \n          </div>\n          {% else %}\n          <h2 class=\"post-listing-simple\"><a href=\"{{content.absolute_url}}\">{{ content.name }}</a></h2>\n          {% endif %}\n        </div>\n        {% endfor %}\n      </div>\n    </div>\n    {% if not simple_list_page %}\n  \n  \n    <!-- Numbered Pagination -->\n    <div class=\"blog-pagination pt-2 pb-4\">\n        {% set page_list = [-2, -1, 0, 1, 2] %}\n        {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}\n        {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}\n        {% elif current_page_num == 2 %}{% set offset = 1 %}\n        {% elif current_page_num == 1 %}{% set offset = 2 %}\n        {% else %}{% set offset = 0 %}{% endif %}\n\n        <div class=\"blog-pagination-left\">\n            {% if last_page_num %}<a class=\"btn prev-link\" href=\"{{ blog_page_link(last_page_num) }}\">❮</a>{% endif %}\n            {% if contents.total_page_count > 5 %}\n                {% if current_page_num >= 4 %}\n                    <a class=\"btn\" href=\"{{ blog_page_link(1) }}\">1</a>\n                    <a class=\"btn elipses\" href=\"{% if current_page_num <= 5 %}{{ blog_page_link(1) }}{% else %}{{ blog_page_link(current_page_num - 5) }}{% endif %}\">...</a>\n                {% endif %}\n            {% endif %}\n        </div>\n        <div class=\"blog-pagination-center\">\n            {% for page in page_list %}\n                {% set this_page = current_page_num + page + offset %}\n                {% if this_page > 0 and this_page <= contents.total_page_count %}\n                    <a class=\"btn {% if this_page == current_page_num %}active{% endif %}\" href=\"{{ blog_page_link(this_page) }}\">{{ this_page }}</a>\n                {% endif %}\n            {% endfor %}\n        </div>\n        <div class=\"blog-pagination-right\">\n            {% if contents.total_page_count > 5 %}\n                {% if contents.total_page_count - current_page_num > 2 %}\n                    <a class=\"btn elipses\" href=\"{% if contents.total_page_count - current_page_num <= 5 %}{{ contents.total_page_count }}{% else %}{{ blog_page_link(current_page_num + 5) }}{% endif %}\">...</a>\n                    <a class=\"btn\" href=\"{{ blog_page_link(contents.total_page_count) }}\">{{ contents.total_page_count }}</a>\n                {% endif %}\n            {% endif %}\n            {% if next_page_num %}<a class=\"btn next-link\" href=\"{{ blog_page_link(current_page_num + 1) }}\">❯</a>{% endif %}\n        </div>\n    </div>\n  \n\n    {% endif %}\n  </div>\n</div>\n\n\n\n\n\n\n\n",
+                      "blog_post_source" : "<!-- this blog uses separate master template for Listing/Post page  --> ",
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "path" : "@hubspot/blog_content",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "template_to_edit" : "listing",
+                      "widget_name" : "Blog Content",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "blog-content blog-list",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "page-center content-wrapper",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "HubSpot_Boilerplate Theme/Footer",
+        "label" : "HubSpot_Boilerplate Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "path" : "/AssetBank_March2019 Theme/Global Groups/AssetBank_March2019 Footer.template.json",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

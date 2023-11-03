@@ -1,0 +1,192 @@
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Custom styles for the Dash Landing Page template   */
+/*****************************************/
+
+.d-container {
+  max-width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  box-sizing: content-box;
+}
+
+.d-padded-section {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.d-top-padded-section {
+  padding-top: 4rem;
+}
+
+.d-bottom-padded-section {
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 748px) {
+  .d-padded-section {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+  }
+  
+  .d-top-padded-section {
+    padding-top: 6rem;
+  }
+  
+  .d-bottom-padded-section {
+    padding-bottom: 6rem;
+  }
+}
+
+
+/* Set up some typography */
+
+.d-landing-page {
+  line-height: 1.5;
+}
+
+.d-landing-page h1,
+.d-landing-page h2,
+.d-landing-page h3,
+.d-landing-page h4 {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+}
+
+.d-landing-page h1,
+.d-landing-page h2 {
+  margin: 0;
+
+  line-height: 1.125;
+  font-weight: 700;
+  letter-spacing: 0.04px;
+}
+
+.d-landing-page h1 {
+  margin-bottom: 1.5rem;
+
+  font-size: 3rem;
+}
+
+.d-landing-page h1 > span, 
+.d-landing-page h1 > div > span,
+.d-landing-page h2 > span, 
+.d-landing-page h2 > div > span  {
+  color: #4c00a9;
+}
+
+.d-landing-page h2 {
+  font-size: 2.625rem;
+}
+
+.d-landing-page p {
+  margin-bottom: 1rem;
+}
+
+.d-landing-page p:last-child {
+  margin-bottom: 0;
+}
+
+.d-landing-page .body-container-wrapper {
+  padding-top: 0;
+}
+
+.d-landing-page ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Signup form styles  */
+
+.d-signup form {
+  position: relative;
+
+  display: flex;
+
+  box-shadow: 0 0 0 3px #00D5B7;
+  border-radius: 4px;
+}
+
+.d-signup .hs_email {
+  width: 100%;
+}
+
+.d-signup .hs_email input {
+  height: 52px;
+  margin: 0;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Hide label */
+.d-signup .hs_email > label {
+  display: none;
+}
+
+.d-signup .hs-button.primary {
+  display: block;
+  flex-shrink: 0;
+  width: auto;
+  width: max-content;
+  margin: 0;
+  height: 52px;
+
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Validation messages */
+.d-signup .hs-error-msgs.hs-error-msgs {
+  position: absolute;
+  top: calc(100% + 3px);
+  padding: 12px !important;
+
+  background: #F05305;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff !important;
+}
+
+
+/* Slash divider */
+
+.d-slash {
+  display: block;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 9px;
+  height: 20px;
+}
+
+/* Shared cta styles */
+
+.d-cta__title.d-cta__title {
+  margin-bottom: 6px;
+  font-size: 1.5rem;
+  color: #F6EFFB;
+}
+
+.d-cta__gdpr {
+  margin-top: 9px;
+
+  font-size: 0.875rem;
+  color: #BC85E0;
+}
+
+.d-cta__gdpr a {
+  color: #BC85E0;
+}
+
+.d-cta__gdpr a:hover {
+  color: #F6EFFB;
+}

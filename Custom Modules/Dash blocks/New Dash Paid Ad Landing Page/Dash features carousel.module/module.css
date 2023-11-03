@@ -1,0 +1,23 @@
+.d-features__section-heading {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+
+  text-align: center;
+}
+
+.d-features__subline {
+  margin-top: 10px;
+  font-size: 1.125rem;
+  color: #5C5956;
+}
+
+
+.d-features__title {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+}

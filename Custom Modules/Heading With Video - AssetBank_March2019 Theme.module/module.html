@@ -1,0 +1,23 @@
+<div class="heading_with_video">
+  <div class="section pt-2 bg-grey">
+    <div class="container page-center">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1 ">
+          <h1 class="h2 mt-half">{{ module.heading }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section pt-1 pb-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="embed-responsive embed-responsive-16by9 mb-1">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ module.video_id }}" allowfullscreen=""></iframe>
+          </div>
+          <a class="btn btn-violet" href="{{ page_by_id(module.button_link).absolute_url }}">{{ module.button_text }}</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

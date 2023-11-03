@@ -1,0 +1,19 @@
+.client-logo-grid .client-logo {
+  display: flex;
+}
+
+.filters .button {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    line-height: 1.8rem;
+    color:#4400a9;
+}
+.filters .button:hover {
+  text-decoration:underline;
+}
+.filters .button.is-checked {
+  color:#00d5b7;
+}
+

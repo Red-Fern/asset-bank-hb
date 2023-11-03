@@ -1,0 +1,51 @@
+<div class="custom-two-col-image-wrapper {% if module.curved_side == "left" %}content-curved--left{% endif %}">
+	<div class="page-center">
+		<div class="content_with_image_group_fullwidth content-curved custom-two-col-image mt-{{ module.module_setting.top_margin_gap_in_rem_ }} mb-{{ module.module_setting.bottom_margin_gap_in_rem_ }} pt-{{ module.module_setting.top_padding_gap_in_rem_ }} pb-{{ module.module_setting.bottom_padding_gap_in_rem_ }}">
+			<div id="{{ module.section_id }}" class="section">
+				<div class="container content_with_image_group_fullwidth__inner">
+					<div class="row align-items-center {% if module.image_alignment == "left" %}{% else %}flex-sm-row-reverse{% endif %}">
+            <div class="lozenge-container"><div class="lozenge-container__lozenge"></div></div>
+						<div class="col-md-6 image-column">
+							{% if module.image.src %}
+							{% if module.image_shadow %}<div class="image-shadow {{ module.image_shadow_position }}" style="background-color:rgba({{ module.image_shadow_color.color|convert_rgb  }},{{ module.image_shadow_color.opacity/100 }});">{% endif %}
+							<img src="{{ module.image.src }}" class="img-fluid d-block w-100" alt="{{ module.image.alt }}">
+							{% if module.image_shadow %}</div>{% endif %}
+							{% endif %}
+						</div>
+						<div class="col-md-6 content-column">
+							<div class="content_with_image_group_fullwidth_content {% if module.image_alignment == "right" %}img-right{% endif %}" >
+								{{ module.content }}
+								{% if module.show_button %}
+								{% set href = module.button_link.url.href %}
+								{% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+								{% set href = "mailto:" + href %}
+								{% endif %}
+								<p class="custom-btn-wrap"><a class="btn btn-violet" href="{{ href }}" {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if module.button_link.no_follow %}rel="nofollow"{% endif %}>{{ module.button_text }}</a></p>
+								{% endif %}
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{# Module styles #}
+
+{% require_css %}
+<style>
+	{% scope_css %}
+
+	.custom-two-col-image {
+		background: -moz-linear-gradient(111.04deg, rgba({{ module.module_setting.section_gradient_bg_color.color_1.color|convert_rgb }}, {{ module.module_setting.section_gradient_bg_color.color_1.opacity/100 }}) 18.32%, rgba({{ module.module_setting.section_gradient_bg_color.color_2.color|convert_rgb }}, {{ module.module_setting.section_gradient_bg_color.color_2.opacity/100 }}) 71.71%);
+		background: -webkit-linear-gradient(111.04deg, rgba({{ module.module_setting.section_gradient_bg_color.color_1.color|convert_rgb }}, {{ module.module_setting.section_gradient_bg_color.color_1.opacity/100 }}) 18.32%, rgba({{ module.module_setting.section_gradient_bg_color.color_2.color|convert_rgb }}, {{ module.module_setting.section_gradient_bg_color.color_2.opacity/100 }}) 71.71%);
+		background: linear-gradient(111.04deg, rgba({{ module.module_setting.section_gradient_bg_color.color_1.color|convert_rgb }}, {{ module.module_setting.section_gradient_bg_color.color_1.opacity/100 }}) 18.32%, rgba({{ module.module_setting.section_gradient_bg_color.color_2.color|convert_rgb }}, {{ module.module_setting.section_gradient_bg_color.color_2.opacity/100 }}) 71.71%);
+	}
+	.custom-two-col-image:before {
+		background: rgba({{ module.module_setting.section_gradient_bg_color.color_1.color|convert_rgb }}, {{ module.module_setting.section_gradient_bg_color.color_1.opacity/100 }});
+	}
+
+	{% end_scope_css %}
+</style>
+{% end_require_css %}

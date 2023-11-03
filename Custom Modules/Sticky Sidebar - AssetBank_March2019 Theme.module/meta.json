@@ -1,0 +1,15 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 7191553,
+  "js_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/JS/ResizeSensor.js",
+    "autoload" : true,
+    "name" : "ResizeSensor.js"
+  }, {
+    "url" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/JS/sticky-sidebar-1.js",
+    "autoload" : true,
+    "name" : "sticky-sidebar-1.js"
+  } ],
+  "is_available_for_new_content" : true
+}

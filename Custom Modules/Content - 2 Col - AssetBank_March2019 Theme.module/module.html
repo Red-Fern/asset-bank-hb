@@ -1,0 +1,27 @@
+<div class="content_with_image_group">
+  {% for item in module.item %}
+  <div class="section">
+    <div class="container page-center">
+      <div class="inner 
+        {% if module.module_setting.border_radius == "yes" %}radius-lg{% endif %}
+        {% if module.module_setting.background_colour %}p-1{% endif %}
+        mt-{{ module.module_setting.top_margin_gap_in_rem_ }} 
+        mb-{{ module.module_setting.bottom_margin_gap_in_rem_ }}" 
+        {% if module.module_setting.background_colour %}style="background-color:{{ module.module_setting.background_colour.color }}"{% endif %}
+        {% if module.module_setting.background_image.src %}style="background-image:url('{{ module.module_setting.background_image.src }}'); background-position:{{ module.module_setting.background_position }}" {% endif %}
+      >
+        <div class="row {% if item.reverse_row == "no" %}{% else %}flex-sm-row-reverse{% endif %} {% if module.module_setting.show_bottom_border %}border-bottom{% endif %} pt-{{ module.module_setting.top_padding_gap_in_rem_ }} pb-{{ module.module_setting.bottom_padding_gap_in_rem_ }} ">
+         {% for item2 in item.column %}
+          <div class="{{ item2.class }}">
+            {{ item2.content }}
+          </div>
+         {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+

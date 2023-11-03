@@ -1,0 +1,41 @@
+<div class="section testimonial_carousel pt-{{ module.module_setting.top_padding_gap_in_rem_ }} pb-{{ module.module_setting.bottom_padding_gap_in_rem_ }} mt-{{ module.module_setting.top_margin_gap_in_rem_ }} mb-{{ module.module_setting.bottom_margin_gap_in_rem_ }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% if module.title %}
+        <h2 class="text-center text-violet mb-2">
+          {{ module.title }}
+        </h2>
+        {% endif %}
+        {% if module.content %}
+        <div class="col-md-8 offset-md-2">
+          {{ module.content }}
+        </div>
+        {% endif %}
+        
+        <div class="slider-testimonials mb-2">
+          {% for item in module.item %}
+            <div>
+              <div class=" text-center testimonial_carousel-content mx-auto">
+                {{ item.content }}
+              </div>
+              <div class="text-violet text-center">
+                {{ item.title }}
+              </div>
+            </div>
+          {% endfor %}
+        </div> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+	
+	
+
+  
+
+	

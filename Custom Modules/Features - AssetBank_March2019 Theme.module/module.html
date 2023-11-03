@@ -1,0 +1,55 @@
+<div class="section slideshow pt-3">
+  <div class="container page-center">
+    <div class="row">
+      <div class="offset-sm-1 col-sm-10">
+        <h1 class="h2 mt-half mb-2 text-center">{{ module.heading }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section pt-1 pb-1">
+  <div class="container page-center">
+    <div class="row align-items-center">
+      {% for item in module.item %}
+      <div class="col-6 col-md-2">
+        <div class="feature-icon">
+          <a href="#{{ item.title|replace('<br>','')|replace(',','')|lower|split(' ')|join('_') }}">
+            {% if item.icon_image.src %}
+            <img class="feature-icon__icon img-fluid" src="{{ item.icon_image.src }}" alt="{{ item.icon_image.alt }}">
+            {% endif %}
+            <h5 class="feature-icon__title">{{ item.title }}</h5>
+          </a>
+        </div>
+      </div>    
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% for item in module.item %}
+<div id="{{ item.title|replace('<br>','')|replace(',','')|lower|split(' ')|join('_') }}">
+  <div class="section {% if not loop.first and not loop.last %}pt-1 pb-1{% endif %} {% if loop.first %}pt-4 pb-1{% endif %} {% if loop.last %}pt-1 pb-2{% endif %}">
+    <div class="container page-center">
+      <div class="row align-items-center {% if item.image_alignment == "right" %}flex-sm-row-reverse{% endif %} ">
+        <div class="{% if item.image_alignment == "right" %}offset-md-1{% endif %} col-md-5">
+          <div class="image-shadow {% if item.image_alignment == "right" %}image-shadow--bottom-right{% else %}image-shadow--bottom-left{% endif %}" style="background-color:rgba({{ item.box_shadow_color.color|convert_rgb  }},{{ item.box_shadow_color.opacity/100 }});">
+            {% if item.image.src %}
+            <img src="{{ item.image.src }}" class="img-fluid d-block" alt="{{ item.image.alt }}">
+            {% endif %}
+          </div> 
+        </div>
+        <div class="offset-md-1 col-md-5">
+          <h2 class="icon-title d-flex align-items-center mt-2 mt-md-1">
+            {% if item.icon_image.src %}
+            <img class="d-none d-lg-inline icon-title__icon img-fluid" src="{{ item.icon_image.src }}" alt="{{ item.icon_image.alt }}" width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}">
+            {% endif %}
+            <span>{{ item.title }}</span>
+          </h2>
+         {{ item.content }}
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+{% endfor %}

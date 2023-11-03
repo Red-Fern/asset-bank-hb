@@ -1,0 +1,30 @@
+<div class="section pt-4 pb-5 custom-our-product">
+  <div class="container page-center">
+    {% if module.heading %}
+    <div class="row">
+      <div class="offset-md-1 col-sm-6 col-lg-4">
+        <h3>{{ module.heading }}</h3>
+      </div>
+    </div>
+    {% endif %}
+    <div class="row">
+      {% for item in module.item %}
+      <div class="col-sm-6 col-lg-4">
+        <div class="d-flex flex-column h-100">
+          <div>
+            {% if item.image.src %}
+            <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" class="img-fluid mt-1 mb-1" style="height:2.7rem">
+            {% endif %}
+          </div>
+          <div class="flex-grow-1 pr-half">
+            {{ item.content }}
+          </div>
+          <div>
+            <a class="btn btn-violet mb-1" href="{{ page_by_id(item.button_link).absolute_url }}">{{ item.button_text }}</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

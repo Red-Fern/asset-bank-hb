@@ -1,0 +1,36 @@
+<div class="section pb-2 mb-1 custom-content-with-top-image">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+        <div class="row">
+          {% for item in module.item %}
+          <div class="col-sm-6 mb-2">
+            <div class="card-integration d-flex flex-column h-100 ">
+              <div class="card-header">
+                <div class="card-image">
+                  {% if item.image.src %}
+                  <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" class="img-fluid d-block" style="height: 7.2rem;">
+                  {% endif %}
+                </div>
+              </div>
+              <div class="card-body flex-grow-1">
+                <h4>{{ item.title }}</h4>
+                <p>{{ item.content }}</p>
+              </div>
+              <div class="card-footer">
+                {% set href = item.more_information_link.url.href %}
+                {% if item.more_information_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a class="btn btn-link" href="{{ href }}" {% if item.more_information_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.more_information_link.no_follow %}rel="nofollow"{% endif %}>
+                  More information
+                </a>
+              </div>
+            </div>     
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+{# Need help setting up site search?
+   Start here: https://knowledge.hubspot.com/articles/kcs_article/cos-general/how-do-i-set-up-a-results-page-for-my-search-field-in-hubspot #}
+<div class="section pt-1 pb-1 blog-search">
+  <div class="page-center">
+    <div class="row align-items-center">
+      <div class="col-sm-8">
+        {% if topic %}
+        <h1 class="h2 mb-1">Topic: {{ topic }}</h1>
+        
+        {% else %}
+        <h1 class="mb-1 h2">{{ group.public_title }}</h1>
+        {% endif %}
+      </div>
+      <div class="col-sm-4">
+        <div class="hs-search-field"> 
+          <div class="hs-search-field__bar"> 
+            <form action="/{{ site_settings.content_search_results_page_path }}">
+              <input type="text" class="hs-search-field__input" name="term" autocomplete="off" aria-label="{{ module.field_label || "Search" }}" placeholder="{{ module.placeholder }}">
+              <a href="#" class="btn btn-violet btn-search-blog">
+                <span class="ab-icon search">
+                  <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg>
+                </span>
+              </a>
+              {# 
+        DEVELOPERS: You can set additional search parameters by adding hidden
+        inputs like the example below. Both the typeahead and search results 
+        modules will accept these, except 'limit' which only works for results.
+
+       	<input type="hidden" name="limit" value="5">
+        #}
+            </form>
+          </div>
+          <ul class="hs-search-field__suggestions"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

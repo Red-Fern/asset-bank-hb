@@ -1,0 +1,29 @@
+[ {
+  "id" : "aba029a5-6b6d-624d-45e9-a28a8facd33f",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Testimonials"
+}, {
+  "id" : "f533389d-2304-f4ef-032a-e90beee50140",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We pride ourselves on positive feedback from our clients, five star digital             asset management software at a great price"
+} ]

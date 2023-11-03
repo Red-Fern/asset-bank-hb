@@ -1,0 +1,195 @@
+{% macro defaultItemClasses() %}
+ {{
+ {
+   "class": "no-submenu menu-item {{ node.linkTarget }}"
+ }|xmlattr
+ }}
+{% endmacro %}
+{% macro childClasses() %}
+ {{
+ {
+   "class": "has-submenu menu-item"
+ }|xmlattr
+ }}
+{% endmacro %}
+{% macro activeNode() %}
+ {{
+ {"class": "menu-link active-item",
+ "aria-current": "page"}|xmlattr
+ }}
+{% endmacro %}
+{% macro activeBranch() %}
+ {{
+ {"class": "menu-link active-branch"}|xmlattr
+ }}
+{% endmacro %}
+{% macro linkTarget() %}
+{{
+{"target": "_blank"}|xmlattr
+}}
+{% endmacro %}
+{% macro link(node) %}
+<li {{ childClasses() if node.children else defaultItemClasses() }}>
+  <a class="menu-link {% if node.label == 'Products' %}child-open{% endif %}" href="{{ node.url }}" {{ activeNode() if node.activeNode }} {{ activeBranch()if node.activeBranch }} {{ linkTarget() if node.linkTarget }}>{{ node.label }}</a>
+    {% if node.children %}
+    <span class="menu-expand {% if node.label == 'Products' %}child-open{% endif %}">
+      <svg class="ab-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg>
+    </span>
+    {{ renderNavigation(node) }}
+    {% endif %} 
+    
+    {% if !node.children %}
+    <span class="menu-icon-mobile">
+      <svg class="ab-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg>
+    </span>
+    {% endif %}  
+</li>
+{% endmacro %}
+{% macro renderNavigation(menuTree) %}
+  {% set level = level + 1 %}
+  
+    
+    {% if node.label == 'Products' %}
+    <ul class="submenu mega level-{{ level }} products" aria-hidden="{{ level != 1 }}" style="display: block;">
+      <div class="page-center">
+        <div class="row">
+          <div class="level-{{ level }}-left d-none d-xl-block col-xl-3 py-xl-3">
+            {% inline_rich_text field="products_left" value="{{ module.products_left }}" %}
+          </div>
+          <div class="level-{{ level }}-links col-12 col-xl-5 py-xl-3 pr-xl-2 pl-xl-2 mt-xl-1">
+            {% for node in menuTree.children %}
+              {{ link(node) }}
+            {% endfor %}
+          </div>
+          <div class="level-{{ level }}-right d-none d-xl-block col-xl-4 pt-xl-2 pb-xl-3 pl-xl-2">
+             {% inline_rich_text field="products_right" value="{{ module.products_right }}" %}
+          </div>  
+        </div>
+      </div>
+    </ul>
+    {% elif node.label == 'Resources' %}
+    <ul class="submenu mega level-{{ level }} resources" aria-hidden="{{ level != 1 }}">
+      <div class="page-center">
+        <div class="row">
+          <div class="level-{{ level }}-left d-none d-xl-block col-xl-3 py-xl-3">
+            {% inline_rich_text field="resources_left" value="{{ module.resources_left }}" %}
+          </div>
+          <div class="level-{{ level }}-links col-12 col-xl-4 py-xl-3 pr-xl-2 pl-xl-3 mt-xl-2">
+            {% for node in menuTree.children %}
+              {{ link(node) }}
+            {% endfor %}
+          </div>
+          <div class="level-{{ level }}-right d-none d-xl-block col-xl-5 py-xl-3 pl-xl-2">
+            <h4>Latest</h4>
+            {% for item in module.resource_right %}
+              {% set href = item.resource_link.url.href %}
+              {% if item.resource_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+              {% endif %}
+              <a class="resources-link" href="{{ href }}"
+                {% if item.resource_link.open_in_new_tab %}target="_blank"{% endif %}
+                {% if item.resource_link.no_follow %}rel="nofollow"{% endif %}
+                >
+                <span class="resources-title">
+                  {{ item.resource_type }}
+                </span>
+                {{ item.resource_link_text }}
+                {% if item.resource_new %}
+                  <span class="resources-pill">New</span>
+                {% endif %}
+              </a>
+            {% endfor %}
+
+            {% set my_content = content_by_id(module.resource_right_case_study) %}
+            <div class="resources-case d-flex p-half mt-2">
+              <div class="resources-case-image mr-half">
+                <img width="140px" src="{{my_content.featured_image}}" alt="{{my_content.title}}" />
+              </div>
+              <div class="resources-case-text">
+                <h4 class="m-0">{{my_content.title}}</h4>
+                <div>{{ module.resource_right_case_text }}</div>
+                <a class="m-0" href="{{ my_content.absolute_url }}">Read more</a>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </ul>
+    {% elif node.label == 'About us' %}
+    <ul class="submenu mega level-{{ level }} about" aria-hidden="{{ level != 1 }}">
+      {% if module.about_right_image.src %}
+        <img class="about-image-right" src="{{ module.about_right_image.src }}" alt="{{ module.about_right_image.alt }}">
+      {% endif %}
+      <div class="page-center">
+        <div class="row">
+          <div class="level-{{ level }}-left d-none d-xl-block col-xl-3 py-xl-3">
+            {% inline_rich_text field="about_left" value="{{ module.about_left }}" %}
+          </div>
+          <div class="level-{{ level }}-links col-12 col-xl-4 py-xl-3 pr-xl-2 pl-xl-3 mt-xl-2">
+            {% for node in menuTree.children %}
+              {{ link(node) }}
+            {% endfor %}
+          </div>
+          <div class="level-{{ level }}-right d-none d-xl-block col-xl-5 py-xl-3 pl-xl-2">
+            <div class="right-inner">
+              {% inline_rich_text field="about_right" value="{{ module.about_right }}" %}
+            </div>
+          </div>  
+        </div>
+      </div>
+    </ul>
+    {% elif node.label == 'Pricing' %}
+    <ul class="submenu pricing level-{{ level }}" aria-hidden="{{ level != 1 }}">
+       {% for node in menuTree.children %}
+        {{ link(node) }}
+      {% endfor %}
+    </ul>
+    {% else %}
+    <ul class="submenu level-{{ level }}" aria-hidden="{{ level != 1 }}">
+       {% for node in menuTree.children %}
+        {{ link(node) }}
+      {% endfor %}
+    </ul>
+    {% endif %}
+    
+  
+{% endmacro %}
+
+<div class="custom-header">
+  <div class="page-center">
+    <div class="d-flex align-items-center py-half py-xl-0">
+      
+      <a class="logo mr-1" href="/">
+        <svg width="115px" height="41px" viewBox="0 0 203.103 72.428" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><radialGradient id="a" cx="36.203" cy="30.38" gradientUnits="userSpaceOnUse" r="70.436"><stop offset="0" stop-color="#b18aff"/><stop offset=".7" stop-color="#4c00a9"/></radialGradient><g transform="translate(-21.717 -21.701)"><path d="m113.456 43.048v9.262a12.779 12.779 0 0 1 5.87-1.562c6.085 0 10.339 3.662 10.339 10.717v6.892c0 7.163-4.2 10.77-10.878 10.77a26.657 26.657 0 0 1 -8.562-1.4 3.344 3.344 0 0 1 -2.315-3.177v-31.5a2.773 2.773 0 0 1 5.546 0zm0 14.647v15.616a19.3 19.3 0 0 0 5.331.754c3.447 0 5.332-1.992 5.332-5.384v-7.54c0-3.446-1.831-5.277-5.332-5.277a8.991 8.991 0 0 0 -5.331 1.836z" fill="#4c00a9"/><path d="m145.508 51.126a2.529 2.529 0 0 1 2.208 2.638 2.49 2.49 0 0 1 -2.639 2.531c-.807 0-1.884-.323-3.23-.323a2.816 2.816 0 0 0 -2.909 3.07v17.339a2.773 2.773 0 0 1 -5.546 0v-17.501c0-5.008 3.177-8.132 8.077-8.132a20.54 20.54 0 0 1 4.039.378z" fill="#4c00a9"/><path d="m156.122 43.533a3.231 3.231 0 1 1 -3.231-3.232 3.252 3.252 0 0 1 3.231 3.232zm-.485 9.962v22.886a2.629 2.629 0 0 1 -2.746 2.746 2.672 2.672 0 0 1 -2.8-2.746v-22.881a2.673 2.673 0 0 1 2.8-2.747 2.63 2.63 0 0 1 2.746 2.747z" fill="#4c00a9"/><path d="m178.7 52.2a3.213 3.213 0 0 1 2.315 3.123v24.612c0 6.246-4.2 10.662-10.716 10.662a18.669 18.669 0 0 1 -8.347-1.831 2.447 2.447 0 0 1 -1.292-2.207 2.331 2.331 0 0 1 2.477-2.423 3.528 3.528 0 0 1 1.292.322 13.383 13.383 0 0 0 5.87 1.293c3.877 0 5.492-2.585 5.492-5.6v-2.693a11.629 11.629 0 0 1 -5.977 1.669c-6.839 0-10.554-3.877-10.554-10.77v-6.892c0-7.163 4.2-10.717 10.878-10.717a25.526 25.526 0 0 1 8.562 1.452zm-13.894 8.938v7.593c0 3.662 1.993 5.331 5.332 5.331a8.807 8.807 0 0 0 5.33-1.885v-15.612a19.286 19.286 0 0 0 -5.33-.7c-3.499-.001-5.33 1.992-5.33 5.276z" fill="#4c00a9"/><path d="m191 43.048v9.262a13.956 13.956 0 0 1 6.031-1.562c6.516 0 10.123 3.824 10.123 10.717v14.916a2.773 2.773 0 0 1 -5.546 0v-15.24c0-3.5-1.885-5.277-5.223-5.277a8.641 8.641 0 0 0 -5.385 1.885v18.632a2.774 2.774 0 0 1 -5.547 0v-33.333a2.774 2.774 0 0 1 5.547 0z" fill="#4c00a9"/><path d="m216.8 43.048v8.239h5.277a2.641 2.641 0 1 1 0 5.278h-5.277v14.215c0 2.155 1.023 3.177 2.746 3.177 1.346 0 1.831-.268 2.693-.268a2.387 2.387 0 0 1 2.584 2.53 2.613 2.613 0 0 1 -2.315 2.585 14.951 14.951 0 0 1 -3.124.323c-4.577 0-8.13-2.908-8.13-8.508v-27.571a2.773 2.773 0 0 1 5.546 0z" fill="#4c00a9"/><g fill="url(#a)"><path d="m39.086 56.35a18.069 18.069 0 0 1 12.614.15 2.693 2.693 0 0 0 1.952-5.019 23.455 23.455 0 0 0 -16.367-.2 24.167 24.167 0 0 0 -13.653 12.232 24.554 24.554 0 0 0 -1.844 5.175 2.693 2.693 0 0 0 2.012 3.235 2.722 2.722 0 0 0 .616.071 2.694 2.694 0 0 0 2.619-2.08 19.133 19.133 0 0 1 1.439-4.036 18.806 18.806 0 0 1 10.612-9.528z"/><path d="m58.687 43.136c.934.351 1.843.742 2.7 1.159a2.689 2.689 0 0 0 3.6-1.245 2.7 2.7 0 0 0 -1.245-3.6c-1.007-.489-2.069-.945-3.158-1.355a2.693 2.693 0 1 0 -1.9 5.04z"/><path d="m25.785 56.126a2.68 2.68 0 0 0 1.861-.748 26.108 26.108 0 0 1 9.221-5.7 24.9 24.9 0 0 1 15.082-.584 2.693 2.693 0 0 0 1.438-5.19 30.257 30.257 0 0 0 -18.325.7h-.007a31.1 31.1 0 0 0 -11.137 6.883 2.693 2.693 0 0 0 1.863 4.638z"/><path d="m30.712 44.4a2.689 2.689 0 0 0 1.132-.251c.913-.424 1.855-.81 2.8-1.147a32.019 32.019 0 0 1 17.462-1.187 2.693 2.693 0 1 0 1.128-5.266 37.415 37.415 0 0 0 -20.4 1.381c-1.1.393-2.2.842-3.26 1.335a2.693 2.693 0 0 0 1.138 5.135z"/><path d="m58.535 50.809a9.523 9.523 0 0 0 3.906.838 9.685 9.685 0 0 0 3.245-.564 9.912 9.912 0 0 0 6.07-12.426 9.505 9.505 0 0 0 -4.89-5.593 44.219 44.219 0 0 0 -6.449-2.526 2.693 2.693 0 0 0 -1.564 5.153 38.846 38.846 0 0 1 5.66 2.218 4.161 4.161 0 0 1 2.136 2.453 4.527 4.527 0 0 1 -2.766 5.65 4.214 4.214 0 0 1 -3.146-.113 2.692 2.692 0 1 0 -2.2 4.913z"/><path d="m59.111 58.413a16.415 16.415 0 0 0 3.194.314 16.713 16.713 0 0 0 5.609-.974 17.131 17.131 0 0 0 10.486-21.464 16.342 16.342 0 0 0 -8.411-9.62 50.9 50.9 0 0 0 -9.689-3.546 2.693 2.693 0 0 0 -1.324 5.221 45.46 45.46 0 0 1 8.663 3.169 10.993 10.993 0 0 1 5.654 6.478 11.748 11.748 0 0 1 -7.185 14.689 11.192 11.192 0 0 1 -5.947.45 2.693 2.693 0 0 0 -1.05 5.283z"/><path d="m68.332 59.351a18.281 18.281 0 0 1 -8.36.928 2.692 2.692 0 1 0 -.665 5.343 23.076 23.076 0 0 0 2.868.178 23.8 23.8 0 0 0 7.965-1.376 24.415 24.415 0 0 0 16.067-21.25 2.693 2.693 0 1 0 -5.373-.371 19.024 19.024 0 0 1 -12.5 16.549z"/><path d="m85.066 53.15a25.971 25.971 0 0 1 -14.515 12.873 25.42 25.42 0 0 1 -10.675 1.381 2.693 2.693 0 0 0 -.473 5.365q1.3.114 2.614.114a30.959 30.959 0 0 0 10.336-1.783h.006a31.34 31.34 0 0 0 17.517-15.528 2.693 2.693 0 1 0 -4.81-2.422z"/><path d="m38.306 34.688a2.76 2.76 0 0 0 .476-.042 38.532 38.532 0 0 1 13.428-.046 2.693 2.693 0 0 0 .924-5.306 43.962 43.962 0 0 0 -15.3.045 2.693 2.693 0 0 0 .469 5.344z"/><path d="m49.12 27.081c1.058.078 2.123.2 3.164.347a2.9 2.9 0 0 0 .391.028 2.693 2.693 0 0 0 .385-5.356c-1.166-.169-2.358-.3-3.542-.388a2.693 2.693 0 0 0 -.4 5.371z"/><path d="m53.235 73.887a31.6 31.6 0 0 1 -7.206-2.481 2.693 2.693 0 1 0 -2.353 4.844 37.027 37.027 0 0 0 8.433 2.9 2.742 2.742 0 0 0 .566.059 2.693 2.693 0 0 0 .56-5.326z"/><path d="m89.538 64.118a2.692 2.692 0 0 0 -3.806.11 33.243 33.243 0 0 1 -12.958 8.467 31.991 31.991 0 0 1 -12.959 1.818 2.693 2.693 0 1 0 -.357 5.374q1.248.082 2.493.083a37.5 37.5 0 0 0 12.631-2.2 38.652 38.652 0 0 0 15.066-9.845 2.691 2.691 0 0 0 -.11-3.807z"/><path d="m82.471 75.793a40.315 40.315 0 0 1 -7.471 3.574 38.993 38.993 0 0 1 -15.22 2.243 2.693 2.693 0 1 0 -.28 5.378q1.163.061 2.323.061a44.5 44.5 0 0 0 14.977-2.608 45.544 45.544 0 0 0 8.474-4.052 2.692 2.692 0 0 0 -2.811-4.593z"/><path d="m53.132 81.1a38.4 38.4 0 0 1 -10.225-3.3 4.157 4.157 0 0 1 -2.137-2.453 4.525 4.525 0 0 1 2.766-5.65 4.206 4.206 0 0 1 3.263.166 30.351 30.351 0 0 0 5.157 1.946 2.652 2.652 0 0 0 .717.1 2.693 2.693 0 0 0 .715-5.289 24.861 24.861 0 0 1 -4.236-1.6h-.006a9.529 9.529 0 0 0 -7.415-.394h-.005a9.912 9.912 0 0 0 -6.069 12.426 9.5 9.5 0 0 0 4.9 5.6 43.748 43.748 0 0 0 11.656 3.765 2.693 2.693 0 0 0 .92-5.306z"/><path d="m73.164 87.279a46.016 46.016 0 0 1 -13.415 1.421 2.693 2.693 0 0 0 -.226 5.381q1.066.044 2.134.044a51.5 51.5 0 0 0 12.85-1.635 2.693 2.693 0 0 0 -1.343-5.215z"/><path d="m53.058 88.277a45.213 45.213 0 0 1 -13.275-4.087 10.994 10.994 0 0 1 -5.654-6.479 11.747 11.747 0 0 1 7.182-14.688 11.067 11.067 0 0 1 8.61.445c.545.263 1.126.514 1.775.766a2.693 2.693 0 0 0 1.944-5.023c-.511-.2-.958-.39-1.369-.59h-.007a16.423 16.423 0 0 0 -12.764-.673h-.006a17.132 17.132 0 0 0 -10.48 21.462 16.341 16.341 0 0 0 8.41 9.619 50.515 50.515 0 0 0 14.856 4.573 2.692 2.692 0 1 0 .772-5.329z"/></g></g></svg>
+      </a>
+    
+      <div class="mega-menu-primary">
+        <nav class="navigation-primary">
+          {{ renderNavigation(menu(module.primary_menu_field)) }}
+        </nav>
+        <div class="mobile-menu-cta d-lg-none">
+          {{ module.mobile_cta }}
+        </div>
+      </div>
+      
+      <div class="mega-menu-right ml-auto d-flex">
+        <a class="header-tel btn" href="/contact">Contact</a>
+        <a class="btn btn-swell" href="/book-a-demo">Book a Demo</a>
+
+        <div class="d-sm-none">{{cta('8aea184c-8e27-4b37-a5f8-f76b9f29cc1f')}}</div>
+      </div>
+
+      <div id="menu-toggle">
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="cross">
+            <span></span>
+            <span></span>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>

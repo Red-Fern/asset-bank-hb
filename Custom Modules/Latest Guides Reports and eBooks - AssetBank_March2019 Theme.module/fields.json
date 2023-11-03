@@ -1,0 +1,160 @@
+[ {
+  "id" : "98fb795e-5911-eafe-64c7-c18301af80dd",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Latest Guides, reports &amp; eBooks"
+}, {
+  "id" : "d9fe0075-d8b8-d7d8-4a20-7648212bea30",
+  "name" : "add_item",
+  "display_width" : null,
+  "label" : "Add Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 12,
+    "sorting_label_field" : "61062413-3b3b-f293-1d9f-ceb23843eabe",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "7da67d7a-02f1-ee5d-16d4-6a6baa90837f",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null
+    }
+  }, {
+    "id" : "9411549e-f8bb-1fe1-21bf-76aaaf74598e",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "1d4e7457-7cbe-56db-3839-d2ea60267482",
+    "name" : "button_link_url",
+    "display_width" : null,
+    "label" : "Button Link Url",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "f96c884a-599c-9111-4ebd-6f0937be2e3d",
+    "name" : "parameter_link",
+    "display_width" : null,
+    "label" : "Parameter Link",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "f4e99f06-3cd1-de36-7a8d-47ff2cbc240c",
+    "name" : "parameter_link_url",
+    "display_width" : null,
+    "label" : "Parameter Link Url",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "f96c884a-599c-9111-4ebd-6f0937be2e3d",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "61062413-3b3b-f293-1d9f-ceb23843eabe",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "5967cc07-de69-ecaa-ec5c-39d5fcfa72af",
+    "name" : "category",
+    "display_width" : null,
+    "label" : "Category",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "src" : "",
+      "alt" : null
+    },
+    "button_link_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "parameter_link" : false
+  } ]
+} ]

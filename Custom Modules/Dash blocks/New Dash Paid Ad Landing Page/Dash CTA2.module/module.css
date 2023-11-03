@@ -1,0 +1,192 @@
+/* Layout */
+
+.d-cta2 {
+  position: relative;
+  padding: 3rem;
+  margin-bottom: 4rem; 
+
+  background: #4c00a9;
+  background-image: linear-gradient(130deg, #4C00A9 21%, #B941FF 200%);
+  color: #F6EFFB;
+}
+
+.d-cta2--top-margin {
+  margin-top: 4rem; 
+}
+
+.d-cta2::after {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+
+  background: #BC85E0;
+}
+
+.d-cta2__inner {
+  display: flex;
+  
+  margin-left: -48px;
+  margin-right: -48px;
+}
+
+.d-cta2__form,
+.d-cta2__bullets.d-cta2__bullets {
+  padding-left: 48px;
+  padding-right: 48px;
+  width: 100%;
+}
+
+
+@media (min-width: 748px) {
+  .d-cta2__form {
+    width: 55% 
+  }
+  .d-cta2__bullets.d-cta2__bullets {
+    width: 45%;
+  }
+}
+
+/* Content */
+
+.d-cta2__desc {
+  margin-bottom: 21px;
+}
+
+.d-cta2__gdpr {
+  max-width: 500px;
+}
+
+
+/* Bulleted list */
+
+.d-cta2__bullets {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (min-width: 748px) {
+  /* Only show bullets on larger screens */
+  .d-cta2__bullets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.d-cta2__bullets::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 2px;
+  height: 100%;
+  background: #BC85E0;
+  opacity: 0.5;
+}
+
+.d-cta2__bullets__item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  
+  color: #F6EFFB;
+}
+
+.d-cta2__bullets__item:last-child {
+  margin-bottom: 0;
+}
+
+.d-cta2__bullets__item__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}
+
+
+/* Shared  */
+
+.d-container {
+  max-width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  box-sizing: content-box;
+}
+
+.d-cta2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.d-cta__title.d-cta__title {
+  margin-bottom: 6px;
+  font-size: 1.5rem;
+  color: #f6effb;
+  margin-top:0;
+  font-weight: 500;
+  line-height: 1.125;
+}
+
+.d-cta2__gdpr {
+  margin-top: 9px;
+  font-size: .875rem;
+  color: #bc85e0;
+  margin-bottom:0;
+}
+
+.d-cta2__gdpr a {
+  color: #bc85e0;
+}
+
+/* Signup form styles  */
+
+.d-signup form {
+  position: relative;
+
+  display: flex;
+
+  box-shadow: 0 0 0 3px #00D5B7;
+  border-radius: 4px;
+}
+
+.d-signup .hs_email {
+  width: 100%;
+}
+
+.d-signup .hs_email input {
+  height: 52px;
+  margin: 0;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Hide label */
+.d-signup .hs_email > label {
+  display: none;
+}
+
+.d-signup .hs-button.primary {
+  display: block;
+  flex-shrink: 0;
+  width: auto;
+  width: max-content;
+  margin: 0;
+  height: 52px;
+
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 0 4px 4px 0;
+}

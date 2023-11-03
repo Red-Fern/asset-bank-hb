@@ -1,0 +1,141 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_15517818969134863",
+        "label" : "Page Center",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "page-center pt-3 pb-5 border-top border-bottom",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 6,
+            "name" : "module_15517818945444849",
+            "label" : "Row4 Content",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "dash-row4-content",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "html" : "<h2>Get your free trial</h2>\n<p>If you would like to arrange a free trial please fill in the form and a member of our team will be in touch to get you set up.</p>\n<p>If you would like to know more about Dash, please fill in the form <a href=\"https://info.assetbank.co.uk/assetbank/book-a-demo\" rel=\" noopener\">here</a> and we'll be in touch.</p>\n<p>Pricing starts from £350 ($525 USD) per month.</p>",
+              "overrideable" : false,
+              "path" : "@hubspot/rich_text",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "widget_name" : "Rich Text",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          },
+          "6" : {
+            "x" : 6,
+            "w" : 6,
+            "name" : "module_15517839375775618",
+            "label" : "Row4 Form Group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "dash-row4-form",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_15517821918984969",
+                "label" : "Row4 Form",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "bg-violet form-right-runoff",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "form" : {
+                    "form_id" : "9d60521c-d7ef-4fe5-b223-bce4a0ba76cf",
+                    "form_type" : "HUBSPOT",
+                    "message" : "Thanks for submitting the form.",
+                    "redirect_id" : 10649560186,
+                    "response_type" : "redirect"
+                  },
+                  "overrideable" : false,
+                  "path" : "@hubspot/form",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "title" : "Arrange your free trial",
+                  "widget_name" : "Form",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

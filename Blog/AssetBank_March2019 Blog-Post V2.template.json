@@ -1,0 +1,493 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 6,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/AssetBank_March2019-style.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/AssetBank_March2019 Theme/Coded Files/AssetBank_March2019-main.js"
+  } ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "blog no-space resource-blog v2",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1601961762573269",
+        "label" : "Mega Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/AssetBank_March2019 Theme/Custom Modules/Mega Menu",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Mega Menu",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1580769242530102",
+        "label" : "Resource Blog Post Banner Area - AssetBank_March2019 V2",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/AssetBank_March2019 Theme/Custom Modules/Resource Blog Post Banner Area - AssetBank_March2019 V2",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Resource Blog Post Banner Area - AssetBank_March2019 V2",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_13885129496421879",
+        "label" : "Page Center, Content Wrapper",
+        "type" : "cell",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "page-center content-wrapper",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "root" : false,
+          "row" : false,
+          "starting_html" : "",
+          "value" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 9,
+            "name" : "deduplicated_cell_138851284969979",
+            "label" : "Blog Content",
+            "type" : "cell",
+            "params" : {
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "blog-content pb-1",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "overrideable" : false,
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "value" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1523032069834331",
+                "label" : "Blog Content",
+                "type" : "custom_widget",
+                "params" : {
+                  "blog_listing_source" : "<!-- this blog uses separate master template for Listing/Post page  --> ",
+                  "blog_post_source" : "<div class=\"blog-section\">\n  <div class=\"blog-post-wrapper cell-wrapper\">\n    \n    <h1 class=\"blog-title h2\">{{ content.name }}</h1>\n\n    <div class=\"section post-body\">\n      {{ content.post_body }}\n      \n      <div class=\"about-author-sec row-fluid mb-3 py-2 mt-1\">\n        {% if content.blog_post_author.avatar %}\n        <div class=\"span2\">\n          <img id=\"author-image\" alt=\"{{ content.blog_post_author.display_name }}\" src=\"{{ content.blog_post_author.avatar }}\">\n        </div>\n        {% endif %}\n        <div class=\"span10\">\n          <h5 class=\"mt-0 mb-half font-weight-bold\">Written by <a class=\"author-link\" href=\"{{ blog_author_url(group.id, content.blog_post_author.slug) }}\">{{ content.blog_post_author.display_name }}</a></h5>\n          <p class=\"mb-half\">{{ content.blog_post_author.bio }}</p>\n          {% if content.blog_post_author.has_social_profiles %}\n          <div class=\"hs-author-social-section\">\n            <h5 class=\"follow mt-0 mb-half font-weight-bold d-inline\">Follow&nbsp;&nbsp;</h5>\n            <div class=\"hs-author-social-links\">\n              {% if content.blog_post_author.facebook %}\n              <a href=\"{{ content.blog_post_author.facebook }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-facebook\">Facebook</a>\n              {% endif %}\n              {% if content.blog_post_author.linkedin %}\n              <a href=\"{{ content.blog_post_author.linkedin }}\" target=\"_blank\" class=\"\">\n                <span class=\"ab-icon linkedin\">\n                  <svg role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><path fill=\"currentColor\" d=\"M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1 0 53.8 0s53.8 24.1 53.8 53.8-24.1 54.3-53.8 54.3zM448 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448h-.1z\"></path></svg>\n                </span>\n              </a>\n              {% endif %}\n              {% if content.blog_post_author.twitter %}\n              <a href=\"{{ content.blog_post_author.twitter }}\" target=\"_blank\" class=\"hs-author-social-link hs-social-twitter\">Twitter</a>\n              {% endif %}\n            </div>\n          </div>\n          {% endif %}\n        </div>\n      </div>\n      \n    </div>\n  </div>\n</div>\n",
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "path" : "@hubspot/blog_content",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "template_to_edit" : "post",
+                  "widget_name" : "Blog Content",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_15519534070083470",
+                "label" : "Call-to-Action",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "blog-footer-cta",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "guid" : "34407ad3-2f4e-4dc0-9681-5e86cdac0f62",
+                  "overrideable" : true,
+                  "path" : "@hubspot/cta",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Call-to-Action",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "blog-footer-cta",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1523032063950328",
+                "label" : "Blog Comments",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "path" : "@hubspot/blog_comments",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "Blog Comments",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "blog-content pb-1",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          },
+          "9" : {
+            "x" : 9,
+            "w" : 3,
+            "name" : "migrated_unnamed_cell_138851284969980",
+            "label" : "Blog Sidebar",
+            "type" : "cell",
+            "params" : {
+              "cell" : false,
+              "cells" : [ ],
+              "css_class" : "blog-sidebar",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "ending_html" : "",
+              "overrideable" : false,
+              "root" : false,
+              "row" : false,
+              "starting_html" : "",
+              "value" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_15519620851604373",
+                "label" : "Sidebar Inner",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "sidebar-inner",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_15519520050083374",
+                    "label" : "Blog Social Share - AssetBank_March2019 Theme",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "overrideable" : false,
+                      "path" : "/AssetBank_March2019 Theme/Custom Modules/Blog Social Share - AssetBank_March2019 Theme",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Blog Social Share - AssetBank_March2019 Theme",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_15519531078073407",
+                    "label" : "Call-to-Action",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "css_id" : "",
+                      "css_id_str" : "",
+                      "css_style" : "",
+                      "guid" : "34407ad3-2f4e-4dc0-9681-5e86cdac0f62",
+                      "overrideable" : true,
+                      "path" : "@hubspot/cta",
+                      "per_widget_wrapper_html" : "",
+                      "schema_version" : 2,
+                      "widget_name" : "Call-to-Action",
+                      "wrapping_html" : ""
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "sidebar-inner",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "blog-sidebar",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "page-center content-wrapper",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_15519544167783653",
+        "label" : "Related Articles - AssetBank_March2019 Theme",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/AssetBank_March2019 Theme/Custom Modules/Related Articles - AssetBank_March2019 Theme",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Related Articles - AssetBank_March2019 Theme",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1552976484187116",
+        "label" : "Sticky Sidebar - AssetBank_March2019 Theme",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/AssetBank_March2019 Theme/Custom Modules/Sticky Sidebar - AssetBank_March2019 Theme",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "Sticky Sidebar - AssetBank_March2019 Theme",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "HubSpot_Boilerplate Theme/Footer",
+        "label" : "HubSpot_Boilerplate Theme/Footer",
+        "type" : "global_group",
+        "params" : {
+          "cell" : false,
+          "cells" : [ ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "ending_html" : "",
+          "overrideable" : false,
+          "path" : "/AssetBank_March2019 Theme/Global Groups/AssetBank_March2019 Footer.template.json",
+          "root" : false,
+          "row" : false,
+          "starting_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

@@ -1,0 +1,182 @@
+<div class="section pb-sm-5 custom-our-product">
+  <div class="container page-center">
+    <div class="wizard-container radius-lg">
+      <div class="wizard-container-image">
+        <img src="https://cdn2.hubspot.net/hubfs/4056449/pencil_graphic.svg" />
+      </div>
+      
+      
+      <!--Questions -->
+      <div class="wizard-container-questions">
+          {% if module.heading %}
+          <h2 class="text-center text-white mt-0 mb-0">{{ module.heading }}</h2>
+          <h3 class="text-center text-white mt-0 mb-2">{{ module.sub_heading }}</h3>
+          {% endif %}
+          <div class="wizard-container-inner shadow-lg radius-lg">
+            <div class="wizard-questions text-center">
+              {% for item in module.questions %}
+              <div class="wizard-question">
+                <div class="wizard-questions_content"> 
+                  <p>
+                    <span class="font-weight-bold curret">{{ loop.index }}. </span>{{ item.question }}
+                  </p>
+                </div>
+                <div class="wizard-questions_buttons"> 
+                  <a class="btn btn-violet yes">Yes</a>
+                  <a class="btn btn-violet no">No</a>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            <div class="slide-nav">
+              <div class="pagingInfo"></div>
+              <div class="slide-nav_dots"></div>
+            </div>
+            
+          </div>  
+      </div>
+
+      
+      <!-- Yes Result -->
+      <div class="wizard-container-answers yes" style="display:none;">
+        
+        <h3 class="text-center text-white mb-0 mt-0">The results are in...</h3>
+        <h1 class="h2 text-center text-white mb-2">{{ module.yes_heading }}</h1>
+        
+        <div class="wizard-container-inner wizard-answers shadow-lg radius-lg">
+          <div class="wizard-answers-title row">
+            <div class="col-sm-6">
+              <h3 class="text-violet mb-0 mb-sm-1 ">Here’s why:</h3>
+            </div>
+            <div class="col-sm-6">
+              <h3 class="d-none d-sm-block text-violet">Here’s what we can do about it:</h3>
+              <p class="d-sm-none mb-half">(Click to see how we can help with each)</p>
+            </div>
+          </div>
+          <section class="wizard-answers-slider">
+<!--             <div class="row">
+              <div class="col-sm-6">
+                 <div class="nav-container">
+                    <div class="slider-nav">
+                      {% for item in module.questions %}
+                        <div>
+                          <div class="wizard-answer-question font-weight-bold">
+                            <strong>{{ item.answer_title }}</strong>
+                          </div>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="main-container">
+                  <div class="slider slider-main">
+                    {% for item in module.questions %}
+                      <div>
+                        <div class="wizard-answer">
+                          {{ item.answer }}
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <div class="clearfix">
+              <div id="VerticalTab_1">
+                <ul class="resp-tabs-list ver_1">
+                  {% for item in module.questions %}
+                  <li>
+                    <div class="wizard-answer-question font-weight-bold">
+                      <strong>{{ item.answer_title }}</strong>
+                    </div>
+                  </li>
+                  {% endfor %}
+                </ul>
+                <div class="resp-tabs-container ver_1">
+                  {% for item in module.questions %}
+                      <div>
+                        <div class="wizard-answer">
+                          {{ item.answer }}
+                        </div>
+                      </div>
+                    {% endfor %}
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          
+          <span class="answers-down">
+            <svg aria-hidden="true" focusable="false" width="44px" height="34px" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+          </span>
+        </div>
+
+        <div class="wizard-answers-yes-form">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                {% if module.form_image.src %}
+                  {% set sizeAttrs = 'width="{{ module.form_image.width }}" height="{{ module.form_image.height }}"' %}
+                  {% if module.form_image.size_type == 'auto' %}
+                    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                  {% elif module.form_image.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.form_image.max_width }}px; max-height: {{ module.form_image.max_height }}px"' %}
+                  {% endif %}
+                  <img src="{{ module.form_image.src }}" alt="{{ module.form_image.alt }}" {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <div class="col-sm-8">
+                {{ module.yes_footer_text }}
+                {% form form_to_use="{{ module.form_field.form_id }}" response_response_type="{{ module.form_field.response_type }}" response_message="{{ module.form_field.message }}" response_redirect_id="{{ module.form_field.redirect_id }}" response_redirect_url="{{module.form_field.redirect_url}}" gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}" %}
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+      
+      <!-- No Result -->
+      <div class="wizard-container-answers no" style="display:none;">
+
+        <h3 class="text-center text-white mb-0 mt-0">The results are in...</h3>
+        <h1 class="h2 text-center text-white mb-2">{{ module.no_heading }}</h1>
+        
+        <div class="no-text text-center mb-2">
+          {{ module.no_text }}
+        </div>
+        
+       
+<!--         <a class="btn btn-violet answers-back">Back</a> -->
+        <div class="wizard-answers-no-form">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                {% if module.form_image.src %}
+                  {% set sizeAttrs = 'width="{{ module.form_image.width }}" height="{{ module.form_image.height }}"' %}
+                  {% if module.form_image.size_type == 'auto' %}
+                    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                  {% elif module.form_image.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.form_image.max_width }}px; max-height: {{ module.form_image.max_height }}px"' %}
+                  {% endif %}
+                  <img src="{{ module.form_image.src }}" alt="{{ module.form_image.alt }}" {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <div class="col-sm-8">
+                {{ module.no_footer_text }}
+                {% form form_to_use="{{ module.form_field.form_id }}" response_response_type="{{ module.form_field.response_type }}" response_message="{{ module.form_field.message }}" response_redirect_id="{{ module.form_field.redirect_id }}" response_redirect_url="{{module.form_field.redirect_url}}" gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}" %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

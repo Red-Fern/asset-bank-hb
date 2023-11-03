@@ -1,0 +1,36 @@
+ {% if not topic %}
+<div class="section mb-2 blog-gallery">
+  <div class="row">
+    <div class="col-12">
+      {% set pop_posts = blog_popular_posts('group.id', 6) %}
+      <div class="blog-carousel">
+        {% for pop_post in pop_posts %}
+         {% if pop_post.featured_image %}
+        <div class="carousel-cell d-flex align-items-end" style="background-image:url('{{ resize_image_url( pop_post.featured_image,767 ) }}')">
+          <a href="{{ pop_post.absolute_url }}"></a>
+          <div class="blog-carousel__content">
+            <h3 class="blog-carousel__title">{{ pop_post.name }}</h3>
+            <p class="blog-carousel__meta">by {{ pop_post.blog_post_author.display_name }}, {{ pop_post.publish_date_local_time.strftime('%B') }} 
+              {% set day = pop_post.publish_date_local_time.strftime('%e') %}
+              {% if day >= 4 and day <= 20 %}
+              {% set day = day + "th" %}
+              {% elif day >= 24 and day <= 30 %}
+              {% set day = day + "th" %}
+              {% elif day == 1 or day == 21 or day == 31 %}
+              {% set day = day + "st" %}
+              {% elif day == 2 or day == 22 %}
+              {% set day = day + "nd" %}
+              {% elif day == 3 or day == 23 %}
+              {% set day = day + "rd" %}
+              {% endif %}
+              {{ day }}
+              , {{ pop_post.publish_date_local_time.strftime('%Y') }}</p> 
+          </div> 
+        </div>
+        {% endif %}
+       {% endfor %}
+      </div> 
+    </div>
+  </div>
+</div>
+{% endif %}

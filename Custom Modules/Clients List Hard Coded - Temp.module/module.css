@@ -1,0 +1,9 @@
+.client-logo img {
+    max-width: 110px !important;
+    max-height: 75px;
+    width: auto;
+    height: auto;
+}
+.cl-lyt .client-list {
+  margin-bottom:0 !important;
+}

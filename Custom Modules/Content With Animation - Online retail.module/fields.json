@@ -1,0 +1,13 @@
+[ {
+  "picker" : "file",
+  "id" : "48e7ec65-a13c-c936-7b3e-bb10e613dbcf",
+  "name" : "json_file",
+  "display_width" : null,
+  "label" : "JSON File",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/4056449/Bright-Homepage-Image%201.jpg"
+} ]

@@ -1,0 +1,37 @@
+.screenshots_module {
+  overflow:hidden;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.screenshots {
+  padding:0 10%;
+  position:relative;
+}
+.screenshot {
+  border-radius:10px;
+  line-height:0;
+  overflow:hidden;
+}
+.screenshots .col-12:first-child {
+  margin-left:-100%;
+}
+.screenshots_module .cta_button {
+  width:124px;
+}
+.screenshots_module .btn-white:hover {
+  background:#350083;
+  color:#fff;
+}
+@media (min-width:991px) {
+  .screenshots .col-12:first-child {
+    margin-left:-33.333%;
+  }
+}
+@media (min-width:576px) and (max-width:991px)  {
+  .screenshots {
+    padding:0 5%;
+  }
+  .screenshots .col-12:first-child {
+    margin-left:-50%;
+  }
+}

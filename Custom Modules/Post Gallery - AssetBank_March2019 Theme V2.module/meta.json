@@ -1,0 +1,16 @@
+{
+  "global" : false,
+  "host_template_types" : [ "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 25224320669,
+  "css_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/CSS/slick.css",
+    "autoload" : true,
+    "name" : "slick.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/JS/slick.js",
+    "autoload" : true,
+    "name" : "slick.js"
+  } ],
+  "is_available_for_new_content" : true
+}

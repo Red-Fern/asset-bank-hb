@@ -1,0 +1,20 @@
+<div class="section pt-3 mb-2 content-top-img">
+  <div class="page-center border-bottom pb-3">
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2 text-center">
+        {% if module.beta %}
+        <div class="dash-logo-beta">
+          {% if module.image.src %}
+          <img class="img-fluid mb-1" src="{{ module.image.src }}" alt="{{ module.image.alt }}" class="img-fluid mb-1" style="height: 5.4rem;">
+          {% endif %}
+        </div>
+        {% else %}
+        {% if module.image.src %}
+        <img class="img-fluid mb-1" src="{{ module.image.src }}" alt="{{ module.image.alt }}" class="img-fluid mb-1" style="height: 5.4rem;">
+        {% endif %}
+        {% endif %}
+        {{ module.content }}
+      </div>
+    </div>
+  </div>
+</div>

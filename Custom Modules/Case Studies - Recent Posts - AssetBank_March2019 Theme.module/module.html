@@ -1,0 +1,99 @@
+<div class="section recent-post-wrapper gradient-70 pt-2 pb-2">
+  <div class="page-center">
+    <div class="wrap-sec">
+      <div class="row">
+        <div class="col-8">
+          <h2 class="text-white">{{ module.title }}</h2>
+          {{ module.content }}
+        </div>
+      </div>            
+<!--       <div class="row recent-post">
+        {% set rec_posts = blog_recent_posts(module.select_blog, 6) %}
+        {% for rec_post in rec_posts %}
+        <div class="col-sm-6 col-lg-4 mb-1">
+          <div class="card d-flex flex-column h-100 shadow-lg">
+            <a href="{{ rec_post.absolute_url }}">
+              <div class="card-header">
+                <div class="card-image">
+                  <img src="{{ rec_post.featured_image }}" class="img-fluid d-block" alt="{{ rec_post.name }}">
+                </div>
+              </div>
+              <div class="card-body flex-grow-1">
+
+                {% for module_item in rec_post.widgets %}
+                {% if module_item.label == "Case Studies - Post Title - AssetBank_March2019 Theme" %}
+                {% if module_item.body.post_title %}
+                <h3 class="card-title diff">{{ module_item.body.post_title }}</h3>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+                <h3 class="card-title">{{ rec_post.name }}</h3>
+
+                {% for module_item in rec_post.widgets %}
+                {% if module_item.label == "Case Studies - Post Listing - AssetBank_March2019 Theme" %}
+                {% if module_item.body.listing_content %}
+                <p class="diff">{{ module_item.body.listing_content }}</p>
+                {% else %}
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+              </div>
+              <div class="card-footer">
+                <span class="btn btn-link">Read more</span>
+              </div>
+            </a>
+          </div>                      
+        </div>
+        {% endfor %}
+      </div> -->
+      
+      <div class="row recent-post">
+        {# Get Team Members from HubDB #}
+        {% set limit = 6 %}
+        {% set queryparam = "limit=" ~ limit %}
+        {% set table = hubdb_table_rows(5251345, queryparam)%}
+
+        {% if table == [] %}
+            <p class='align-center'>No Results.</p>
+        {% else %}
+        {% for row in table %}
+        <div class="col-sm-6 col-lg-4 mb-1">
+          <div class="card d-flex flex-column h-100 shadow-lg">
+            <a href="{{ row.url }}">
+              <div class="card-header">
+                <div class="card-image">
+                  <img src="{{ row.featured_image.url }}" class="img-fluid d-block" alt="{{ row.title }}">
+                </div>
+              </div>
+              <div class="card-body flex-grow-1">
+                <h3 class="card-title diff">{{ row.title }}</h3>
+                <p class="diff">{{ row.description }}</p>
+              </div>
+              <div class="card-footer">
+                <span class="btn btn-link">Read more</span>
+              </div>
+            </a>
+          </div>                      
+        </div>
+        {% endfor %}
+        {% endif %}
+       </div>
+
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+{% if module.display_button %}
+<div class="section bottom-case-study pt-2 pb-3 mb-2">
+  <div class="page-center">
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="/assetbank/case-studies" class="btn btn-violet">{{ module.button_text }}</a>
+      </div>
+    </div> 
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,254 @@
+[ {
+  "id" : "6171fa16-1d48-9bff-7e40-8100c4c92a35",
+  "name" : "testimonials_heading",
+  "display_width" : null,
+  "label" : "Testimonials heading",
+  "inline_help_text" : "Wrap any text you want to display purple in span tags",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext",
+  "default" : "We’re used by innovative companies <span>around the world</span>"
+}, {
+  "id" : "f5181152-28a8-f0c1-0e34-d6989bd4f1b3",
+  "name" : "company_logo",
+  "display_width" : null,
+  "label" : "Company logo",
+  "required" : true,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 5,
+    "sorting_label_field" : null,
+    "default" : 0
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "",
+    "alt" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "ed14f5fc-8ac6-69fd-a349-7b0e8e6e8f41",
+  "name" : "review",
+  "display_width" : null,
+  "label" : "Review",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : 3,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "6676a858-afa6-3b9a-635d-0af65843c049",
+    "name" : "reviewer_name",
+    "display_width" : null,
+    "label" : "Reviewer name",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "placeholder" : "Joe Bloggs",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "9c6f86db-d51f-b490-80e2-e3c857baf3a5",
+    "name" : "reviewer_company",
+    "display_width" : null,
+    "label" : "Reviewer company",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "placeholder" : "Google",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "bda58f04-628c-3c62-f5a7-d9da087cf127",
+    "name" : "headshot",
+    "display_width" : null,
+    "label" : "Headshot",
+    "inline_help_text" : "Use an image 120px by 120px",
+    "required" : true,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "disabled"
+    }
+  }, {
+    "id" : "a5ea9206-e75a-0a6b-4f83-6bcd81760023",
+    "name" : "number_of_full_stars",
+    "display_width" : null,
+    "label" : "Number of full stars",
+    "required" : true,
+    "locked" : false,
+    "display" : "slider",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "min" : 1,
+    "max" : 5,
+    "step" : 1,
+    "type" : "number",
+    "default" : 4
+  }, {
+    "id" : "065d8ee9-a3c2-87c4-9468-ade2cf4f5746",
+    "name" : "number_of_half_stars",
+    "display_width" : null,
+    "label" : "Number of half stars",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "min" : 0,
+    "max" : 1,
+    "step" : 1,
+    "type" : "number",
+    "default" : 0
+  }, {
+    "id" : "9082da39-0116-fa21-0203-b555d1e41099",
+    "name" : "review_title",
+    "display_width" : null,
+    "label" : "Review title",
+    "inline_help_text" : "Usually a killer line from the review",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "b813619d-31be-b6f6-1e4e-29c68fb0953e",
+    "name" : "review_text",
+    "display_width" : null,
+    "label" : "Review text",
+    "inline_help_text" : "The body of the review (try keep these all roughly the same length)",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "placeholder" : "Body of the review",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "6f9f4576-a657-ad38-e40d-ae8f55fa2d7d",
+    "name" : "g2_link",
+    "display_width" : null,
+    "label" : "G2 link",
+    "inline_help_text" : "Link to the review on G2",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "headshot" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "disabled"
+    },
+    "number_of_full_stars" : 4,
+    "number_of_half_stars" : 0,
+    "g2_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "headshot" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "disabled"
+    },
+    "number_of_full_stars" : 4,
+    "number_of_half_stars" : 0,
+    "g2_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "headshot" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "disabled"
+    },
+    "number_of_full_stars" : 4,
+    "number_of_half_stars" : 0,
+    "g2_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "b0bf2382-4c4c-f302-b8dd-1690da8212d9",
+  "name" : "bottom_padding",
+  "display_width" : null,
+  "label" : "Bottom padding",
+  "inline_help_text" : "Do you want to include the same bottom padding that we have at the top of this section",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : false
+} ]

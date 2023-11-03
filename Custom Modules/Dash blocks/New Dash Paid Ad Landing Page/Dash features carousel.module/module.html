@@ -1,0 +1,46 @@
+<section class="d-features d-padded-section content_carousel">
+  <div class="d-container">
+
+    {% if module.heading %}
+    <div class="d-features__section-heading">
+      <h2>
+        {{ module.heading }}
+      </h2>
+      <p class="d-features__subline">
+        {{ module.sub_line}}
+      </p>
+    </div>
+    {% endif %}
+
+    <!-- Tabs -->
+    <div class="slider-nav mb-1">
+      {% for item in module.item %}
+        <div>
+          <div class="content_carousel_top-bar"></div>
+          <h4 class="d-features__title">{{ item.title }}</h4>
+          <p class="d-features__desc">{{ item.content }}</p>
+        </div>
+      {% endfor %}
+    </div> 
+
+    <!-- Images -->
+    <div class="slider-for">
+      {% for item in module.item %}
+        <div>
+          {% if item.image.src %}
+            {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+            {% if item.image.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif item.image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image.max_width }}px; max-height: {{ item.image.max_height }}px"' %}
+            {% endif %}
+            <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" class="w-100" {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div> 
+
+  </div>
+
+</section>
+

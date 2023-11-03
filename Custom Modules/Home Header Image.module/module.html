@@ -1,0 +1,13 @@
+
+
+<div class="home_header">
+  <div class="home_header__image" style="background-image:url('{{ module.img.src }}');">
+      <div class="home_header__overlay"> </div>
+      <div class="container page-center {{ module.container_classes }}">
+        <div class="home_header__text pt-half pb-half">
+          {% inline_rich_text field="caption" value="{{ module.caption }}" %}
+        </div>
+      </div>
+  </div>
+</div>
+

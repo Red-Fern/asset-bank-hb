@@ -1,0 +1,139 @@
+[ {
+  "id" : "c15b5e38-23a2-d15b-25d4-f244cca1a0f5",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our Products"
+}, {
+  "id" : "818e8d93-440c-dd1d-f0ae-a8794b25ea2c",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "350c32f2-6d32-9f4b-966c-a77202e03c47",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "350c32f2-6d32-9f4b-966c-a77202e03c47",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/AssetBank_Logo_Pos.svg",
+      "alt" : "AssetBank",
+      "width" : 400,
+      "height" : 400
+    }
+  }, {
+    "id" : "43b67df0-e2b1-b6ca-d5b7-c4407ca4b7f8",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext",
+    "default" : "<p>Asset Bank - award winning, intelligent digital asset management software that makes managing brand media seamless, whatever the size of your organisation.</p>\n<p>Your digital files are centrally stored and are secure, searchable and easily accessible by anyone you choose - fast.</p>"
+  }, {
+    "id" : "85892519-9ed1-459c-19d7-6f0d364da810",
+    "name" : "content_lower",
+    "display_width" : null,
+    "label" : "Content Lower",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext"
+  }, {
+    "id" : "529772a8-1e79-f4ad-b3ba-3070a329998e",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Features"
+  }, {
+    "id" : "e2dbacea-cdfe-110e-d504-eebd1b54ec10",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "529772a8-1e79-f4ad-b3ba-3070a329998e",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : "NOT_EMPTY",
+      "access" : null
+    },
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "page"
+  }, {
+    "id" : "195db07f-ff68-c680-c5c8-83852f993ac4",
+    "name" : "mock_up",
+    "display_width" : null,
+    "label" : "Mock up",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null
+    }
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/AssetBank_Logo_Pos.svg",
+      "alt" : "AssetBank",
+      "width" : 400,
+      "height" : 400
+    },
+    "content" : "<p>Asset Bank - award winning, intelligent digital asset management software that makes managing brand media seamless, whatever the size of your organisation.</p>\n<p>Your digital files are centrally stored and are secure, searchable and easily accessible by anyone you choose - fast.</p>",
+    "button_text" : "Features",
+    "mock_up" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null
+    }
+  }
+} ]

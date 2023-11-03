@@ -1,0 +1,34 @@
+<div class="section {% if module.content %}pb-2{% else %}pb-4{% endif %} custom_benefits_lists">
+  <div class="container page-center">
+    <div class="benefits-list">
+      <div class="row ">
+        {% if module.content %}
+        <div class="offset-md-1 col-md-6 pt-2 pb-1">
+          <h3 class="text-violet">{{ module.heading }}</h3>  
+          <p>{{ module.content }}</p>
+        </div>
+        <div class="col-8 offset-md-1 col-md-3 offset-lg-2 col-lg-2 pb-2 pb-md-0 align-self-center">
+         <a href="https://www.glassdoor.co.uk/Overview/Working-at-Bright-Interactive-EI_IE976925.11,29.htm">
+             <img src="https://www.glassdoor.co.uk/api/widget/verticalStarRating.htm?e=976925">
+          </a>
+        </div>
+        {% else %}
+        <div class="col-12">
+          <h3>{{ module.heading }}</h3>
+        </div>
+        {% endif %}
+      </div>
+      <div class="row ">
+        {% for item in module.column_item %}
+        <div class="col-12 col-sm-6 col-md-3">
+          {% for item2 in item.item %}
+          <div class="benefits-list_benefit" style="background-color:rgba({{ item2.box_shadow_color.color|convert_rgb  }},{{ item2.box_shadow_color.opacity/100 }});">
+            <h4 class="benefits-list_title"><span>{{ item2.title }}</span></h4>
+          </div> 
+          {% endfor %}
+        </div>  
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

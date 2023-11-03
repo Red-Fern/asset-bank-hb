@@ -1,0 +1,222 @@
+.d-pricing {
+  background: #efeef3;
+}
+
+.d-pricing__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  text-align: center;
+}
+
+.d-pricing__heading.d-pricing__heading {
+  max-width: 47rem;
+  margin-bottom: 0.75rem;
+} 
+
+.d-pricing__subline {
+  font-size: 18px;
+  max-width: 29rem
+}
+
+
+/* Plans */
+
+.d-plans {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.d-plan {
+  position: relative;
+  padding: 32px;
+  flex-shrink: 0;
+  margin-bottom: 24px;
+
+  background: #FFFFFF;
+  box-shadow: 0 10px 20px -10px rgba(54,38,85,0.26), 0 25px 60px -30px rgba(0,0,0,0.25);
+  border-radius: 4px;
+}
+
+.d-plan.popular {
+  border: 1px solid #4c00a9;
+  background-color: #F6EFFB;
+}
+
+@media (min-width: 930px) {
+  .d-plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .d-plan {
+    width: calc(100% / 3 - 48px / 3);
+  }
+
+  .d-plan:last-child {
+    display: block;
+  }
+}
+
+
+.d-plan__title-and-label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.d-plan__title.d-plan__title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.d-plan__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 36px;
+  height: 3px;
+
+  border-radius: 3px;
+  background: #4c00a9;
+}
+
+/* Most popular label */
+.d-plan__label {
+  display: none; /* Hidden by default */
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 4px;
+
+  background: #4c00a9;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 12px;
+}
+
+.d-plan__label--sale {
+  display: inline-block;
+
+  background: #DC2E2E;
+  color: #FCEEEF;
+}
+
+.d-plan.popular .d-plan__label {
+  display: inline-block
+}
+
+
+.d-plan__info {
+  margin-bottom: 1.5rem;
+}
+
+.d-plan__info__heading {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.d-plan__features {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+.d-plan__feature {
+  padding-left: 27px;
+  
+  background: url("https://f.hubspotusercontent40.net/hubfs/4056449/Dash-assets/tick.svg") no-repeat top left;
+}
+
+.d-plan__feature:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.d-plan__price-info {
+  text-align: right;
+}
+
+.d-plan__price {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #38383C;
+}
+
+.d-plan__price--sale {
+  color: #DC2E2E;
+}
+
+.d-plan__old-price {
+  position: relative;
+  color: #62626a;
+  font-weight: 700;
+}
+
+.d-plan__old-price::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid #DC2E2E!important;
+  border-color: inherit;
+  transform:rotate(-8deg);
+}
+
+.d-plan__smallprint {
+  text-align: right;
+  font-size: 0.8125rem;
+}
+
+/* Currency selector */
+
+.d-currency {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 3rem;
+}
+
+.d-currency__selector.d-currency__selector {
+  padding: 0 1rem;
+  margin: 0 4px;
+
+  background: white;
+  border: 1px solid #D3D3DF;
+  border-radius: 4px;
+  font-weight: 400;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.d-currency__selector:hover {
+  border-color: #4c00a9;
+}
+
+.d-currency__selector.active {
+  background: #4c00a9;
+  color: #fff;
+  border-color: #00D5B7;
+  border-width: 2px;
+}
+
+
+/* Showing the correct price */
+.js-price-value {
+  display:none;
+}
+.js-price-value.active {
+  display:inline-block;
+}

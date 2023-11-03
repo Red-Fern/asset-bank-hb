@@ -1,0 +1,121 @@
+[ {
+  "id" : "c20baee9-c598-c888-01be-1b055aaef120",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Centralise and Control your digital assets, giving everyone self service access 24/7, anywhere in the world"
+}, {
+  "id" : "4567eda3-1af5-f131-9089-ebb8d5e54045",
+  "name" : "heading_text",
+  "display_width" : null,
+  "label" : "Heading Text",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext"
+}, {
+  "id" : "a594a44b-2e4d-fbdb-d45f-8b7274822c19",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "c20baee9-c598-c888-01be-1b055aaef120",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "1ecf431d-d448-ffae-cf69-e352c3db333c",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "99de96c3-7360-23a3-2f0e-b72225068bde",
+    "name" : "link_id",
+    "display_width" : null,
+    "label" : "Link ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "7e553058-4471-7dd3-14ec-f9f86fe32b5c",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link text",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : ""
+  }
+}, {
+  "id" : "32029e08-a5bb-ebe1-1b22-f59eb841c8b2",
+  "name" : "heading_image",
+  "display_width" : null,
+  "label" : "Heading image",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null
+  }
+}, {
+  "id" : "c30d8ed1-0b15-f3b9-eaac-b60a7f026b9f",
+  "name" : "links_position",
+  "display_width" : null,
+  "label" : "Links Position",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "choices" : [ [ "below", "Below" ], [ "left", "Left" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "below"
+} ]

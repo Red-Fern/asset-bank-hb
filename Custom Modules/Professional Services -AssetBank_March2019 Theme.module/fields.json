@@ -1,0 +1,144 @@
+[ {
+  "id" : "50898980-72b3-38e8-880d-6dac16c06b40",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "db3afbcf-4375-a4cd-dd96-3154763b5085",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "e0754c69-25cb-b632-68c1-153dcdbfc016",
+    "name" : "categories",
+    "display_width" : null,
+    "label" : "Categories",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "db3afbcf-4375-a4cd-dd96-3154763b5085",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "On boarding"
+  }, {
+    "id" : "8709ab98-74a7-e966-f686-e1b462296947",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/delivery-journey-on-boarding.jpg",
+      "alt" : "DAM delivery journey",
+      "width" : 934,
+      "height" : 642
+    }
+  }, {
+    "id" : "ca33cccf-e674-1922-c9d7-8f7edfa15a95",
+    "name" : "left_content",
+    "display_width" : null,
+    "label" : "Left Content",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext",
+    "default" : "<p>Here at Asset Bank, we know that the software is only part of the solution. We support our new clients through the onboarding process to ensure the project smoothly flows from sales to go-live.</p>\n<p>By using our background knowledge of digital asset management and providing guidance and training t hat our clients so highly rate, we are able to ensure your initial launch is successful and your system provide real, lasting benefit.</p>"
+  }, {
+    "id" : "83d8e6ed-ea53-bfd8-33ef-a9b061d4b860",
+    "name" : "right_content",
+    "display_width" : null,
+    "label" : "Right Content",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext",
+    "default" : "<h4>Installation &amp; set-up</h4>\n<p>We are able to quickly and easily launch your new application, either using the settings from an existing trial application or a blank slate for you to customise. Our best practice guidance can help to ensure your initial set-up is quick and easy.</p>\n<h4>Traning &amp; configuration</h4>\n<p>Our training sessions are designed to give your administrative team a great overview of the functionality available in addition to running through common configuration options. These online courses are recorded in order to ensure they give the most benefit possible to your team.</p>\n<h4>Live</h4>\n<p>Launching your system and ensuring a seamless experience for your users is a key part of the onboarding process. We can be on hand during the big day to make sure any hitches are resolved to make sure you get off to a flying start.</p>"
+  }, {
+    "id" : "5816fb2e-a93f-0da3-aa90-5311dc4d4035",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "More information"
+  }, {
+    "id" : "edeabd9b-2a26-2008-41ba-533673e0b20d",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "heading" : "On boarding",
+    "image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/delivery-journey-on-boarding.jpg",
+      "alt" : "DAM delivery journey",
+      "width" : 934,
+      "height" : 642
+    },
+    "left_content" : "<p>Here at Asset Bank, we know that the software is only part of the solution. We support our new clients through the onboarding process to ensure the project smoothly flows from sales to go-live.</p>\n<p>By using our background knowledge of digital asset management and providing guidance and training t hat our clients so highly rate, we are able to ensure your initial launch is successful and your system provide real, lasting benefit.</p>",
+    "right_content" : "<h4>Installation &amp; set-up</h4>\n<p>We are able to quickly and easily launch your new application, either using the settings from an existing trial application or a blank slate for you to customise. Our best practice guidance can help to ensure your initial set-up is quick and easy.</p>\n<h4>Traning &amp; configuration</h4>\n<p>Our training sessions are designed to give your administrative team a great overview of the functionality available in addition to running through common configuration options. These online courses are recorded in order to ensure they give the most benefit possible to your team.</p>\n<h4>Live</h4>\n<p>Launching your system and ensuring a seamless experience for your users is a key part of the onboarding process. We can be on hand during the big day to make sure any hitches are resolved to make sure you get off to a flying start.</p>",
+    "button_text" : "More information",
+    "button_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

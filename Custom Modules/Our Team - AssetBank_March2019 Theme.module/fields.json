@@ -1,0 +1,197 @@
+[ {
+  "id" : "03aeea5c-1032-e0fc-63d9-8a8174634330",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Meet our team"
+}, {
+  "id" : "b75c1337-865e-86f1-52eb-1a44d2059a3d",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We asked our team why they like working at Bright"
+}, {
+  "id" : "f1c349bc-3126-e414-419c-d3198fe7409b",
+  "name" : "member_item",
+  "display_width" : null,
+  "label" : "Member Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "48667ab1-6352-955b-bc86-066181a8fd82",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "48667ab1-6352-955b-bc86-066181a8fd82",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null
+    }
+  }, {
+    "id" : "93276d7f-f88d-5771-a87a-f81f45440772",
+    "name" : "member_name",
+    "display_width" : null,
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "eac16713-f376-b3ed-0b8c-4aa99b6ac585",
+    "name" : "job_title",
+    "display_width" : null,
+    "label" : "Job Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "d0f644b8-63f9-6a63-ddea-568a1cda29d1",
+    "name" : "overlay_content",
+    "display_width" : null,
+    "label" : "Overlay Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "f1233e5e-58e7-a45f-1446-1ef4254c3a5c",
+    "name" : "overlay_link",
+    "display_width" : null,
+    "label" : "Overlay Link",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "src" : "",
+      "alt" : null
+    },
+    "overlay_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "cac0ba85-fa57-8041-1117-90789f0da899",
+  "name" : "display_button",
+  "display_width" : null,
+  "label" : "Display Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "890b2bb3-dbc7-7a65-45f1-f46a977fa2c9",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "cac0ba85-fa57-8041-1117-90789f0da899",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "6652b2a5-6215-a450-4460-5ad5284f12ae",
+  "name" : "button_link_url",
+  "display_width" : null,
+  "label" : "Button Link Url",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "cac0ba85-fa57-8041-1117-90789f0da899",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+} ]

@@ -1,0 +1,148 @@
+[ {
+  "id" : "c20baee9-c598-c888-01be-1b055aaef120",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Centralise and Control your digital assets, giving everyone self service access 24/7, anywhere in the world"
+}, {
+  "id" : "a594a44b-2e4d-fbdb-d45f-8b7274822c19",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "c20baee9-c598-c888-01be-1b055aaef120",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "2df344f4-f45b-d701-fcf5-32c575beeb91",
+    "name" : "icon_image",
+    "display_width" : null,
+    "label" : "Icon Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/bright_symbols_presentations_pos.png",
+      "alt" : "Store, organise and access",
+      "width" : 944,
+      "height" : 944
+    }
+  }, {
+    "id" : "1b40102c-e966-82c6-03a6-e912cd405901",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/features-left.jpg",
+      "alt" : "Store, organise and access",
+      "width" : 780,
+      "height" : 780
+    }
+  }, {
+    "id" : "1ecf431d-d448-ffae-cf69-e352c3db333c",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Store, organise<br>and access"
+  }, {
+    "id" : "9970070b-cf2c-1dab-a950-d52a7541a7a4",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext",
+    "default" : "<p>Your content, your way. A single source of truth for all digital assets, organised to suit you.</p>\n<p>Asset Bank is the brighter way to manage digital content files, saving time and money, increasing collaborations, improving efficiency and stopping bottlenecks.</p>\n<p>Control and curate your brand message by providing <a href=\"/features/upload/\">easy to access images, documents</a> and media assets for multiple users across multiple platforms.</p>\n<p>Use Asset Bank's Digital Asset Management Software to create a fully searchable, categorised library of all your digital assets that allows you to safely manage and share them with colleagues and partners all over the world.</p>"
+  }, {
+    "id" : "7bd4e585-4c3a-81dc-7e95-d044989ec82e",
+    "name" : "image_alignment",
+    "display_width" : null,
+    "label" : "Image Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "choices" : [ [ "left", "Left" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left"
+  }, {
+    "id" : "ab2be6fa-4b30-6875-479a-6f3250c52ac6",
+    "name" : "box_shadow_color",
+    "display_width" : null,
+    "label" : "Box Shadow Color",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "color",
+    "default" : {
+      "color" : "#00d5b7",
+      "opacity" : 100
+    }
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "icon_image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/bright_symbols_presentations_pos.png",
+      "alt" : "Store, organise and access",
+      "width" : 944,
+      "height" : 944
+    },
+    "image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/features-left.jpg",
+      "alt" : "Store, organise and access",
+      "width" : 780,
+      "height" : 780
+    },
+    "title" : "Store, organise<br>and access",
+    "content" : "<p>Your content, your way. A single source of truth for all digital assets, organised to suit you.</p>\n<p>Asset Bank is the brighter way to manage digital content files, saving time and money, increasing collaborations, improving efficiency and stopping bottlenecks.</p>\n<p>Control and curate your brand message by providing <a href=\"/features/upload/\">easy to access images, documents</a> and media assets for multiple users across multiple platforms.</p>\n<p>Use Asset Bank's Digital Asset Management Software to create a fully searchable, categorised library of all your digital assets that allows you to safely manage and share them with colleagues and partners all over the world.</p>",
+    "image_alignment" : "left",
+    "box_shadow_color" : {
+      "color" : "#00d5b7",
+      "opacity" : 100
+    }
+  }
+} ]

@@ -1,0 +1,19 @@
+<div class="section pt-2 pb-2 custom-key-facts">
+  <div class="container page-center">
+    <div class="row">
+      <div class="offset-sm-1 col-sm-10">
+        <h3>{{ module.heading }}</h3>
+        {% for item in module.item %}
+        <div class="row mt-1">
+          <div class="col-sm-4">
+            <h4 class="font-weight-bold m-0">{{ item.title }}</h4>
+          </div>
+          <div class="col-sm-8">
+            {{ item.content }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

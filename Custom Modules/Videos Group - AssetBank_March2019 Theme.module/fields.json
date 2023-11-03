@@ -1,0 +1,144 @@
+[ {
+  "id" : "2d07e4b2-9eba-336b-52c4-7f07f287adc8",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Videos"
+}, {
+  "id" : "477ef2d6-78b8-a4fd-fd72-0cd3cac257ec",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Watch our video demos to learn more about Asset Bank's key features."
+}, {
+  "id" : "9d2d3a64-094f-9619-10fc-919372350c57",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Back to resource centre"
+}, {
+  "id" : "1ca01790-381a-36f8-3db7-4b234101596d",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "page"
+}, {
+  "id" : "c8c2ca6b-e7a2-dd45-09f7-b7bf7682308d",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "5520e0ff-7f69-c98b-4811-37cacf328e1e",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "c9f420c1-ee0d-033c-0b5d-021d180c20ed",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "page"
+  }, {
+    "id" : "5520e0ff-7f69-c98b-4811-37cacf328e1e",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null
+    }
+  }, {
+    "id" : "82b7aa89-e630-4d7b-f9c6-817f3c836193",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "e211a102-e976-b6b1-cf7b-f9b09182b836",
+    "name" : "duration",
+    "display_width" : null,
+    "label" : "Duration",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "8c0bbc60-f666-6ae4-e197-55110c15e145",
+    "name" : "image_border",
+    "display_width" : null,
+    "label" : "Image Border",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "src" : "",
+      "alt" : null
+    },
+    "image_border" : false
+  }
+} ]

@@ -1,0 +1,179 @@
+[ {
+  "id" : "42ab8310-2597-ab2f-0d0d-a3a3b39cf276",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We are proud to partner with over 800 clients including 20 FTSE 100 companies"
+}, {
+  "id" : "77b0587b-96d8-75b8-b622-1c91df5d3cc1",
+  "name" : "sub_heading",
+  "display_width" : null,
+  "label" : "Sub Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our clients span a variety of industries, including Travel &amp; Leisure, Non-Profit, Education, Media &amp;           Entertainment, Retail and Information Technology."
+}, {
+  "id" : "41c1861d-c07f-ad51-b299-414963f85b4e",
+  "name" : "add_client",
+  "display_width" : null,
+  "label" : "Add Client",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 1000,
+    "sorting_label_field" : "5f2a307e-56ab-b4d8-bcff-5d7587c2bbd6",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "5f2a307e-56ab-b4d8-bcff-5d7587c2bbd6",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/coca-cola-logo-2.png",
+      "alt" : "Coca Cola",
+      "width" : 90,
+      "height" : 30
+    }
+  }, {
+    "id" : "2ac60838-d05c-1efd-c36e-6066b9886886",
+    "name" : "sector",
+    "display_width" : null,
+    "label" : "Sector",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "choices" : [ [ "commercial", "Commercial" ], [ "ftse-100", "FTSE 100" ], [ "not-for-profit", "Not for Profit" ], [ "public-sector", "Public Sector" ], [ "education", "Education" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "commercial"
+  }, {
+    "id" : "9b8c508e-e3fe-8182-33aa-60588818039c",
+    "name" : "region",
+    "display_width" : null,
+    "label" : "Region",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "choices" : [ [ "europe", "Europe" ], [ "north-america", "North America" ], [ "australasia", "Australasia" ], [ "rest-of-the-world", "Rest of the World" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "europe"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/coca-cola-logo-2.png",
+      "alt" : "Coca Cola",
+      "width" : 90,
+      "height" : 30
+    },
+    "sector" : "commercial",
+    "region" : "europe"
+  } ]
+}, {
+  "id" : "765cee92-e4e0-f276-1f7b-3d4b3401e415",
+  "name" : "display_button",
+  "display_width" : null,
+  "label" : "Display Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "2e2a8cf8-0601-9fc6-db0a-9d9d9ee91e8d",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "765cee92-e4e0-f276-1f7b-3d4b3401e415",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See all clients"
+}, {
+  "id" : "be20d589-019a-f406-ae87-d0069e387edc",
+  "name" : "button_link_url",
+  "display_width" : null,
+  "label" : "Button Link Url",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "765cee92-e4e0-f276-1f7b-3d4b3401e415",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "15b436b5-0d5b-5224-13c2-ea1131d66fc0",
+  "name" : "display_filters",
+  "display_width" : null,
+  "label" : "Display Filters",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : false
+} ]

@@ -1,0 +1,40 @@
+/* Signup form styles  */
+
+.d-signup form {
+  position: relative;
+
+  display: flex;
+
+  box-shadow: 0 0 0 3px #00D5B7;
+  border-radius: 4px;
+}
+
+.d-signup .hs_email {
+  width: 100%;
+}
+
+.d-signup .hs_email input {
+  height: 52px;
+  margin: 0;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Hide label */
+.d-signup .hs_email > label {
+  display: none;
+}
+
+.d-signup .hs-button.primary {
+  display: block;
+  flex-shrink: 0;
+  width: auto;
+  width: max-content;
+  margin: 0;
+  height: 52px;
+
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 0 4px 4px 0;
+}

@@ -1,0 +1,99 @@
+    <section class="d-pricing">
+      <div class="d-padded-section">
+        <div class="d-container">
+          <div class="d-pricing__intro">
+            <h2 class="d-pricing__heading">{% inline_rich_text field="heading" value="{{ module.heading }}" %}</h2>
+            <p class="d-pricing__subline">{{ module.sub_heading }}</p>
+          </div>
+          
+          <ul class="d-plans">
+            <li class="d-plan {% if module.most_popular_plan == 'starting' %}popular{% endif %}">
+              <div class="d-plan__title-and-label">
+                <h3 class="d-plan__title">Starting</h3>
+                <span class="d-plan__label">Most popular</span>
+              </div>
+              
+              <div class="d-plan__info">
+                <div class="d-plan__info__heading">Plan includes:</div>
+                <ul class="d-plan__features">
+                  {% for item in module.starting_bullet %}
+                    <li class="d-plan__feature">{% inline_text field="starting_bullet" value="{{ item }}" %}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+
+              <div class="d-plan__price-info">From 
+                <span class="d-plan__price js-price-list">
+                  <span class="js-price-value GBP GB active">£{{ module.starting_price }}</span>
+                  <span class="js-price-value EUR AL AD AT BY BE BA BG HR CY CZ DK EE FO FI FR DE GI GR HU IS IE IM IT XK LV LI LT LU MK MT MD MC ME NL NO PL PT RO RU SM RS SK SI ES SE CH UA VA">€{{ (module.starting_price * 1.3)|round(0) }}</span>
+                  <span class="js-price-value USD US">${{ (module.starting_price * 1.5)|round(0) }}</span>
+                  <span class="js-price-value AUD AU">${{ (module.starting_price * 2)|round(0) }}</span>
+                  <span class="js-price-value CAD CA">${{ (module.starting_price * 1.9)|round(0) }}</span>
+                </span> /month
+              </div>
+            </li>
+            
+            
+            <li class="d-plan {% if module.most_popular_plan == 'growing' %}popular{% endif %}">
+              <div class="d-plan__title-and-label">
+                <h3 class="d-plan__title">Growing</h3>
+                <span class="d-plan__label">Most popular</span>
+              </div>
+              
+              <div class="d-plan__info">
+                <div class="d-plan__info__heading">All of Starting, plus:</div>
+                <ul class="d-plan__features">
+                  {% for item in module.growing_bullet %}
+                    <li class="d-plan__feature">{% inline_text field="growing_bullet" value="{{ item }}" %}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+
+              <div class="d-plan__price-info">From 
+                <span class="d-plan__price js-price-list">
+                  <span class="js-price-value GBP GB active">£{{ module.growing_price }}</span>
+                  <span class="js-price-value EUR AL AD AT BY BE BA BG HR CY CZ DK EE FO FI FR DE GI GR HU IS IE IM IT XK LV LI LT LU MK MT MD MC ME NL NO PL PT RO RU SM RS SK SI ES SE CH UA VA">€{{ (module.growing_price * 1.3)|round(0) }}</span>
+                  <span class="js-price-value USD US">${{ (module.growing_price * 1.5)|round(0) }}</span>
+                  <span class="js-price-value AUD AU">${{ (module.growing_price * 2)|round(0) }}</span>
+                  <span class="js-price-value CAD CA">${{ (module.growing_price * 1.9)|round(0) }}</span>
+                </span> /month
+              </div>
+            </li>
+            
+            <li class="d-plan {% if module.most_popular_plan == 'dashing' %}popular{% endif %}">
+              <div class="d-plan__title-and-label">
+                <h3 class="d-plan__title">Dashing</h3>
+                <span class="d-plan__label">Most popular</span>
+              </div>
+              
+              <div class="d-plan__info">
+                <div class="d-plan__info__heading">All of Growing, plus:</div>
+                <ul class="d-plan__features">
+                  {% for item in module.dashing_bullet %}
+                    <li class="d-plan__feature">{% inline_text field="dashing_bullet" value="{{ item }}" %}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+
+              <div class="d-plan__price-info">From 
+                <span class="d-plan__price js-price-list">
+                  <span class="js-price-value GBP GB active">£{{ module.dashing_price }}</span>
+                  <span class="js-price-value EUR AL AD AT BY BE BA BG HR CY CZ DK EE FO FI FR DE GI GR HU IS IE IM IT XK LV LI LT LU MK MT MD MC ME NL NO PL PT RO RU SM RS SK SI ES SE CH UA VA">€{{ (module.dashing_price * 1.3)|round(0) }}</span>
+                  <span class="js-price-value USD US">${{ (module.dashing_price * 1.5)|round(0) }}</span>
+                  <span class="js-price-value AUD AU">${{ (module.dashing_price * 2)|round(0) }}</span>
+                  <span class="js-price-value CAD CA">${{ (module.dashing_price * 1.9)|round(0) }}</span>
+                </span> /month
+              </div>
+            </li>
+          </ul>
+
+          <div class="d-currency">
+            <button class="d-currency__selector js-currency-selector GBP GB active" data-currency="gbp">GBP</button>
+            <button class="d-currency__selector js-currency-selector EUR AL AD AT BY BE BA BG HR CY CZ DK EE FO FI FR DE GI GR HU IS IE IM IT XK LV LI LT LU MK MT MD MC ME NL NO PL PT RO RU SM RS SK SI ES SE CH UA VA" data-currency="eur">EUR</button>
+            <button class="d-currency__selector js-currency-selector USD US" data-currency="usd">USD</button>
+            <button class="d-currency__selector js-currency-selector AUD AU" data-currency="aud">AUD</button>
+            <button class="d-currency__selector js-currency-selector CAD CA" data-currency="cad">CAD</button>   
+          </div>
+        </div>
+      </div>
+    </section>

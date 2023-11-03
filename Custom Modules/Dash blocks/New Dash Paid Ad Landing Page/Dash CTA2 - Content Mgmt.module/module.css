@@ -1,0 +1,109 @@
+/* Layout */
+
+.d-cta2 {
+  position: relative;
+  padding: 3rem;
+  margin-bottom: 4rem; 
+
+  background: #4c00a9;
+  background-image: linear-gradient(130deg, #4C00A9 21%, #B941FF 200%);
+  color: #F6EFFB;
+}
+
+.d-cta2::after {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+
+  background: #BC85E0;
+}
+
+.d-cta2__inner {
+  display: flex;
+  
+  margin-left: -48px;
+  margin-right: -48px;
+}
+
+.d-cta2__form,
+.d-cta2__bullets.d-cta2__bullets {
+  padding-left: 48px;
+  padding-right: 48px;
+  width: 100%;
+}
+
+
+@media (min-width: 748px) {
+  .d-cta2__form {
+    width: 55% 
+  }
+  .d-cta2__bullets.d-cta2__bullets {
+    width: 45%;
+  }
+}
+
+/* Content */
+
+.d-cta2__desc {
+  margin-bottom: 21px;
+}
+
+.d-cta2__gdpr {
+  max-width: 500px;
+}
+
+
+/* Bulleted list */
+
+.d-cta2__bullets {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (min-width: 748px) {
+  /* Only show bullets on larger screens */
+  .d-cta2__bullets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.d-cta2__bullets::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 2px;
+  height: 100%;
+  background: #BC85E0;
+  opacity: 0.5;
+}
+
+.d-cta2__bullets__item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  
+  color: #F6EFFB;
+}
+
+.d-cta2__bullets__item:last-child {
+  margin-bottom: 0;
+}
+
+.d-cta2__bullets__item__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}

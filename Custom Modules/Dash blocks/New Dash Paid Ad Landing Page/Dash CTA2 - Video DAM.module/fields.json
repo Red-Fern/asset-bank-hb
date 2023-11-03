@@ -1,0 +1,62 @@
+[ {
+  "id" : "0237f086-b97d-ea52-9d26-4d218a6a53ea",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Let's get you set up"
+}, {
+  "id" : "b705e307-4f0e-7dd7-e616-6aab02b6effa",
+  "name" : "intro",
+  "display_width" : null,
+  "label" : "Intro",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "You'll be up and running in minutes"
+}, {
+  "id" : "6bed6f6f-8d20-f672-7e6a-f705c36b8c12",
+  "name" : "bullet_point",
+  "display_width" : null,
+  "label" : "Bullet point",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : [ "No credit card required", "No credit card required", "No credit card required", "No credit card required" ]
+}, {
+  "id" : "d80518ec-0e48-16e6-bcde-5d9fb1b777be",
+  "name" : "include_top_margin",
+  "display_width" : null,
+  "label" : "Include top margin",
+  "inline_help_text" : "Whether to have some whitespace above the cta panel",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : false
+} ]

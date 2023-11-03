@@ -1,0 +1,24 @@
+<div class="post-banner-area">
+  <div class="page-center">
+    <div class="post-banner-content">
+      <h1>{{ content.name }}</h1>
+      {% if module.description %}<h4>{{ module.description }}</h4>{% endif %}
+      
+        {% set href = module.case_study_pdf.url.href %}
+        {% if module.case_study_pdf.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+        {% endif %}
+      
+        {% if href %}
+          <a class="mt-1 btn btn-white" href="{{ href }}"
+            {% if module.case_study_pdf.open_in_new_tab %}target="_blank"{% endif %}
+            {% if module.case_study_pdf.no_follow %}rel="nofollow"{% endif %}
+            >
+            Download Case Study
+          </a>
+        {% endif %}
+      
+    </div>
+  </div>
+</div>
+

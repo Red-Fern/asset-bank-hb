@@ -1,0 +1,26 @@
+.screenshots_module {
+  overflow:hidden;
+}
+.screenshots {
+  padding:0 10%;
+  position:relative;
+}
+.screenshot {
+  border-radius:10px;
+  line-height:0;
+  overflow:hidden;
+}
+.screenshots .col-12:first-child {
+  margin-left:-100%;
+}
+.screenshots_module .cta_button {
+  width:124px;
+}
+@media (min-width:768px) {
+  .screenshots {
+    padding:0 5%;
+  }
+  .screenshots .col-12:first-child {
+    margin-left:-33.333%;
+  }
+}

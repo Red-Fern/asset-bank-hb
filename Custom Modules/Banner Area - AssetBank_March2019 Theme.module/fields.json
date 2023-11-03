@@ -1,0 +1,122 @@
+[ {
+  "id" : "0631866f-4278-2195-bd71-bfcba472c809",
+  "name" : "sub_title",
+  "display_width" : null,
+  "label" : "Sub Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Enterprise"
+}, {
+  "id" : "f9187be5-d19b-afb8-6310-564c46b7af19",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Digital asset management software that makes your brand work harder"
+}, {
+  "id" : "142f270e-8708-48a9-d832-7a13a1da4b83",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Asset Bank Enterprise is the digital asset management system specially designed to meet the needs of large organisations with complex content workflows."
+}, {
+  "id" : "c474b8b0-22a3-cf24-ff73-1e617c3acf01",
+  "name" : "button_type",
+  "display_width" : null,
+  "label" : "Button Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "choices" : [ [ "link", "Link" ], [ "cta", "CTA" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+}, {
+  "id" : "829e87a1-4d45-dabb-c443-aed521fa1d7a",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "c474b8b0-22a3-cf24-ff73-1e617c3acf01",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "link",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Contact Us"
+}, {
+  "id" : "552a1539-e8eb-f644-28a5-1942b574805c",
+  "name" : "button_link_url",
+  "display_width" : null,
+  "label" : "Button Link Url",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "c474b8b0-22a3-cf24-ff73-1e617c3acf01",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "link",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "CONTENT",
+    "href" : "http://assetbank-co-uk-4056449.hs-sites.com/contact/",
+    "content_id" : 7995687846
+  }
+}, {
+  "id" : "7f2fd3fd-07f9-c9bf-3fc7-797c8ca5dc57",
+  "name" : "select_button",
+  "display_width" : null,
+  "label" : "Select Button",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "c474b8b0-22a3-cf24-ff73-1e617c3acf01",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "cta",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "cta"
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "picker" : "file",
+  "id" : "48e7ec65-a13c-c936-7b3e-bb10e613dbcf",
+  "name" : "json_file",
+  "display_width" : null,
+  "label" : "JSON File",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "file",
+  "default" : "https://cdn2.hubspot.net/hubfs/4056449/Bright-Homepage-Image%201.jpg"
+}, {
+  "id" : "18b45ed1-c739-43ba-6b45-d5071846b962",
+  "name" : "show_button",
+  "display_width" : null,
+  "label" : "Show Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "02e4b292-ec11-dfbf-0ddd-233e8c2edee5",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "form",
+  "default" : {
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form."
+  }
+} ]

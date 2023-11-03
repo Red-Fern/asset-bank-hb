@@ -1,0 +1,342 @@
+{
+  "item.button_link.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.button_link.label" : {
+    "message" : "Button Link",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.button_text.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.button_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.button_text.label" : {
+    "message" : "Button Text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.button_text.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.button_text.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.content.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.content.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.content.label" : {
+    "message" : "Content",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.content_left_gap.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.content_left_gap.label" : {
+    "message" : "Content Left Gap",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.cta_button.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.cta_button.label" : {
+    "message" : "CTA Button",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image.default.alt" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image.label" : {
+    "message" : "Image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_alignment.choices.left" : {
+    "message" : "Left",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_alignment.choices.right" : {
+    "message" : "Right",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_alignment.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_alignment.label" : {
+    "message" : "Image Alignment",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_alignment.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_border.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_border.label" : {
+    "message" : "Image Border",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_content.choices.4:5" : {
+    "message" : "4:5",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_content.choices.4:7" : {
+    "message" : "4:7",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_content.choices.4:8" : {
+    "message" : "4:8",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_content.choices.5:5" : {
+    "message" : "5:5",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_content.choices.5:6" : {
+    "message" : "5:6",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_content.choices.6:4" : {
+    "message" : "6:4",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_content.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "item.image_content.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_content.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_content.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_left_gap.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_left_gap.label" : {
+    "message" : "Image Left Gap",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_shadow.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_shadow.label" : {
+    "message" : "Image Shadow",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_shadow_color.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_shadow_color.label" : {
+    "message" : "Image Shadow Color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_shadow_position.choices.image-shadow--bottom-left" : {
+    "message" : "Left",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_shadow_position.choices.image-shadow--bottom-right" : {
+    "message" : "Right",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_shadow_position.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_shadow_position.label" : {
+    "message" : "Image Shadow Position",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.image_shadow_position.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.label" : {
+    "message" : "Item",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.select_button.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.select_button.label" : {
+    "message" : "Select Button",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.show_button.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "item.show_button.label" : {
+    "message" : "Show Button",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.bottom_margin_gap_in_rem_.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.bottom_margin_gap_in_rem_.label" : {
+    "message" : "Bottom Margin Gap (in rem)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.bottom_padding_gap_in_rem_.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.bottom_padding_gap_in_rem_.label" : {
+    "message" : "Bottom Padding Gap (in rem)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.label" : {
+    "message" : "Module Setting",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.mobile_view.choices.md" : {
+    "message" : "From 767px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.mobile_view.choices.sm" : {
+    "message" : "From 565px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.mobile_view.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.mobile_view.label" : {
+    "message" : "Content Wrapping",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.mobile_view.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.show_bottom_border.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.show_bottom_border.label" : {
+    "message" : "Show Bottom Border",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.top_margin_gap_in_rem_.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.top_margin_gap_in_rem_.label" : {
+    "message" : "Top Margin Gap (in rem)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.top_padding_gap_in_rem_.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "module_setting.top_padding_gap_in_rem_.label" : {
+    "message" : "Top Padding Gap (in rem)",
+    "description" : "",
+    "placeholders" : null
+  }
+}

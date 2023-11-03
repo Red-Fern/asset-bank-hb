@@ -1,0 +1,52 @@
+<div class="content_with_image_group_fullwidth">
+  {% for item in module.item %}
+  <div id="{{ item.section_id }}" class="section" {% if item.background_color.color %}style="background-color:rgba({{ item.background_color.color|convert_rgb  }},{{ item.background_color.opacity/100 }});"{% endif %}>
+    <div class="container container-wide content_with_image_group_fullwidth__inner">
+      <div class="row align-items-center {% if item.image_alignment == "right" %}{% else %}flex-sm-row-reverse{% endif %} {% if item.module_setting.show_bottom_border %}border-bottom{% endif %} pt-{{ item.module_setting.top_padding_gap_in_rem_ }} pb-{{ item.module_setting.bottom_padding_gap_in_rem_ }} mt-{{ item.module_setting.top_margin_gap_in_rem_ }} mb-{{ item.module_setting.bottom_margin_gap_in_rem_ }}">
+
+        <div class="col-{{ item.module_setting.mobile_view }}-6 ">
+          <div class="content_with_image_group_fullwidth_content {{ item.module_setting.mobile_view }} {% if item.image_alignment == "right" %}img-right {% if item.module_setting.text_padding %}pr-xl-{{ item.module_setting.text_padding }}{% endif %} {% else %}img-left {% if item.module_setting.text_padding %}pl-xl-{{ item.module_setting.text_padding }}{% endif %} {% endif %}" >
+            {{ item.content }}
+            {% if item.show_button %}
+            {% set href = item.button_link.url.href %}
+            {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <p><a class="btn btn-violet" href="{{ href }}" {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %} {% if item.button_link.no_follow %}rel="nofollow"{% endif %}>{{ item.button_text }}</a></p>
+            {% endif %}
+           
+            {% if item.show_inline_form %}
+            <div class="d-signup">
+              <!--[if lte IE 8]>
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+              <![endif]-->
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                  region: "na1",
+                  portalId: "4056449",
+                  formId: "{{ item.form_field.form_id }}",
+                  onFormSubmit: function($form){
+                    var email = $form.find('input[name="email"]').val();
+                    window.location = "http://signup.brightdash.app/create-account?email=".concat(encodeURIComponent(email));
+                  }
+                });
+              </script>
+            </div>
+            {% endif %}
+            
+          </div> 
+        </div>
+        <div class="pt-1 pb-1 col-{{ item.module_setting.mobile_view }}-6 ">
+          {% if item.image.src %}
+          {% if item.image_shadow %}<div class="image-shadow {{ item.image_shadow_position }}" style="background-color:rgba({{ item.image_shadow_color.color|convert_rgb  }},{{ item.image_shadow_color.opacity/100 }});">{% endif %}
+          <img src="{{ item.image.src }}" class="img-fluid d-block w-100" alt="{{ item.image.alt }}">
+          {% if item.image_shadow %}</div>{% endif %}
+          {% endif %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,56 @@
+[ {
+  "id" : "2bb4be60-efc3-2a09-6cab-bf4e0d0ba6db",
+  "name" : "logo_image",
+  "display_width" : null,
+  "label" : "Logo Image",
+  "required" : false,
+  "locked" : true,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://cdn2.hubspot.net/hubfs/4056449/AssetBank_March2019%20Theme/Images/AssetBank_Logo_Rev.svg",
+    "alt" : "Asset Bank",
+    "width" : 400,
+    "height" : 400
+  }
+}, {
+  "id" : "8facc574-047a-0bc1-91aa-84b1139c6553",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our demos are designed to:"
+}, {
+  "id" : "4d7dbfbf-26a8-7a71-a407-41183c162978",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : true,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext",
+  "default" : "<ul class=\"styled alt\">\n<li>Help you understand Asset Bank’s features and how they can address your pain points</li>\n<li>Give you the opportunity to ask specific questions around features</li>\n<li>Inform you about how an Asset Bank project is structured</li>\n<li>Show you how flexible Asset Bank really is</li>\n<li>Provide you with indicative pricing for your specific requirements</li>\n</ul>"
+}, {
+  "id" : "c51cb1b8-5b4b-ee2e-b33a-3c5b37ea8b14",
+  "name" : "select_button_cta_",
+  "display_width" : null,
+  "label" : "Select Button (CTA)",
+  "required" : false,
+  "locked" : true,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "cta",
+  "default" : "9242d8eb-b0f4-4d4f-8c84-bc43abc3a556"
+} ]

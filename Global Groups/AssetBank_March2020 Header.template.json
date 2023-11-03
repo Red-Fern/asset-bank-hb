@@ -1,0 +1,216 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_155167786997377",
+        "label" : "Header",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "custom-header",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_155167786974274",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "page-center",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 3,
+                "name" : "module_1591216266255403",
+                "label" : "Logo",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "custom-logo",
+                  "schema_version" : 2,
+                  "path" : "/Logo",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "widget_name" : "Logo",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "3" : {
+                "x" : 3,
+                "w" : 9,
+                "name" : "module_155167811049897",
+                "label" : "Navigation",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "custom-navigation",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_1551678126584100",
+                    "label" : "Header Links",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "custom-header-links",
+                      "schema_version" : 2,
+                      "path" : "@hubspot/rich_text",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "html" : "<a class=\"header-tel btn\" href=\"tel:+441273923153\">+44 (0) 1273 923153</a>\n<div class=\"hidebutton\">{{cta('18e17e25-db0e-4078-bd07-a66452bffbb6')}}</div>\n<div>{{cta('dd3b4b7e-cb53-45d2-af4c-14b8b1ee20b8')}}</div>",
+                      "wrapping_html" : "",
+                      "css_id" : "",
+                      "widget_name" : "Rich Text",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_155167810063286",
+                    "label" : "Menu",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_style" : "",
+                      "max_levels" : "10",
+                      "css_id" : "",
+                      "css_class" : "custom-menu-primary",
+                      "schema_version" : 2,
+                      "path" : "@hubspot/menu",
+                      "per_widget_wrapper_html" : "",
+                      "id" : 7920339924,
+                      "wrapping_html" : "",
+                      "widget_name" : "Menu",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            }, {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_159663836996417",
+                "label" : "Mega Menu",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "schema_version" : 2,
+                  "path" : "/AssetBank_March2019 Theme/Custom Modules/Mega Menu",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "widget_name" : "Mega Menu",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

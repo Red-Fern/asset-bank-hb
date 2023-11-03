@@ -1,0 +1,97 @@
+.d-social-proof {
+  position: relative;
+
+  background: #4c00a9;
+  background-image: linear-gradient(122deg, #4C00A9 20%, #B941FF 150%);
+  color: #F6EFFB;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.d-social-proof::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background: url("https://f.hubspotusercontent40.net/hubfs/4056449/Dash-assets/left-quote.svg") bottom right no-repeat;
+}
+
+.d-social-proof__inner {
+  display: flex;
+  align-items: center;
+
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-social-proof__image {
+  display: none;
+}
+
+.d-social-proof__image > img {
+  position: absolute;
+  top: -0.75rem;
+
+  display: block;
+}
+
+@media (min-width: 748px) {
+  .d-social-proof__image {
+    flex-shrink: 0;
+    display: block;
+  }
+
+  .d-social-proof__content {
+    padding-left: 340px;
+  }
+}
+
+.d-social-proof__logo  {
+  display: block;
+  width: 120px;
+  margin-bottom: 0.75rem;
+}
+
+.d-social-proof__quote {
+  max-width: 550px;
+  margin-bottom: 1rem;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #F6EFFB;
+}
+
+.d-social-proof__author {
+  display: flex;
+  align-items: center;
+}
+
+.d-social-proof__g2 {
+  display: inline-flex;
+  align-items: center;
+  color: #F6EFFB;
+  text-decoration: none;
+}
+
+.d-social-proof__g2:hover {
+  color: #F6EFFB;
+  text-decoration: underline;
+}
+
+.d-social-proof__g2 svg {
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
+
+  fill: #BC85E0;
+}
+

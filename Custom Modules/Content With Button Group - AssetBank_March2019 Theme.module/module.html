@@ -1,0 +1,26 @@
+<div class="section pt-2 pb-4 custom_content_with_button_group">
+  <div class="container page-center">
+    <div class="row">
+      <div class="offset-sm-1 col-sm-10">   
+        {% for item in module.item %}
+        <div class="row {% if not loop.last %}border-bottom{% endif %} mb-1">
+          <div class="col-sm-12">
+            <h3>{{ item.heading }}</h3>
+          </div>
+          <div class="col-lg-9">
+            <p>{{ item.content }}</p>
+          </div>
+          <div class="col-lg-3">
+            {% if item.button_type == "link" %}
+            <a class="mb-2 mb-lg-0 btn btn-violet" href="{{ page_by_id(item.button_link).absolute_url }}">{{ item.button_text }}</a>
+            {% else %}
+            {% cta guid="{{ item.select_button }}" %}
+            {% endif %}
+            
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

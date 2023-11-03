@@ -1,0 +1,48 @@
+    <section class="d-social-proof">
+      <div class="d-container">
+        <div class="d-social-proof__inner">
+          <div class="d-social-proof__image">
+            {% if module.headshot.src %}
+              <img src="{{ module.headshot.src }}" alt="{{ module.headshot.alt }}" alt="Will @ taster" width="314"/>
+            {% endif %}
+          </div>
+          <div class="d-social-proof__content">
+            {% if module.company_logo.src %}
+              {% set loadingAttr = module.company_logo.loading != 'disabled' ? 'loading="{{ module.company_logo.loading }}"' : '' %}
+              <img class="d-social-proof__logo" src="{{ module.company_logo.src }}" alt="{{ module.company_logo.alt }}" {{ loadingAttr }}>
+            {% endif %}
+        
+            <blockquote class="d-social-proof__quote">
+              &ldquo;{{ module.quote }}&rdquo;
+            </blockquote>
+            <div class="d-social-proof__author">
+              <span>{{ module.persons_name }}</span>
+              
+              <img class="d-slash" src="https://f.hubspotusercontent40.net/hubfs/4056449/Dash-assets/green-slash.svg" alt=""/>
+              <span>{{ module.job_title }}</span>
+              <img class="d-slash" src="https://f.hubspotusercontent40.net/hubfs/4056449/Dash-assets/green-slash.svg" alt=""/>
+              {% set href = module.g2_link.url.href %}
+              {% if module.g2_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if module.g2_link.no_follow %}
+                {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if module.g2_link.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+              {% endif %}
+              <a href="{{ href }}" class="d-social-proof__g2"
+                {% if module.g2_link.open_in_new_tab %}target="_blank"{% endif %}
+                {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                >
+                Read the case study
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M0 0h24v24H0z" fill="none"/><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

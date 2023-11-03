@@ -1,0 +1,55 @@
+
+<div class="content_with_image_group_fullwidth features_header pb-0">
+  <div class="section">
+    <div class="row">
+      <div class="container container-wide content_with_image_group_fullwidth__inner">
+        <div class="row align-items-center">
+
+          <div class="col-md-5">
+            <div class="content_with_image_group_fullwidth_content img-right px-2 px-sm-0 px-xl-2">
+              <h1 class="h2 mb-2"></h1>
+              <h1>Find your images and video, fast</h1>
+              <div>Search your visual content with Dash and save hours each day.</div>
+<div>&nbsp;</div>
+<div>Dash's AI tags the content of your assets (like objects and faces), which you can search for.</div>
+<div>&nbsp;</div>
+<div>Combine this with your own custom attributes - like product lines and marketing campaigns - and you'll never lose another file again.</div>
+              <div>&nbsp;</div>
+              
+              {% if module.show_button %}
+              <p><a href="/dash/free-trial" class="btn btn-violet" rel="noopener" target="_blank">Start your free trial</a></p>
+              {% endif %}
+              
+              {% if module.form_field %}
+              <div class="d-signup">
+                <!--[if lte IE 8]>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                    region: "na1",
+                    portalId: "4056449",
+                    formId: "{{ module.form_field.form_id }}",
+                  });
+                </script>
+              </div>
+              {% endif %}
+              
+            </div> 
+          </div>
+          
+          <div class="col-md-7">
+            <div class="animation-wrapper">
+              <div id="animation-dash" class="animation-dash animation"></div> 
+            </div>
+          </div>  
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

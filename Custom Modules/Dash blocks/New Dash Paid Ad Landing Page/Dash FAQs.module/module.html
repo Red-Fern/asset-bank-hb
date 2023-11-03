@@ -1,0 +1,19 @@
+<section class="d-padded-section">
+  <div class="d-container">
+    <h2 class="d-faqs__heading">{% inline_text field="section_title" value="{{ module.section_title }}" %}</h2>
+
+    <ul class="d-faqs">
+      {% for item in module.faq %}
+      <li class="d-faq">
+        <h3 class="d-faq__title">
+          {% inline_text field="question" value="{{ item.question }}" %}
+        </h3>	
+        <div class="d-faq__desc">
+          {% inline_rich_text field="answer" value="{{ item.answer }}" %}
+        </div>
+      </li>   
+      {% endfor %}
+    </ul>
+
+  </div>
+</section>

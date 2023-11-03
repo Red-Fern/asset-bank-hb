@@ -1,0 +1,52 @@
+<div class="section pt-{{ module.module_setting.top_padding_gap_in_rem_ }} pb-{{ module.module_setting.bottom_padding_gap_in_rem_ }} mt-{{ module.module_setting.top_margin_gap_in_rem_ }} mb-{{ module.module_setting.bottom_margin_gap_in_rem_ }} custom-image_with_caption_group">
+  <div class="container page-center">
+    <div class="row">
+      <div class="offset-sm-1 col-sm-10">
+        <h3>{{ module.heading }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      {% for item in module.item %}
+      <div class="col-sm-4">
+        <div class="card-premium d-flex flex-column h-100 text-center align-items-center with-bg">
+          
+          
+          {% set href = item.link.url.href %}
+          {% if item.link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if item.link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.link.no_follow %}rel="nofollow"{% endif %}
+             >
+            
+             <div class="card-header">
+              <div class="card-image">
+                {% if item.image.src %}
+                <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" class="img-fluid d-block">
+                {% endif %}
+                <div class="card-premium_icon">
+                  <span class="btn btn-violet">Download now</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body flex-grow-1">
+              <h4 class="font-weight-bold mt-half">{% if item.caption %}<h4 class="font-weight-bold">{{ item.caption }}</h4>{% endif %}</h4>
+            </div>
+            
+          </a>
+          
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+

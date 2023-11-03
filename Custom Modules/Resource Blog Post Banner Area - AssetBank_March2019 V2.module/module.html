@@ -1,0 +1,92 @@
+<div class="mt-1 resource-post-banner section" > <!-- blog-header-with-image -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <img class="resource-post-banner__image" src="{{ content.featured_image }}">  
+      </div>
+      <div class="col-lg-3">
+          <div class="d-flex h-100" style="background:#EFEEF3;">
+            {% if content.blog_post_author %}
+            <div class="post-meta-container-v2">
+              <div class="flex-grow-1 flex-lg-grow-0 hidden-xs">
+                
+                {% if content.blog_post_author.avatar %}
+                <div class="avatar">
+                  <img src="{{ content.blog_post_author.avatar }}" class="img-fluid d-block" alt="{{ content.blog_post_author.display_name }}">
+                </div>
+                {% endif %}
+                <div>
+                  <h5 class="author font-weight-bold mt-half">{{ content.blog_post_author.display_name }}</h5>
+                  {% if content.blog_post_author.has_social_profiles %}
+                  {% if content.blog_post_author.linkedin %}
+                  <a href="{{ content.blog_post_author.linkedin }}" target="_blank">
+                    <span class="ab-icon linkedin">
+                      <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1 0 53.8 0s53.8 24.1 53.8 53.8-24.1 54.3-53.8 54.3zM448 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448h-.1z"></path></svg>
+                    </span>
+                  </a>
+                  {% endif %}
+                  {% endif %}
+                </div>
+                
+              </div>
+              <div class="post-meta flex-grow-1"> 
+                
+                <div>
+                  <span class="read-time">
+                    <h5 class="font-weight-bold">
+                      <span class="ab-icon clock"><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg></span>
+                      Read time
+                    </h5> 
+                    {% set initialPostWords = content.post_body|wordcount %}
+                    {% set calculatedPostWords = (initialPostWords/100) * 100 %}
+                    {% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
+                    {% set number = finishedPostWords|round %}
+                    {% if number < 1 %}
+                    {% else %}
+                    {{ finishedPostWords|round }} min
+                    {% endif %}</span>
+                  <span class="date">
+                    <h5 class="font-weight-bold">
+                      <span class="ab-icon cal"><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg></span>
+                      Published on
+                    </h5> 
+                    {{ content.publish_date_local_time.strftime('%B') }} {% set day = content.publish_date_local_time.strftime('%e') %}
+                    {% if day >= 4 and day <= 20 %}
+                    {% set day = day + "th" %}
+                    {% elif day >= 24 and day <= 30 %}
+                    {% set day = day + "th" %}
+                    {% elif day == 1 or day == 21 or day == 31 %}
+                    {% set day = day + "st" %}
+                    {% elif day == 2 or day == 22 %}
+                    {% set day = day + "nd" %}
+                    {% elif day == 3 or day == 23 %}
+                    {% set day = day + "rd" %}
+                    {% endif %}
+                    {{ day }}, {{ content.publish_date_local_time.strftime('%Y') }}</span>
+                </div>
+              </div>
+
+              {% if content.topic_list %}
+              <div class="blog-post-topics-v2 flex-grow-1 flex-lg-grow-0">
+                <h5 class="font-weight-bold">
+                  Topics
+                </h5>
+                <ul>
+                  {% for topic in content.topic_list %}
+                  <li>
+                    <h5 class="font-weight-bold">
+                      <a class="topic-link" href="{{ blog_tag_url(group.id, topic.slug) }}">{{ topic.name }}</a>
+                    </h5>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+          {% endif %}
+        
+      </div>
+    </div>
+  </div>
+</div>

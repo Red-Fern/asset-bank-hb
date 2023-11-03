@@ -1,0 +1,26 @@
+<div class="section pt-2 pb-3 custom-content_with_form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">  
+        {{ module.content }}
+      </div>
+      <div class="col-md-5 offset-lg-1 col-lg-4">  
+        <div class="bg-violet form-right-runoff">
+          <!-- HUBSPOT FORM -->
+          <h3 class="text-white">{{ module.form_title }}</h3>
+          {% form
+	form_to_use="{{ module.select_form.form_id }}"
+	response_response_type="{{ module.select_form.response_type }}"
+	response_message="{{ module.select_form.message }}"
+	response_redirect_id="{{ module.select_form.redirect_id }}"
+	response_redirect_url="{{module.select_form.redirect_url}}"
+	gotowebinar_webinar_key="{{ module.select_form.gotowebinar_webinar_key }}"
+%}
+          <div class="mt-2 text-royal-pavilion">{{ module.form_bottom_content }}</div>
+        </div>
+
+        {{ module.right_column_bottom_content }}
+      </div>
+    </div>
+  </div>
+</div>

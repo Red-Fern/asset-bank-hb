@@ -1,0 +1,20 @@
+.cd-table-column-header a {
+  color:#fff;
+  text-decoration:none;
+}
+.currency-select {
+  color: #2c2c4a;
+  padding:1px;
+}
+.currency-selector {
+  padding: 1px 10px;
+  border: 1px solid #efefef;
+  display: inline-block;
+  font-family: Netto,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+.currency-selector:hover {
+    background: #2c2c4a;
+    cursor: pointer;
+    color: #fff;
+}

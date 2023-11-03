@@ -1,0 +1,36 @@
+[ {
+  "id" : "96d9aee2-371e-643e-756a-c5c3c4149f3c",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "An example of how Asset Bank’s DAM system can be adapted for other uses."
+}, {
+  "id" : "c780b42d-1e15-5115-fadf-08832749ae56",
+  "name" : "case_study_pdf",
+  "display_width" : null,
+  "label" : "Case Study PDF",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "supported_types" : [ "FILE" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "FILE"
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : true
+  }
+} ]

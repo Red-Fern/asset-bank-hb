@@ -1,0 +1,172 @@
+{
+  "auto_advance.label" : {
+    "message" : "Avancera automatiskt",
+    "description" : null,
+    "placeholders" : null
+  },
+  "caption_position.choices.below" : {
+    "message" : "Håll alltid bildtexter under bilden",
+    "description" : null,
+    "placeholders" : null
+  },
+  "caption_position.choices.superimpose" : {
+    "message" : "Lägg över bildtexter på bilder",
+    "description" : null,
+    "placeholders" : null
+  },
+  "caption_position.label" : {
+    "message" : "Bildtextposition",
+    "description" : null,
+    "placeholders" : null
+  },
+  "caption_position.placeholder" : {
+    "message" : "Sök",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_mode.choices.lightbox" : {
+    "message" : "Ljuslådegalleri",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_mode.choices.standard" : {
+    "message" : "Standardreglage",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_mode.choices.thumbnail" : {
+    "message" : "Miniatyrbildsnavigering",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_mode.label" : {
+    "message" : "Visningsläge",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_mode.placeholder" : {
+    "message" : "Sök",
+    "description" : null,
+    "placeholders" : null
+  },
+  "lightboxRows.label" : {
+    "message" : "Rader för ljuslådegalleri",
+    "description" : null,
+    "placeholders" : null
+  },
+  "lightboxrows.label" : {
+    "message" : "Rader för ljuslådegalleri",
+    "description" : null,
+    "placeholders" : null
+  },
+  "loop_slides.label" : {
+    "message" : "Repeterande bilder",
+    "description" : null,
+    "placeholders" : null
+  },
+  "num_seconds.label" : {
+    "message" : "Tid i sekunder mellan automatiskt skrollning",
+    "description" : null,
+    "placeholders" : null
+  },
+  "show_pagination.label" : {
+    "message" : "Visa navigeringsknappar",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sizing.choices.resize" : {
+    "message" : "Varierande höjd",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sizing.choices.static" : {
+    "message" : "Fast höjd",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sizing.label" : {
+    "message" : "Varierande höjd",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sizing.placeholder" : {
+    "message" : "Sök",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.caption.label" : {
+    "message" : "Bildtext",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.img.label" : {
+    "message" : "Bild",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.label" : {
+    "message" : "Bild",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.link_url.label" : {
+    "message" : "Länk-URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.open_in_new_tab.label" : {
+    "message" : "Öppna länk i ny flik",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.show_caption.label" : {
+    "message" : "Visa bildtext",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.videoid.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.videoid.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.videoid.label" : {
+    "message" : "Text field",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.videoid.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.videoid.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "transition.choices.fade" : {
+    "message" : "Toning",
+    "description" : null,
+    "placeholders" : null
+  },
+  "transition.choices.slide" : {
+    "message" : "Bild",
+    "description" : null,
+    "placeholders" : null
+  },
+  "transition.label" : {
+    "message" : "Bildövergång",
+    "description" : null,
+    "placeholders" : null
+  },
+  "transition.placeholder" : {
+    "message" : "Sök",
+    "description" : null,
+    "placeholders" : null
+  }
+}

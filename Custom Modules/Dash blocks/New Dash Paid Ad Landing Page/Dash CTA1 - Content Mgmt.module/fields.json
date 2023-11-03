@@ -1,0 +1,71 @@
+[ {
+  "id" : "ffd0e0df-252a-47d9-3911-505adff14ef1",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Try it yourself for free"
+}, {
+  "id" : "57a3d328-5626-ab91-1b3b-d5d3320cda1e",
+  "name" : "reasons_to_sign_up",
+  "display_width" : null,
+  "label" : "Reasons to sign up",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "32ca7501-7eb6-418a-6596-41706274b84f",
+    "name" : "reason_1",
+    "display_width" : null,
+    "label" : "Reason 1",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "14 day free trial"
+  }, {
+    "id" : "6d1c9350-2c08-0a90-6d26-24ecb0559020",
+    "name" : "reason_2",
+    "display_width" : null,
+    "label" : "Reason 2",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "81b4a6ad-c8c7-7ff5-335c-5b43578ec10b",
+    "name" : "reason_3",
+    "display_width" : null,
+    "label" : "Reason 3",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "reason_1" : "14 day free trial"
+  }
+} ]

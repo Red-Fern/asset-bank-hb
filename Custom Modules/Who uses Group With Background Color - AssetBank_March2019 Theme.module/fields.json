@@ -1,0 +1,110 @@
+[ {
+  "id" : "0cb0498e-964e-554a-c110-ad93aed7fb65",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Used by over 800 organisations worldwide, including 20 of the FTSE100"
+}, {
+  "id" : "ab265767-9b50-3c09-8c6b-47d15d0a875a",
+  "name" : "introduction",
+  "display_width" : null,
+  "label" : "Introduction",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "ffec0512-a133-4c08-c156-41909e2a2b77",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "37a07293-afc6-204d-4497-daab87869ec3",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "c79c4d73-9477-3879-23fc-97171c2e0074",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null
+    }
+  }, {
+    "id" : "fd0cacea-3bc6-c30e-e190-c74ea39e6577",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "0622ec86-01c8-9e69-865d-c9626cb42763",
+    "name" : "title_color",
+    "display_width" : null,
+    "label" : "Background colour",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "choices" : [ [ "marina", "Marina" ], [ "summer", "Summer" ], [ "swell", "Swell" ], [ "ocean-spray", "Ocean Spray" ], [ "minty", "Minty" ], [ "pear-drops", "Pear Drops" ], [ "brighton-rock", "Brighton Rock" ], [ "jelly-baby", "Jelly Baby" ], [ "lemon-sherbet", "Lemon Sherbet" ], [ "ice-cream", "Ice Cream" ], [ "candy-floss", "Candy Floss" ], [ "royal-pavilion", "Royal Pavilion" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "ocean-spray"
+  }, {
+    "id" : "bc39ea62-3b98-3632-f993-d23886cc5299",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "src" : "",
+      "alt" : null
+    },
+    "title_color" : "ocean-spray"
+  }
+} ]

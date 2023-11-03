@@ -1,0 +1,172 @@
+{
+  "auto_advance.label" : {
+    "message" : "Automatischer Fortschritt",
+    "description" : null,
+    "placeholders" : null
+  },
+  "caption_position.choices.below" : {
+    "message" : "Beschriftungen immer unterhalb des Bildes anzeigen",
+    "description" : null,
+    "placeholders" : null
+  },
+  "caption_position.choices.superimpose" : {
+    "message" : "Überlagernde Bildbeschriftungen werden auf die Bilder gelegt.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "caption_position.label" : {
+    "message" : "Beschriftungsposition",
+    "description" : null,
+    "placeholders" : null
+  },
+  "caption_position.placeholder" : {
+    "message" : "Suche",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_mode.choices.lightbox" : {
+    "message" : "Lightbox-Galerie",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_mode.choices.standard" : {
+    "message" : "Standardschieberegler",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_mode.choices.thumbnail" : {
+    "message" : "Thumbnail-Navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_mode.label" : {
+    "message" : "Anzeigemodus",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_mode.placeholder" : {
+    "message" : "Suche",
+    "description" : null,
+    "placeholders" : null
+  },
+  "lightboxRows.label" : {
+    "message" : "Zeilen für die Lightbox-Galerie",
+    "description" : null,
+    "placeholders" : null
+  },
+  "lightboxrows.label" : {
+    "message" : "Zeilen für die Lightbox-Galerie",
+    "description" : null,
+    "placeholders" : null
+  },
+  "loop_slides.label" : {
+    "message" : "Loop-Folien",
+    "description" : null,
+    "placeholders" : null
+  },
+  "num_seconds.label" : {
+    "message" : "Zeit in Sekunden zwischen dem automatischen Scrollen",
+    "description" : null,
+    "placeholders" : null
+  },
+  "show_pagination.label" : {
+    "message" : "Navigationsschaltflächen anzeigen",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sizing.choices.resize" : {
+    "message" : "Variable Höhe",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sizing.choices.static" : {
+    "message" : "Feste Höhe",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sizing.label" : {
+    "message" : "Variable Höhe",
+    "description" : null,
+    "placeholders" : null
+  },
+  "sizing.placeholder" : {
+    "message" : "Suche",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.caption.label" : {
+    "message" : "Beschriftung",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.img.label" : {
+    "message" : "Bild",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.label" : {
+    "message" : "Folie",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.link_url.label" : {
+    "message" : "Link-URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.open_in_new_tab.label" : {
+    "message" : "Link in neuem Tab öffnen",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.show_caption.label" : {
+    "message" : "Beschriftung anzeigen",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.videoid.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.videoid.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.videoid.label" : {
+    "message" : "Text field",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.videoid.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.videoid.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "transition.choices.fade" : {
+    "message" : "Ausblenden",
+    "description" : null,
+    "placeholders" : null
+  },
+  "transition.choices.slide" : {
+    "message" : "Folie",
+    "description" : null,
+    "placeholders" : null
+  },
+  "transition.label" : {
+    "message" : "Folienübergänge",
+    "description" : null,
+    "placeholders" : null
+  },
+  "transition.placeholder" : {
+    "message" : "Suche",
+    "description" : null,
+    "placeholders" : null
+  }
+}

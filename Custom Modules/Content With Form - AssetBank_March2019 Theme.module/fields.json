@@ -1,0 +1,65 @@
+[ {
+  "id" : "07621287-88d0-ccb8-d4ac-9c6ce99a0ed0",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext",
+  "default" : "<p>Imagine….you’re working as a Digital Marketing Manager in central Brighton. You’re given the freedom to make the role your own, with support from our CMO, sales and marketing team. You’re autonomous and hands on, bringing creativity and new ideas that are not only welcomed but celebrated. The office is located on the 9th floor with stunning views of the sea and the Downs and whilst the slightly temperamental lift can cause problems, its more than outweighed by the company’s mature and flexible approach to work life balance and great benefits.</p>\n<p>If you’ve been searching for a Digital Marketing Manager role in the centre of Brighton….You’ve found it.</p>\n<h3>Who we are</h3>\n<p>Bright Interactive is an established software development company based in central Brighton. As a Digital Marketing Manager, you’ll be responsible for developing, implementing and managing our digital campaigns and website for our flagship product, Asset Bank, which is a Digital Asset Management tool, and you’ll be working alongside our marketing and sales team.</p>\n<p>Asset Bank helps brand managers, marketers and digital asset specialists all over the world organise, control and share their digital assets. We work with over 700 clients including IKEA, ITV, Coca-Cola &amp; Unicef.<br> Our offices are based in the North Laine area of Brighton with views of both the Downs and the sea. Work/life balance is a priority and we believe that being at work should be fulfilling and productive, yet enjoyable. We offer a range of great benefits including a supportive &amp; collaborative work environment, 25 days holiday, regular company-funded outings, a great coffee machine &amp; free fruit, flexible work hours, monthly wellness contribution and of course, beers and drinks after 4pm on Fridays. We’re particularly proud of our profit share scheme that ensures every member of the team benefits from our success.</p>\n<p>Our supportive leadership style means you get to make your own decisions and take responsibility for your own approach to work. As a result, we have very motivated, committed and energetic people who can make a real difference to what we do and how we do it.</p>\n<p>Check out our ‘Meet the team’ video &amp; Glassdoor page to get a flavour of who we are.</p>\n<h3>What we’re looking for</h3>\n<p>We’re looking for an enthusiastic and capable digital marketer who can easily showcase their previous successful projects experience. You’ll have a strong understanding of current digital marketing tools &amp; strategies as well as the hands on experience to back this up. You’ll be data driven and all about the numbers, which you’ll use this to inform your decision making.The ability to lead, manage and optimise integrated digital marketing campaigns from concept to execution is an essential part of this role.<br> Whilst being supported by the team &amp; mentored by our CMO, you’ll have the freedom to manage your day and workload. This means we are looking for someone who is happy to work autonomously and takes a self starter approach. It’s important to us that you really have a passion for digital marketing and so we’d love to hear from you if you have an active interest in your field, keeping up to date with the latest trends, events and ideas to promote knowledge sharing and development of the team.</p>\n<h3>What you’ll be responsible for</h3>\n<p>Owning the digital marketing strategy and implementation including:</p>\n<ul class=\"styled\">\n<li>Planning and executing all digital marketing campaigns</li>\n<li>SEO/SEM</li>\n<li>Managing and increasing our marketing database</li>\n<li>Create and analyse email campaigns and display advertising campaigns</li>\n<li>Measuring and reporting on the performance and assessing against agreed goals (ROI and KPIs).</li>\n<li>Optimising user funnels, managing online brand and product campaigns to raise brand awareness.</li>\n<li>Conducting keyword research and web statistics reporting</li>\n<li>Manage the contact database and assist with lead generation activities</li>\n<li>Evaluating customer research, market conditions and competitor data</li>\n<li>Have overall responsibility for planning and budgetary control of all digital marketing</li>\n<li>Brainstorm new and creative digital growth strategies</li>\n</ul>\n<p>Managing our website which uses the Hubspot CMS. This includes:</p>\n<ul class=\"styled\">\n<li>Working with our Hubspot partner to iteratively improve the usability, design, content and conversions</li>\n<li>Devising strategies &amp; conversion tests to drive online traffic to the company website.</li>\n<li>Collaborating with internal teams to create landing pages and optimise user experience</li>\n<li>Utilise strong analytical ability to evaluate end-to-end customer experience across multiple channels and customer touch points</li>\n</ul>\n<p>Managing our social channels which include:</p>\n<ul class=\"styled\">\n<li>LinkedIn, Facebook, Twitter &amp; YouTube.</li>\n<li>Implement a social media strategy and maintain our social media presence across all digital channels</li>\n<li>Research new online media opportunities that may benefit the business including mobile, additional social channels, development of blogs and forums</li>\n</ul>\n<p>It’s essential that you are hands on in operating tools such as Google Analytics (Organic SEO &amp; PPC), Moz, Hubspot and our social channels to enable you to optimise spend, analyse campaign performance and identify opportunities for customer acquisition.</p>\n<h3>Skills</h3>\n<ul class=\"styled\">\n<li>BS/BA/MS degree in marketing or a related field</li>\n<li>Min 5+ years working experience in digital marketing</li>\n<li>Preferred experience working in B2B Marketing and with product driven marketing</li>\n<li>Strong verbal communication skills for articulating ideas to colleagues and clients</li>\n<li>Excellent written communication skills</li>\n<li>Attention to detail and accuracy</li>\n<li>The capacity to prioritise and work across multiple projects</li>\n<li>The ability to work as part of a team</li>\n<li>The ability to work well under pressure and meet deadlines</li>\n</ul>\n<h3>Position type</h3>\n<p>Permanent</p>\n<h3>Salary range</h3>\n<p>£35k-£45k Benefits + Profit share</p>"
+}, {
+  "id" : "923cf493-b12a-fedc-3194-ed8127c9e398",
+  "name" : "form_title",
+  "display_width" : null,
+  "label" : "Form Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Apply now"
+}, {
+  "id" : "6d6e1837-7642-9b43-d956-6a8b6ee523d2",
+  "name" : "select_form",
+  "display_width" : null,
+  "label" : "Select Form",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "form",
+  "default" : {
+    "form_id" : "28c4758b-653e-4bb6-be6e-db792f14e81b",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "f16c6c1f-83e8-5f4e-f39d-66f480ae82f2",
+  "name" : "form_bottom_content",
+  "display_width" : null,
+  "label" : "Form Bottom Content",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext",
+  "default" : "<p>If you have any questions or comments do let us know and we will be happy to discuss. Please contact <a href=\"mailto:careers@assetbank.co.uk\" class=\"text-white\">careers@assetbank.co.uk</a>.</p>"
+}, {
+  "id" : "eea37218-a524-10ef-c43b-af2201343575",
+  "name" : "right_column_bottom_content",
+  "display_width" : null,
+  "label" : "Right Column Bottom Content",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext",
+  "default" : "<p class=\"mt-2\">Please understand that due to the overwhelming response we receive to our vacancies, we do not have the capacity to respond to every individual personally, so please be patient and if we feel there is a potential match to our open position, we will contact you directly.</p>"
+} ]

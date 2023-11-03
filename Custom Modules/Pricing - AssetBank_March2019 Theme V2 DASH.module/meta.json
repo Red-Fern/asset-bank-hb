@@ -1,0 +1,16 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 24317145893,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../Coded Files/AssetBank_March2019-AssetBank_March2019-microtip.css",
+    "name" : "AssetBank_March2019-AssetBank_March2019-microtip.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../Coded Files/AssetBank_March2019-AssetBank_March2019-squeezebox.js",
+    "name" : "AssetBank_March2019-AssetBank_March2019-squeezebox.js"
+  } ],
+  "is_available_for_new_content" : true
+}

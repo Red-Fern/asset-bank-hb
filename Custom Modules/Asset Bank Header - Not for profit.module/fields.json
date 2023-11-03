@@ -1,0 +1,22 @@
+[ {
+  "id" : "1757593f-8186-34ed-c378-a1deda118f94",
+  "name" : "primary_menu_field",
+  "display_width" : null,
+  "label" : "Primary Menu",
+  "required" : true,
+  "locked" : true,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "menu",
+  "default" : 94605991448
+}, {
+  "id" : "7b9dc806-d0e1-d1e9-153b-fbba3236afb1",
+  "name" : "mobile_cta",
+  "display_width" : null,
+  "label" : "Mobile CTA",
+  "required" : false,
+  "locked" : true,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext"
+} ]

@@ -1,0 +1,12 @@
+[ {
+  "id" : "c51cb1b8-5b4b-ee2e-b33a-3c5b37ea8b14",
+  "name" : "select_button_cta_",
+  "display_width" : null,
+  "label" : "Select Button (CTA)",
+  "required" : false,
+  "locked" : true,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "cta",
+  "default" : "9242d8eb-b0f4-4d4f-8c84-bc43abc3a556"
+} ]

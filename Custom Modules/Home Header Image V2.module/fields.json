@@ -1,0 +1,38 @@
+[ {
+  "id" : "f1f35522-b266-a35a-0d57-b94a7e0d9d3a",
+  "name" : "img",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "responsive" : false,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image"
+}, {
+  "id" : "2af283ee-8b30-210b-41b1-74496a3d0f33",
+  "name" : "caption",
+  "display_width" : null,
+  "label" : "Caption",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext"
+}, {
+  "id" : "0044ff5e-330e-6339-1d4c-d4b60bccc4fe",
+  "name" : "container_classes",
+  "display_width" : null,
+  "label" : "Container Classes",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "pt-5 pb-5"
+} ]

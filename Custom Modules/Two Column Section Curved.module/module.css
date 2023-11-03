@@ -1,0 +1,101 @@
+.custom-two-col-image-wrapper {
+  position: relative;
+}
+
+.custom-two-col-image {
+	background-color: rgba(76, 0, 169, 1.0);
+	padding: 128px 0;
+}
+
+.custom-two-col-image:before {
+	content: "";
+	background: rgba(76, 0, 169, 1.0);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.custom-two-col-image-wrapper .page-center {
+	max-width: 1360px !important;
+	padding: 0 !important;
+}
+
+.custom-two-col-image.content_with_image_group_fullwidth .btn-violet {
+	background-color: #fff;
+	border-color: #fff;
+	color: #48118B;
+	border-radius: 4px;
+	font-weight: 500;
+}
+
+.custom-two-col-image.content_with_image_group_fullwidth .custom-btn-wrap {
+	margin-top: 25px;
+}
+
+.custom-two-col-image.content_with_image_group_fullwidth .btn-violet:hover,
+.custom-two-col-image.content_with_image_group_fullwidth .btn-violet:focus,
+.custom-two-col-image.content_with_image_group_fullwidth .btn-violet:active {
+	background-color: #e9d7ff !important;
+	border-color: #e9d7ff !important;
+	border-radius: 4px !important;
+	color: #48118B !important;
+}
+
+
+.custom-two-col-image .content_with_image_group_fullwidth_content {
+	margin: 0;
+}
+
+.custom-two-col-image .content_with_image_group_fullwidth_content *:not(a) {
+	color: #fff;
+	line-height: 1.5;
+}
+
+.custom-two-col-image .content_with_image_group_fullwidth_content h1,
+.custom-two-col-image .content_with_image_group_fullwidth_content h2 {
+	line-height: 1.2;
+	font-weight: 600;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.custom-two-col-image .content_with_image_group_fullwidth_content h2 {
+	font-size: 36px;
+}
+
+.custom-two-col-image .content_with_image_group_fullwidth__inner .image-column img {
+	border-radius: 20px;
+}
+
+
+@media (min-width: 768px) {
+	.content-curved .content-column {
+		padding: 8px 0 8px 48px;
+	}
+	.custom-two-col-image {
+		border-radius: 0px 360px 360px 0;
+	}
+	.custom-two-col-image:before {
+		border-radius: 0px 360px 360px 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.custom-two-col-image .content_with_image_group_fullwidth_content {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.custom-two-col-image-wrapper .custom-two-col-image {
+		padding: 60px 0 !important;
+	}
+	.custom-two-col-image.content_with_image_group_fullwidth .content_with_image_group_fullwidth_content {
+		float: none;
+		padding-top: 0;
+		padding-bottom: 0 !important;
+	}
+}

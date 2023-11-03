@@ -1,0 +1,29 @@
+[ {
+  "id" : "fac04efa-b20a-d9af-2b22-8ff21fa3ade4",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "DAM Resource Center"
+}, {
+  "id" : "37d7a3cc-db6c-b5b8-18ef-cea51020e0f0",
+  "name" : "sub_title",
+  "display_width" : null,
+  "label" : "Sub Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Digital Asset Management statistics and trends that provide insights for your business"
+} ]

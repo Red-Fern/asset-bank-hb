@@ -1,0 +1,34 @@
+<div class="clearfix content-group">
+  <div class="{% if module.small_width %}span10_wrapper{% endif %}">
+    <div class="section pt-{{ module.module_setting.top_padding_gap_in_rem_ }} pb-{{ module.module_setting.bottom_padding_gap_in_rem_ }} mt-{{ module.module_setting.top_margin_gap_in_rem_ }} mb-{{ module.module_setting.bottom_margin_gap_in_rem_ }}" {% if module.background_color.color %}style="background-color:rgba({{ module.background_color.color|convert_rgb  }},{{ module.background_color.opacity/100 }});"{% endif %}>
+      <div class="container page-center">
+        <div class="row align-items-center">
+          {% if module.module_setting.border_top or module.module_setting.border_bottom %}
+          <div class="col-12 {% if module.module_setting.border_top %}border-top pt-1{% endif %} {% if module.module_setting.border_bottom %}border-bottom pb-1{% endif %}">
+            <div class="row ">
+              {% for item in module.item %}
+              <div class="{{ module.column_type }}">
+                {{ item.content }}
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% else %}
+          {% for item in module.item %}
+          <div class="{{ module.column_type }}">
+            {{ item.content }}
+          </div>
+          {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

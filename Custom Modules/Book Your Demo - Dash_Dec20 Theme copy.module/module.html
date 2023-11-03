@@ -1,0 +1,28 @@
+<div class="section pt-1 pb-4 hs-book-a-demo">
+  <div class="container page-center">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="book-demo-cta">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="book-demo-cta_left mb-1 mb-md-0">
+                {% if module.logo_image.src %}
+                <img class="book-demo-cta__logo" src="{{ module.logo_image.src }}" alt="{{ module.logo_image.alt }}">
+                {% endif %}
+                {% cta guid="{{ module.select_button_cta_ }}" %}
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="book-demo-cta_right pl-1 pl-md-0">
+                <h5 class="book-demo-cta__title">{{ module.heading }}</h5>
+                <div class="book-demo-cta__text">
+                  {{ module.content }}
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>   
+      </div>
+    </div>  
+  </div>
+</div>

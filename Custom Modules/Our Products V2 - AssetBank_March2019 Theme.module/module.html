@@ -1,0 +1,42 @@
+<div class="section choose-dam ">
+  <div class="container page-center">
+    {% if module.heading %}
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="h1 text-violet mb-3">{{ module.heading }}</h2>
+      </div>
+    </div>
+    {% endif %}
+    <div class="row justify-content-center">
+      {% for item in module.item %}
+      <div class="col-12 col-sm-6 col-lg-5 col-xl-4 mb-4">
+        <div class="d-flex flex-column h-100 shadow-lg radius-lg choose-dam_card {{ item.image.alt }}">
+          <div class="text-center pt-half px-1">
+            {% if item.image.src %}
+            <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" class="img-fluid mt-1 mb-1" style="height:3.6rem">
+            {% endif %}
+          </div>
+          <div class="flex-grow-1 text-center px-1 pb-1">
+            {{ item.content }}
+          </div>
+          <div class="flex-grow-1 px-1 pt-1 choose-dam_content-lower">
+            {{ item.content_lower }}
+          </div>
+          <div class="px-1 choose-dam_button">
+            <a class="btn btn-block btn-swell mb-1" href="{{ page_by_id(item.button_link).absolute_url }}">{{ item.button_text }}</a>
+          </div>
+          {% if item.mock_up.src %}
+            {% set sizeAttrs = 'width="{{ item.mock_up.width }}" height="{{ item.mock_up.height }}"' %}
+            {% if item.mock_up.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif item.mock_up.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.mock_up.max_width }}px; max-height: {{ item.mock_up.max_height }}px"' %}
+            {% endif %}
+            <img class="choose-dam_mockup" src="{{ item.mock_up.src }}" alt="{{ item.mock_up.alt }}">
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

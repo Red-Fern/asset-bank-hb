@@ -1,0 +1,227 @@
+[ {
+  "id" : "74c5b8f1-9a17-142d-99c5-74dc9eef616a",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "dc9d63a6-1752-e152-3d03-662ab6ce6b9e",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "type" : "richtext"
+}, {
+  "id" : "e9634ef0-8053-b5e2-d82b-440187e7d296",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "9519254a-33b0-d777-dce2-b9b012475777",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "d5877c04-9cf6-75b6-5352-4a29754478f8",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null
+    }
+  }, {
+    "id" : "2efc3860-addc-cb41-24ac-a5625ed29ee3",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "richtext"
+  }, {
+    "id" : "bbe116d5-dfd5-699f-de0e-94ce8bb9847a",
+    "name" : "show_link",
+    "display_width" : null,
+    "label" : "Show Link",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "62550754-c560-6b70-160b-586ea8441e3e",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "bbe116d5-dfd5-699f-de0e-94ce8bb9847a",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "b70a3b86-a238-cd7f-df63-38979e8bad07",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "bbe116d5-dfd5-699f-de0e-94ce8bb9847a",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "More Info"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null
+    },
+    "show_link" : false,
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "link_text" : "More Info"
+  }
+}, {
+  "id" : "dd02b386-aaaf-f92d-633e-d2805a787089",
+  "name" : "module_setting",
+  "display_width" : null,
+  "label" : "Module Setting",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f9d934f9-4950-d445-1d58-2a5d5341abcd",
+    "name" : "top_padding_gap_in_rem_",
+    "display_width" : null,
+    "label" : "Top Padding Gap (in rem)",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "step" : 1,
+    "type" : "number"
+  }, {
+    "id" : "3f40eb11-46c5-4d06-64d2-b68b2d336028",
+    "name" : "bottom_padding_gap_in_rem_",
+    "display_width" : null,
+    "label" : "Bottom Padding Gap (in rem)",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "step" : 1,
+    "type" : "number"
+  }, {
+    "id" : "1c069321-0a0e-ed65-ed40-2c31f30b6c56",
+    "name" : "top_margin_gap_in_rem_",
+    "display_width" : null,
+    "label" : "Top Margin Gap (in rem)",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "step" : 1,
+    "type" : "number"
+  }, {
+    "id" : "8ae9739c-89fc-343e-a6cc-3ba7d19cf086",
+    "name" : "bottom_margin_gap_in_rem_",
+    "display_width" : null,
+    "label" : "Bottom Margin Gap (in rem)",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "responsive_enabled" : false,
+    "breakpoint_defaults" : { },
+    "step" : 1,
+    "type" : "number"
+  } ],
+  "responsive_enabled" : false,
+  "breakpoint_defaults" : { },
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+} ]
